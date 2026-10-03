@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soft Tissue Injury and Repair &middot; Paper 3 MSK Assessment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf7f5; --surface:#fffdfb; --surface-2:#f3ece6; --border:rgba(35,32,29,.12);
+  --text:#23201d; --text-dim:#6b635b; --accent:#b4491f; --accent-dim:#f3ddd3;
+  --accent2:#4f6b3a; --accent2-dim:#e3ebd8; --mono:#8a4b1f;
+  --font-head:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --font-body:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --maxw:74ch;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#191715; --surface:#211e1b; --surface-2:#2a2622; --border:rgba(255,255,255,.10);
+    --text:#ece7e1; --text-dim:#a79e94; --accent:#e07a4f; --accent-dim:#3a241b;
+    --accent2:#9dbb7e; --accent2-dim:#26301d; --mono:#d99a6a;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);
+  font-size:17px;line-height:1.72;-webkit-text-size-adjust:100%;
+  background-image:radial-gradient(circle at 12% -8%,var(--accent-dim),transparent 42%),
+    radial-gradient(circle at 100% 0%,var(--accent2-dim),transparent 38%);
+  background-attachment:fixed;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--surface) 70%,transparent);
+  backdrop-filter:blur(8px);position:sticky;top:0;z-index:20}
+header.top .bar{max-width:var(--maxw);margin:0 auto;padding:14px 22px;display:flex;
+  align-items:center;justify-content:space-between;gap:14px}
+.brand{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text-dim)}
+.brand b{color:var(--accent);font-weight:600}
+nav.sib{font-family:var(--font-mono);font-size:12.5px;display:flex;gap:16px}
+main{padding:40px 0 80px}
+h1{font-family:var(--font-head);font-weight:400;font-size:clamp(30px,5vw,46px);line-height:1.1;
+  margin:.2em 0 .5em;letter-spacing:-.01em}
+h2{font-family:var(--font-head);font-weight:400;font-size:clamp(21px,3vw,28px);line-height:1.2;
+  margin:1.9em 0 .5em;padding-bottom:.24em;border-bottom:1px solid var(--border)}
+h3{font-family:var(--font-body);font-weight:600;font-size:16.5px;margin:1.4em 0 .4em;
+  color:var(--accent2)}
+p{margin:0 0 1.02em;overflow-wrap:break-word}
+blockquote{margin:1.3em 0;padding:12px 18px;border-left:3px solid var(--accent);
+  background:var(--surface-2);color:var(--text-dim);font-size:15px;border-radius:0 8px 8px 0}
+.lead{font-family:var(--font-head);font-size:clamp(19px,2.4vw,23px);line-height:1.45;
+  color:var(--text-dim);max-width:60ch;margin:0 0 1.6em}
+.crumb{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.06em;color:var(--text-dim);
+  text-transform:uppercase}
+.toc{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 22px;
+  margin:0 0 2.2em}
+.toc h4{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--text-dim);margin:0 0 10px}
+.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:34px}
+@media(max-width:640px){.toc ol{columns:1}}
+.toc li{margin:.18em 0;font-size:14.5px;break-inside:avoid}
+footer{border-top:1px solid var(--border);padding:26px 22px 46px;color:var(--text-dim);
+  font-size:13px;text-align:center}
+footer .wrap{max-width:var(--maxw)}
+/* index */
+.hero{padding:56px 0 30px}
+.hero .eyebrow{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin:8px 0 10px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 20px;
+  display:flex;flex-direction:column;gap:8px;transition:transform .18s ease,border-color .18s ease}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card .num{font-family:var(--font-mono);font-size:12px;color:var(--accent);letter-spacing:.1em}
+.card h3{margin:0;font-family:var(--font-head);font-weight:400;font-size:21px;color:var(--text);
+  line-height:1.2}
+.card p{margin:0;font-size:14px;color:var(--text-dim);line-height:1.5}
+.grouphd{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--text-dim);margin:2.4em 0 .9em;padding-bottom:.5em;border-bottom:1px solid var(--border)}
+.tag{font-family:var(--font-mono);font-size:11px;color:var(--accent2);border:1px solid var(--border);
+  border-radius:999px;padding:2px 9px;align-self:flex-start}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="bar"><div class="brand"><b>Paper&nbsp;3</b> &middot; MSK Assessment</div><nav class="sib"><a href="index.html">Index</a></nav></div></header>
+<div class="wrap"><main>
+<div class="crumb">Paper 3 &middot; MSK Assessment</div>
+<h1>Soft Tissue Injury and Repair</h1>
+<p class="lead">Faithful study notes transcribed from the Paper 3 MSK assessment compilation (based on David J. Magee, <em>Orthopedic Physical Assessment</em>, 6th ed., and companion material).</p>
+<nav class="toc"><h4>On this page</h4><ol><li><a href="#reference">REFERENCE</a></li><li><a href="#soft-tissue-injury">SOFT TISSUE INJURY</a></li><li><a href="#mamta-masnjari-sahu-senior-physiotherapist-cum-junior-lectur">MAMTA MASNJARI SAHU, SENIOR PHYSIOTHERAPIST CUM JUNIOR LECTURER</a></li><li><a href="#tendon-injuries">TENDON INJURIES</a></li><li><a href="#pathology">Pathology</a></li><li><a href="#muscle-strain">MUSCLE STRAIN</a></li><li><a href="#site">Site:-</a></li><li><a href="#pathogenesis">Pathogenesis: -</a></li><li><a href="#types">Types</a></li><li><a href="#grade-1">Grade 1</a></li><li><a href="#grade-ii">Grade II</a></li><li><a href="#grade-iii">Grade III</a></li><li><a href="#rx-cyriaxdtfm-muscle-tendon-ligament">Rx -cyriaxDTFM - Muscle, Tendon, Ligament</a></li><li><a href="#method-training">METHOD/TRAINING: -</a></li><li><a href="#quadricep-strain">Quadricep Strain</a></li><li><a href="#grade-1-2">Grade 1</a></li><li><a href="#grade-2">Grade 2</a></li><li><a href="#grade-3">Grade 3</a></li><li><a href="#acute-stage">Acute Stage</a></li><li><a href="#rice">RICE</a></li><li><a href="#goals">Goals</a></li><li><a href="#quadricep-strain-prevention">Quadricep Strain Prevention</a></li><li><a href="#hamstring-strain">Hamstring Strain</a></li><li><a href="#injuries-thigh-hamstring-strain">Injuries &gt; Thigh &gt; Hamstring Strain</a></li><li><a href="#hamstring">Hamstring)</a></li><li><a href="#initial-exercises">Initial Exercises</a></li><li><a href="#static-hamstring-contraction">Static Hamstring Contraction</a></li><li><a href="#basic-hamstring-stretch">Basic Hamstring Stretch</a></li><li><a href="#bridging">Bridging</a></li><li><a href="#groin-strain">Groin Strain</a></li><li><a href="#adductor-strain-torn-adductor-muscle-adductor-tear">Adductor Strain, Torn Adductor Muscle, Adductor Tear)</a></li><li><a href="#causes">Causes</a></li><li><a href="#diagnosis">Diagnosis</a></li><li><a href="#treatment">Treatment</a></li><li><a href="#poor-posture">Poor Posture</a></li><li><a href="#decreased-fitness">Decreased Fitness</a></li><li><a href="#fatigue">Fatigue</a></li><li><a href="#inadequate-warm-up">Inadequate Warm Up</a></li><li><a href="#poor-pelvic-and-core-stability">Poor Pelvic And Core Stability</a></li><li><a href="#inadequate-rehabilitation-following-a-previous-groin-injury">Inadequate Rehabilitation Following A Previous Groin Injury</a></li><li><a href="#neural-tightness">Neural Tightness</a></li><li><a href="#muscle-imbalances">Muscle Imbalances</a></li><li><a href="#electrotherapy-e-g-ultrasound">Electrotherapy (e.g. Ultrasound)</a></li><li><a href="#stretches">Stretches</a></li><li><a href="#education">Education</a></li><li><a href="#initial-exercises-2">Initial Exercises</a></li><li><a href="#groin-stretch">Groin Stretch</a></li><li><a href="#common-mode-of-symptoms-treatment">COMMON MODE OF SYMPTOMS TREATMENT</a></li><li><a href="#tendon-injury">TENDON INJURY</a></li><li><a href="#injuries">INJURIES</a></li><li><a href="#supraspinatus-tendinitis">SUPRASPINATUS TENDINITIS-</a></li><li><a href="#physiotherapy">PHYSIOTHERAPY-</a></li><li><a href="#tennis-elbow">TENNIS ELBOW -</a></li><li><a href="#physiotherapy-2">PHYSIOTHERAPY-</a></li><li><a href="#golfer-s-elbow">GOLFER`S ELBOW-</a></li><li><a href="#patellar-tendinitis">PATELLAR TENDINITIS-</a></li><li><a href="#physiotherapy-3">PHYSIOTHERAPY-</a></li><li><a href="#ligament-injuries">LIGAMENT INJURIES</a></li><li><a href="#sprain">Sprain</a></li><li><a href="#causes-2">Causes-</a></li><li><a href="#observation">OBSERVATION</a></li><li><a href="#x-ray"> X-RAY</a></li><li><a href="#stress-x-ray"> STRESS X-RAY</a></li><li><a href="#ct-scan"> CT-SCAN</a></li><li><a href="#ist-48hrs">Ist 48hrs</a></li><li><a href="#rest">Rest</a></li><li><a href="#stretching">Stretching :-</a></li><li><a href="#knee-ligament-injury">KNEE LIGAMENT INJURY</a></li><li><a href="#ligament-mode-of-injury-symptoms-management">LIGAMENT MODE OF INJURY SYMPTOMS MANAGEMENT</a></li><li><a href="#prom-a-arom">• PROM/A-AROM</a></li><li><a href="#mensci-mode-of-symptoms-management">MENSCI MODE OF SYMPTOMS MANAGEMENT</a></li><li><a href="#injury">INJURY</a></li><li><a href="#in-acl-reconstruction">IN ACL RECONSTRUCTION</a></li><li><a href="#phase-1-weeks-0-2">Phase 1: Weeks 0-2</a></li><li><a href="#goals-2">Goals</a></li><li><a href="#brace">Brace</a></li><li><a href="#weight-bearing">Weight-bearing</a></li><li><a href="#phase-2-weeks-2-4">Phase 2: Weeks 2-4</a></li><li><a href="#goals-3">Goals</a></li><li><a href="#weight-bearing-2">Weight-bearing</a></li><li><a href="#therapeutic-exercises">Therapeutic Exercises</a></li><li><a href="#phase-3-week-6-month-4">Phase 3: Week 6-Month 4</a></li><li><a href="#goals-4">Goals</a></li><li><a href="#therapeutic-exercises-2">Therapeutic Exercises</a></li><li><a href="#goal">Goal</a></li><li><a href="#therapeutic-exercises-3">Therapeutic Exercises</a></li><li><a href="#goals-5">Goals</a></li><li><a href="#brace-2">Brace</a></li><li><a href="#therapeutic-exercises-4">Therapeutic Exercises</a></li><li><a href="#non-operative-treatment-of-pcl-injury">NON OPERATIVE TREATMENT OF PCL INJURY</a></li><li><a href="#phase-1">Phase 1</a></li><li><a href="#days-1-7">Days 1-7</a></li><li><a href="#weeks-2-3">Weeks 2-3</a></li><li><a href="#phase-2">Phase 2</a></li><li><a href="#week-3">Week 3</a></li><li><a href="#weeks-5-6">Weeks 5-6</a></li><li><a href="#phase-3">Phase 3</a></li><li><a href="#weeks-8-12">Weeks 8-12</a></li><li><a href="#pcl-reconstruction">PCL RECONSTRUCTION</a></li><li><a href="#general-guidelines">General Guidelines</a></li><li><a href="#phase-1-weeks-0-4">Phase 1: Weeks 0-4</a></li><li><a href="#goals-6">Goals</a></li><li><a href="#bracing">Bracing</a></li><li><a href="#weight-bearing-3">Weight-bearing</a></li><li><a href="#special-considerations">Special Considerations</a></li><li><a href="#therapeutic-exercises-5">Therapeutic Exercises</a></li><li><a href="#phase-2-weeks-4-12">Phase 2: Weeks 4-12</a></li><li><a href="#goals-7">Goals</a></li><li><a href="#bracing-2">Bracing</a></li><li><a href="#weight-bearing-4">Weight-bearing</a></li><li><a href="#therapeutic-exercises-6">Therapeutic Exercises</a></li><li><a href="#weeks-4-8">Weeks 4-8</a></li><li><a href="#weeks-8-12-2">Weeks 8-12</a></li><li><a href="#phase-3-months-3-6">Phase 3: Months 3-6</a></li><li><a href="#goals-8">Goals</a></li><li><a href="#therapeutic-exercises-7">Therapeutic Exercises</a></li><li><a href="#phase-4-month-6-full-activity">Phase 4: Month 6-Full Activity</a></li><li><a href="#goals-9">Goals</a></li><li><a href="#therapeutic-exercises-8">Therapeutic Exercises</a></li><li><a href="#mcl-injury">MCL INJURY</a></li><li><a href="#phase-1-2">Phase 1</a></li><li><a href="#goals-10">Goals</a></li><li><a href="#cryotherapy">Cryotherapy</a></li><li><a href="#weight-bearing-5">Weight-bearing</a></li><li><a href="#exercises">Exercises</a></li><li><a href="#phase-2-2">Phase 2</a></li><li><a href="#goal-2">Goal</a></li><li><a href="#bracing-3">Bracing</a></li><li><a href="#exercises-2">Exercises</a></li><li><a href="#phase-3-2">Phase 3</a></li><li><a href="#goals-11">Goals</a></li><li><a href="#bracing-4">Bracing</a></li><li><a href="#exercises-3">Exercises</a></li><li><a href="#meniscal-repair">MENISCAL REPAIR</a></li><li><a href="#phase-1-weeks-0-2-2">Phase 1: Weeks 0-2</a></li><li><a href="#goals-12">Goals</a></li><li><a href="#weight-bearing-6">Weight-bearing</a></li><li><a href="#treatment-2">Treatment</a></li><li><a href="#phase-2-weeks-2-4-2">Phase 2: Weeks 2-4</a></li><li><a href="#goals-13">Goals</a></li><li><a href="#therapeutic-exercises-9">Therapeutic Exercises</a></li><li><a href="#phase-3-weeks-4-8">Phase 3: Weeks 4-8</a></li><li><a href="#goals-14">Goals</a></li><li><a href="#therapeutic-exercises-10">Therapeutic Exercises</a></li><li><a href="#phase-1-acute-phase">Phase 1: Acute Phase</a></li><li><a href="#timing">Timing</a></li><li><a href="#goals-15">Goals</a></li><li><a href="#protection-options">Protection Options</a></li><li><a href="#light-compression">Light Compression</a></li><li><a href="#elevation">Elevation</a></li><li><a href="#phase-2-subacute-phase">Phase 2: Subacute Phase</a></li><li><a href="#timing-2">Timing</a></li><li><a href="#goals-16">Goals</a></li><li><a href="#weight-bearing-7">Weight-bearing</a></li><li><a href="#therapeutic-exercises-11">Therapeutic Exercises</a></li><li><a href="#phase-3-rehabilitative-phase">Phase 3: Rehabilitative Phase</a></li><li><a href="#timing-3">Timing</a></li><li><a href="#goal-3">Goal</a></li><li><a href="#therapeutic-exercises-12">Therapeutic Exercises</a></li><li><a href="#strengthening">Strengthening</a></li><li><a href="#timing-4">Timing</a></li><li><a href="#goals-17">Goals</a></li><li><a href="#therapeutic-exercises-13">Therapeutic Exercises</a></li><li><a href="#phase-5-prophylactic-phase">Phase 5: Prophylactic Phase</a></li><li><a href="#goal-4">Goal</a></li><li><a href="#therapeutic-exercises-14">Therapeutic Exercises</a></li><li><a href="#injury-to-capsules">INJURY TO CAPSULES</a></li><li><a href="#pathomechanics">Pathomechanics: -</a></li><li><a href="#management">Management: -</a></li><li><a href="#methods">Methods -</a></li><li><a href="#strengthening-2">Strengthening: -</a></li><li><a href="#injury-to-articular-cartilage">INJURY TO ARTICULAR CARTILAGE</a></li><li><a href="#management-2">Management: -</a></li><li><a href="#fracture">FRACTURE</a></li><li><a href="#c-f">C/f: -</a></li><li><a href="#2-ards">2. ARDS</a></li><li><a href="#15-rsd">15.RSD-</a></li></ol></nav>
+<h2 id="reference">REFERENCE</h2>
+<p>"Therapeutic Modalities for Musculoskeletal Injuries" by Craig R. Denegar, Ethan Saliba, and Susan L. Sigward:</p>
+<p>Orthopedic Physical Assessment" by David J. Magee:</p>
+<h2 id="soft-tissue-injury">SOFT TISSUE INJURY</h2>
+<h2 id="mamta-masnjari-sahu-senior-physiotherapist-cum-junior-lectur">MAMTA MASNJARI SAHU, SENIOR PHYSIOTHERAPIST CUM JUNIOR LECTURER</h2>
+<p>Soft tissue injury may include injury to tendons, ligaments, capsules, synovium, articular cartilage and fascias.</p>
+<h2 id="tendon-injuries">TENDON INJURIES</h2>
+<p>Muscles are attached firmly to bone and connective tissue at one end and generally insert in bones via tendons. Tendons are white fibrous cords that are lined with a loose tissue (paratenon) and which sometimes run through a fibrous tube (tendon sheath). Tendons have the ability to glide over bone and through tissues. Muscle contraction is therefore transmitted via the tendons causing intervening joints to move. Muscles that bend the joint are termed "flexor" and those that straighten the joint, "extensors".</p>
+<p>As a general, tendon injury can be classified as: -</p>
+<p>1. Acute (mostly traumatic in nature) -also known as strain</p>
+<p>2. Chronic (because of overuse, postural or occupational cause)</p>
+<p>Different terms are used to describe a chronic tendon injury: -</p>
+<p>1. Tendinitis. This actually means "inflammation of the tendon.</p>
+<p>2. Tendinosis. This refers to tiny tears in the tissue in and around the tendon caused by overuse.</p>
+<p>Acute injury</p>
+<p>Cause is overloading. As body has got its own defence mechanism, during overloading eccentric contraction of muscle occurs which absorbs some load and prevents excessive damage to the structures. So if the overloading occurs in a position where the muscle is in no contraction state or in concentric contraction state, it causes injury to the structure.</p>
+<h2 id="pathology">Pathology</h2>
+<p>Injury leads to bleeding. Gradually clot formation occurs to fill the gap. Inflammation occurs as a response to injury to the tissues which heals with fibrosis.</p>
+<h2 id="muscle-strain">MUSCLE STRAIN</h2>
+<p>Muscle pull or even a muscle tear -- implies damage to a muscle or its attaching tendons. You can put undue pressure on muscles during the course of normal daily activities, with sudden heavy lifting, during sports, or while performing work tasks.</p>
+<p>90 Muscle damage can be in the form of tearing (part or all) of the muscle fibers and the tendons attached to the muscle. The tearing of the muscle can also damage small blood vessels, causing local bleeding (bruising) and pain (caused by irritation of the nerve endings in the area).</p>
+<p>Definition: - Strain is the injury to the musculotendinous unit</p>
+<h2 id="site">Site:-</h2>
+<p>- Muscle Belly</p>
+<p>- Musculotendinous Junction</p>
+<p>- Tendon</p>
+<p>- Teno periosteal Junction</p>
+<h2 id="pathogenesis">Pathogenesis: -</h2>
+<p>Since muscle is a highly elastic tissue injury to muscle belly is relatively rare. Usually injury occurs to the tendon. Muscle injury occurs due to direct blow which is referred as contusion. Depending on the severity of injury, movement and function are going to be impaired. Both active movement and passive stretching will be painful and limited. Healing occurs by fibrosis &amp; adhesion. Adhesion occurs within the muscle belly so that movement will be impaired. Adhesion may occur to the underlying structure affecting active as well as passive range of motion.</p>
+<h2 id="types">Types</h2>
+<h2 id="grade-1">Grade 1</h2>
+<p> A Few Fibres Damaged</p>
+<p> Localized Swelling</p>
+<p> Pain</p>
+<p> Tenderness</p>
+<p> Resisted Isometric Contraction Is Painful But Strong</p>
+<p> Passive Movement Could Be Painful At End Range</p>
+<p> Function Is Not Impaired. Patient May Complain Of Pain During Some Activities That Involves Action Or The Involved Muscle.</p>
+<h2 id="grade-ii">Grade II</h2>
+<p>91  More Number Of Fibres Damaged But Not All</p>
+<p> More Swelling, Pain</p>
+<p> Tenderness</p>
+<p> Loss Of Function</p>
+<p> Resisted Isometric Contraction Is Painful And Weak</p>
+<p> Passive Stretching Painful &amp; Limited.</p>
+<h2 id="grade-iii">Grade III</h2>
+<p> Complete Rupture</p>
+<p> All Fibres Are Damaged</p>
+<p> Following Rupture Muscle Retracts Proximally Due To Spasm To A Visible Or Palpable Gap Maybe Found.</p>
+<p> The Contour Is Dissolved I. E. Unusual Ball Like Swelling Over The Muscle Belly Due To Proximal Retraction Of Contractile Tissue.</p>
+<p> Resisted Isometric Contraction Is Painless &amp; weak</p>
+<p> Active Movement May Be Impaired</p>
+<p> Passive Stretching Produce No Pain</p>
+<p> Rom Is Full</p>
+<p>Clinical test</p>
+<p>1.Thompson test</p>
+<p>Squeeze the muscle belly. Movement on distal part indicate continuity of muscle.when there is no movement - Thompson test is positive and suggestive of complete rupture.</p>
+<p>2.FG test</p>
+<p>Faradic stimulation can be used to differentiate between complete rupture or neuromuscular deficit.</p>
+<p>Role of physiotherapy</p>
+<p>1) Immediately to stop bleeding and allow haematoma to form.</p>
+<p>2) Prevent further damage.</p>
+<p>Rx - rest to the part (functional rest)</p>
+<p>92 3) Early resolution of oedema</p>
+<p>Rx - ice ( 5 - 6 times a day ) , compression ( 15 mins ), elevation.</p>
+<p>4) Relief of pain</p>
+<p>Rx - for swelling, pain &amp; accelerate healing - HVPGS/IFT/TENS</p>
+<p>5) Promote healing</p>
+<p>Rx - heating modalities depending upon depth of tissue involved.</p>
+<p>For superficial tissue - hot fermementation, pwb.</p>
+<p>For deep tissue -SWD, MWD, are used.</p>
+<p>6) Prevent complications</p>
+<p>Disuse atrophy due to lack of movement and weakness of muscles</p>
+<p>Rx - static contraction of muscles</p>
+<p>If static contraction not possible - irradiation techniqueor electrical therapy i. e. faradic stimulation/IFT</p>
+<p>7. To prevent Scar Tissue Formation and to Promote Physiological Healing</p>
+<p>Scar tissue formation - adhesion - shortening-limited JROM</p>
+<p>Optimal stress to be applied to help in realignment of collagen tissue perpendicular to the stress so that length will be restored</p>
+<p>As healing tissue is subjected to progressive stress, strength is regained.</p>
+<p>Optimal stress - discomfort but no pain.</p>
+<p>If there is no discomfort, stress is less than optimal - no effect on remodelling</p>
+<p>If stress is more as determined by pain- leads to damage of granulation tissue.</p>
+<h2 id="rx-cyriaxdtfm-muscle-tendon-ligament">Rx -cyriaxDTFM - Muscle, Tendon, Ligament</h2>
+<p>For ligament - Joint Play</p>
+<p>For muscle, Tendon, Ligament - Physiological Movement.</p>
+<p>8) Early return to activities - one must have good strength, endurance, ROM, flexibility, balance, etc...</p>
+<p>Rx - For strength, endurance - progresive strengthening exercises (PRE by using Fowler technique with 10RM) &amp; PNF</p>
+<p>93 - For generalized endurance - cycling, swimming, rowing, jogging, etc...</p>
+<p>- For ROM - mobilization</p>
+<p>- For flexibility - stretching of soft tissues</p>
+<p>For balance -</p>
+<p>a) propioceptors damaged during injury causing forgetfullness of propioceptors due to prolonged immobilisation.</p>
+<p>b) Propioception helps for reflex contraction of muscle to prevent further injury</p>
+<p>c) Once patient can bear full weight bearing then balance board and wobble board are used for balance training.</p>
+<h2 id="method-training">METHOD/TRAINING: -</h2>
+<p>• Inside parallel bar with hand support &amp; eye open</p>
+<p>• Inside parallel bar with hand support &amp; eyes closed</p>
+<p>• Eye open without hand support</p>
+<p>• Same sequence outside parallel bar with eye closed</p>
+<p>- Weight training</p>
+<p>- Running program: -</p>
+<p>- To initiate running, one should have full range of motion, without swelling &amp; pain, muscle strength should be of 70% of normal side.</p>
+<p>94 • Running in a straight line</p>
+<p>• Running in a circle</p>
+<p>• Running on a figure of 8 path</p>
+<p>• Running with sag weight with left and right at regular intervals</p>
+<h2 id="quadricep-strain">Quadricep Strain</h2>
+<p>It usually occurs during sprinting, jumping or kicking. Strains are seen in all the quadriceps muscles but are most common in rectus femoris, which is more vulnerable to strain as it passes over two joints: the hip and the knee. The most common site of strain is the distal musculotendinousjunction of the rectus femoris.</p>
+<p>Like all muscles strains, quadriceps strain may be graded into mild (Grade 1), moderate (Grade 2) or severe, complete tears ( Grade 3). The athlete feels the injury as a sudden pain in the anterior thigh during an activity requiring explosive muscle contraction. There is local muscle pain and tenderness and, if the strain is severe, swelling and bruising.</p>
+<p>The causes of Quadricep Strain</p>
+<p>A Quadricep Strain, including ruptures, partial ruptures or strains are usually caused by a sudden twist, over-stretch or an over contraction of the muscle, such as while playing football or sprinting.</p>
+<p>Grades of quadricep strain</p>
+<h2 id="grade-1-2">Grade 1</h2>
+<p>95 Strain is a minor injury with pain on resisted active contraction and on passive stretching. Patient feels tightness in the thigh. Unable to walk properly. Probably not much swelling. An area of local spasm is palpable at the site of pain. An athlete with such a strain may not cease activity at the time of the pain but will usually notice injury after cool down or the following day. Trying to straighten the knee against resistance probably won't produce much pain (unlike a grade 2 or 3). Healing time-2 to 10 days.</p>
+<h2 id="grade-2">Grade 2</h2>
+<p>Strain cause significant pain on passive stretching as well as on unopposed active contraction. Probably cannot walk properly. The athlete may notice swelling. There is usually a moderate area of inflammation surrounding a tender palpable lesion. Straightening the knee against resistance causes pain. The athlete with a grade 2 strain is generally unable to continue the activity. Healing time-10 days to 6 weeks.</p>
+<h2 id="grade-3">Grade 3</h2>
+<p>Strain of the rectus femoris occurs with sudden onset of pain and disability during intense activity. A muscle fibre defect is usually palpable when the muscle is contracted. Unable to walk properly without the aid of crutches.Bad swelling appearing immediately. A static contraction will be painful and might produce a bulge in the muscle. In the long term, they resolve with conservative management, often with surprisingly little disability. Healing time- 6 to 10 weeks.</p>
+<p>Treatment of Quadricep Strain (or Tears)</p>
+<h2 id="acute-stage">Acute Stage</h2>
+<h2 id="rice">RICE</h2>
+<p>NSAIDs if not contraindicated.</p>
+<p>Crutchs in a touch-down or partial weight bearing (painless) fashion.</p>
+<p>Hold all lower extremity athletic participation.</p>
+<p>Avoid SLR in early rehabilitation because of increased stress on torn rectus femoris.</p>
+<p>Electrical stimulation, Laser if superficial and pulsed ultrasound.</p>
+<p>Intermediate Stage (usually 3-10 days postinjury)</p>
+<h2 id="goals">Goals</h2>
+<p>Regain normal gait.</p>
+<p>Regain normal knee and hip motion.</p>
+<p>96 Usually intermediate stage begins 3-10 days postinjury, depending on severity of injury.</p>
+<p>Exercises and Modalities</p>
+<p>Initiate a gentle quadriceps and hamstring stretching program.</p>
+<p>PNF pattrens.</p>
+<p>Aquatic rehabilitation program in deep water with floatation belt.</p>
+<p>Cycling with no resistance</p>
+<p>Moist heat before stretching exercises</p>
+<p>Begin higher dosage ultrasound (for thermal effects) and or electrical stimulation, when swelling has been controlled.</p>
+<p>Return to Function Stage</p>
+<p>Terminal knee extension exercises.</p>
+<p>Increase aquatic program (deep water running).</p>
+<p>Begin knee extension with light weights.</p>
+<p>Myofascial tension in knee flexion.</p>
+<p>SLR, quads sets progressing to PRE (progressive resistance exercises) with 1-5 pound weight on the ankle.</p>
+<p>Increase low impact exercises to progress endurance and strength.</p>
+<p>Progress bicycle resistance and intensity of workout.</p>
+<p>Elliptical trainer.</p>
+<p>Thera-bands for hip flexion, extension, abduction, adduction.</p>
+<p>Walking progression on jogging (painless).</p>
+<p>30-degrees mini squats (painless).</p>
+<p>Initiate sports specific drills and agility training.</p>
+<p>Isokinetic equipment (at higher speeds) with patient supine.</p>
+<p>97 NOTE: Even quadriceps tears with palpable defects typically respond to this conservative regimen. Persistant defects are common, but rarely, if ever, require surgery or cause loss of function.</p>
+<p>Employ preactivity quad stretching program and appropriate warm-up regimen with return to sports.</p>
+<p>Criteria for Return to Play</p>
+<p>Quadriceps flexibility equal bilaterally.</p>
+<p>Asymptomatic with functional drills at full effort.</p>
+<p>Quadricep strength 85-90% (via isokinetic testing) of contralateral quadricep.</p>
+<h2 id="quadricep-strain-prevention">Quadricep Strain Prevention</h2>
+<p>Always warm up and cool down and stretch thoroughly before and after taking part in any physical or sporting activity in order to reduce the risk of injury.</p>
+<p>Make sure you spend time strengthening the groin and thigh muscles to improve your performance and reduce the risk of injury.</p>
+<p>Try to keep your body weight within normal limits for your height, as excessive body weight can aggravate hip pain caused by conditions like arthritis.</p>
+<h2 id="hamstring-strain">Hamstring Strain</h2>
+<h2 id="injuries-thigh-hamstring-strain">Injuries &gt; Thigh &gt; Hamstring Strain</h2>
+<p>(Also known as Hamstring Tear, Strained Hamstring, Torn Hamstring Muscle, Pulled</p>
+<h2 id="hamstring">Hamstring)</h2>
+<p>A hamstring strain is a condition that is frequently seen in running and kicking sports and is characterised by partial or complete tearing of one or more of the hamstring muscles located at the back of the thigh (figure 1).</p>
+<p>The muscle group at the back of your thigh is commonly called the hamstrings. The hamstrings comprises of 3 muscles:</p>
+<p>bicepsfemoris</p>
+<p>semimembranosus</p>
+<p>semitendinosus</p>
+<p>98 These muscles originate from the pelvis and insert into the top of the lower leg bones (figure 1).The hamstring muscles are responsible for bending the knee and straightening the hip during activity and are particularly active during running, jumping and kicking.</p>
+<p>During contraction of the hamstrings, tension is placed through the hamstring muscles. When this tension is excessive due to too much repetition or high force, one or more of the hamstring muscles can tear. This is known as a hamstring strain.</p>
+<p>Tears to the hamstring muscle can range from a small partial tear whereby there is minimal pain and minimal loss of function, to a complete rupture which may require surgical reconstruction. Hamstring strains range from a grade 1 to a grade 3 tear and are classified as follows:</p>
+<p>Grade 1: a small number of fibres are torn resulting in some pain, but allowing full function.</p>
+<p>Grade 2: a significant number of fibres are torn with moderate loss of function.</p>
+<p>Grade 3: all muscle fibres are ruptured resulting in major loss of function.</p>
+<p>The majority of hamstrings strains are grade 2 tears.</p>
+<p>Causes of a hamstring strain</p>
+<p>Hamstring strains commonly occur due to a sudden contraction of the hamstring muscles often when they are in a position of stretch. This sometimes occurs with rapid acceleration whilst running or when a footballer performs a long kick. They are commonly seen in running sports such as football, hockey and athletics (particularly sprinters, hurdlers, and long jumpers). Hamstring strains tend to occur more commonly in the older athlete and particularly following an inadequate warm-up.</p>
+<p>Signs and symptoms</p>
+<p>Patients with a hamstring strain usually feel a sudden sharp pain or pulling sensation in the back of the thigh during the provocative activity. In minor cases, the patient may be able to continue the activity only to have an increase in symptoms upon resting later (often that night or the next morning). In more severe cases, the patient may be unable to continue the activity and will often limp or be unable to walk off the playing field.</p>
+<p>Patients with a strained hamstring usually experience an increase in pain during activities which place tension on the hamstring muscles. These activities may include: walking (especially uphill), going up and down stairs, running, jumping, kicking and performing a hamstring stretch. It is also common for patients to experience pain or stiffness after these activities with rest, especially upon waking in the morning.</p>
+<p>Patients with this condition may also experience swelling, muscle spasm, weakness, pain on firmly touching the affected region of the hamstring muscle and bruising in the back of the thigh.</p>
+<p>99 Diagnosis of a hamstring strain</p>
+<p>A thorough subjective and objective examination from a physiotherapist is usually sufficient to diagnose a hamstring strain. Further investigations such as an MRI scan or Ultrasound may be required, in rare cases, to confirm diagnosis.</p>
+<p>Prognosis of a hamstring strain</p>
+<p>With appropriate management, patients with minor hamstring strains can usually recover in one to three weeks. With larger tears, recovery may take four to six weeks or longer depending on the severity. In cases of a complete rupture of the hamstring muscle, surgery may be considered with intensive rehabilitation to follow. Return to sport or activity may then take 6 months or longer.</p>
+<p>Contributing factors to the development of a hamstring strain</p>
+<p>There are several factors which can predispose patients to developing a strained hamstring. These need to be assessed and corrected with direction from a physiotherapist. Some of these factors include:</p>
+<p>- Muscle weakness (particularly the hamstrings or gluteals) - Muscle tightness (particularly the hamstrings, quadriceps and hip flexor muscles) - Inadequate conditioning of the hamstring muscles - Inappropriate training or technique - Excessive training or activity - Inadequate recovery periods from sport or activity - Poor biomechanics - Poor posture - Decreased fitness - Fatigue - Inadequate warm up - Joint stiffness (particularly the lower back, hip and knee) - Poor core stability - Inadequate rehabilitation following a previous hamstring strain - Neural tightness - Muscle imbalances</p>
+<p>Physiotherapy for a hamstring strain</p>
+<p>100 Physiotherapy for patients with a strained hamstring is vital to hasten the healing process and ensure an optimal outcome. Treatment may comprise:</p>
+<p>- Soft tissue massage - Electrotherapy (e.g. ultrasound) - Dry needling - Stretchesmuscle energy techniques</p>
+<p>Joint mobilization</p>
+<p>- Ice or heat treatment - Education - Biomechanical correction - Use of crutches - Progressive exercises to improve strength, flexibility, core stability and balance - Activity modification advice - Technique correction - Anti-inflammatory advice - Devising and monitoring a return to sport or activity plan</p>
+<p>Other intervention for a hamstring strain</p>
+<p>Despite appropriate physiotherapy management, some patients with a strained hamstring do not improve adequately. When this occurs, the treating physiotherapist or doctor can advise on the best course of management. This may include investigations such as an ultrasound, CT scan or MRI, or referral to appropriate medical authorities who can advise on any intervention that may be appropriate to improve the condition. In very rare cases, of complete hamstring rupture, surgical intervention may be considered.</p>
+<p>Exercises for a hamstring strain</p>
+<p>The following exercises are commonly prescribed to patients with this condition. You should discuss the suitability of these exercises with your physiotherapist prior to beginning them. Generally, they should be performed 3 times daily and only provided they do not cause or increase symptoms.</p>
+<p>Your physiotherapist can advise when it is appropriate to begin the initial exercises and eventually progress to the intermediate, advanced and other exercises. As a general rule, addition of exercises or progression to more advanced exercises should take place provided there is no increase in symptoms.</p>
+<h2 id="initial-exercises">Initial Exercises</h2>
+<p>101</p>
+<h2 id="static-hamstring-contraction">Static Hamstring Contraction</h2>
+<p>Begin this exercise in sitting with your knee bent to about 45 degrees (figure 2). Press your heel into the floor tightening the back of your thigh (hamstrings). Hold for 5 seconds and repeat 10 times as hard as possible provided the exercise is pain free.</p>
+<h2 id="basic-hamstring-stretch">Basic Hamstring Stretch</h2>
+<p>Begin this exercise sitting with your back straight and your legs hanging over the edge of a chair or bench (figure 3). Slowly straighten your knee as far as you can go without pain, and, provided you feel either nothing, or, no more than a mild to moderate stretch (figure 3). Hold for 5 seconds and repeat 10 times provided the exercise is pain free.</p>
+<h2 id="bridging">Bridging</h2>
+<p>Begin this exercise lying on your back in the position demonstrated (figure 4). Slowly lift your bottom pushing through your feet, until your knees, hips and shoulders are in a straight line. Tighten your bottom muscles (gluteals) as you do this. Hold for 2 seconds then slowly lower your bottom back down. Repeat 10 times provided the exercise is pain free</p>
+<h2 id="groin-strain">Groin Strain</h2>
+<p>Injuries &gt; Hip &amp; Groin &gt; Groin Strain</p>
+<p>(Also known as Groin Strain, Strained Groin, Pulled Groin, Groin Tear, Torn Groin,</p>
+<h2 id="adductor-strain-torn-adductor-muscle-adductor-tear">Adductor Strain, Torn Adductor Muscle, Adductor Tear)</h2>
+<p>What is a groin strain?</p>
+<p>A groin strain is a relatively common condition characterized by tearing of some or all of the adductor muscle group</p>
+<p>The muscles at the inner aspect of your thigh are known as the adductor muscles (groin). These muscles originate from the pelvis and insert into the inner aspect of the thigh (femur) and lower leg bones</p>
+<p>The groin muscles are responsible for stabilising the pelvis and moving the leg towards the midline of the body (adduction). They are particularly active during running (especially when changing direction) and kicking.</p>
+<p>During contraction of the groin muscles, tension is placed through the groin. When this tension is excessive due to too much repetition or high force, one or more of the groin muscles can tear. This is known as a groin strain and can range from a small partial tear of the groin muscle(s) whereby there is minimal pain and minimal loss of function, to a complete 102 rupture of one or more groin muscles resulting in severe pain and marked loss of function. Groin strains range from a grade 1 to a grade 3 strain and are classified as follows:</p>
+<p>Grade 1: a small number of muscle fibres are torn resulting in some pain but allowing full function.</p>
+<p>Grade 2: a significant number of muscle fibres are torn with moderate loss of function.</p>
+<p>Grade 3: all muscle fibres are ruptured resulting in major loss of function.</p>
+<p>The majority of groin strains are grade 2. The most commonly affected muscle involved in a strained groin is the adductor longus muscle.</p>
+<h2 id="causes">Causes</h2>
+<p>A groin strain commonly occurs due to a sudden contraction of the groin muscles often when they are in a position of stretch. This typically occurs during rapid acceleration whilst running (particularly when changing direction) or when a footballer performs a long kick. They are commonly seen in running sports such as football, hockey and athletics (particularly sprinters, hurdlers, and long jumpers) as well as skiing, horse riding and gymnastics. Groin strains tend to occur more commonly in the older athlete and particularly following an inadequate warm-up.</p>
+<p>Signs and symptoms</p>
+<p>Patients with this condition usually feel a sudden sharp pain or pulling sensation in the inner thigh or groin during the provocative activity. In minor cases, the patient may be able to continue the activity only to have an increase in symptoms upon cooling down. In more severe cases, the patient may be unable to continue the activity and will often limp or be unable to walk off the playing field.</p>
+<p>Patients with a groin strain usually experience an increase in pain during activities which place load on the groin muscles. These activities may include: walking (especially on uneven surfaces or stairs), running (especially changing directions), twisting, jumping, and kicking. It is also common for patients with this condition to experience pain or stiffness after these activities with rest, especially upon waking in the morning. Squeezing the legs together and performing a groin stretch (figure 3) may also cause pain in patients with a groin strain.</p>
+<p>Patients with this condition may also experience swelling, muscle spasm, weakness, tightness, tenderness and bruising in the inner aspect of the thigh and groin.</p>
+<h2 id="diagnosis">Diagnosis</h2>
+<p>103 A thorough subjective and objective examination from a physiotherapist is usually sufficient to diagnose a strained groin. Further investigations such as an MRI scan or Ultrasound may be required, in rare cases, to confirm diagnosis and assess the severity of injury.</p>
+<h2 id="treatment">Treatment</h2>
+<p>Prognosis of a groin strain</p>
+<p>With appropriate management, patients with minor groin strains can usually recover in one to three weeks. With larger tears, recovery may take four to six weeks or longer, depending on the severity. In cases of a complete rupture of the groin, long term weakness and reduced function may occur.</p>
+<p>Contributing factors to the development of a groin strain</p>
+<p>There are several factors which can predispose patients to developing a groin strain. These need to be assessed and corrected with direction from a physiotherapist. Some of these factors include:</p>
+<p>- poor groin flexibility - muscle weakness (especially of the groin or gluteals) - inadequate conditioning of the groin muscles - muscle tightness - inappropriate training or technique - poor biomechanics</p>
+<h2 id="poor-posture">Poor Posture</h2>
+<h2 id="decreased-fitness">Decreased Fitness</h2>
+<h2 id="fatigue">Fatigue</h2>
+<h2 id="inadequate-warm-up">Inadequate Warm Up</h2>
+<p>Joint Stiffness (Particularly The Lower Back, Hip And Knee)</p>
+<h2 id="poor-pelvic-and-core-stability">Poor Pelvic And Core Stability</h2>
+<h2 id="inadequate-rehabilitation-following-a-previous-groin-injury">Inadequate Rehabilitation Following A Previous Groin Injury</h2>
+<h2 id="neural-tightness">Neural Tightness</h2>
+<h2 id="muscle-imbalances">Muscle Imbalances</h2>
+<p>Physiotherapy for a groin strain</p>
+<p>104 Physiotherapy for patients with this condition is vital to hasten the healing process, ensure an optimal outcome and reduce the likelihood of future recurrence. Treatment may comprise:</p>
+<p>Soft tissue massage</p>
+<h2 id="electrotherapy-e-g-ultrasound">Electrotherapy (e.g. Ultrasound)</h2>
+<h2 id="stretches">Stretches</h2>
+<p>Muscle energy techniques</p>
+<p>Joint mobilization</p>
+<p>Ice or heat treatment</p>
+<p>The use of a compression bandage or strapping</p>
+<h2 id="education">Education</h2>
+<p>Biomechanical correction</p>
+<p>The use of crutches</p>
+<p>Dry needling</p>
+<p>Progressive exercises to improve strength, flexibility, core stability, pelvic stability and balance</p>
+<p>Activity modification advice</p>
+<p>Technique correction</p>
+<p>Anti-inflammatory advice</p>
+<p>Prescription of orthotics</p>
+<p>Devising and monitoring a return to sport or activity plan</p>
+<p>Other intervention for a groin strain</p>
+<p>Despite appropriate physiotherapy management, some patients with a strained groin do not improve adequately. When this occurs, the treating physiotherapist or doctor can advise on the best course of management. This may include investigations such as an X-ray, ultrasound, CT scan or MRI, or referral to appropriate medical authorities who can advise on any intervention that may be appropriate to improve the condition. In very rare cases, of complete groin rupture, surgical intervention may be considered.</p>
+<p>Exercises for a groin strain</p>
+<p>105 The following exercises are commonly prescribed to patients with this condition. You should discuss the suitability of these exercises with your physiotherapist prior to beginning them. Generally, they should be performed 3 times daily and only provided they do not cause or increase symptoms.</p>
+<p>Your physiotherapist can advise when it is appropriate to begin the initial exercises and eventually progress to the intermediate and advanced exercises. As a general rule, addition of exercises or progression to more advanced exercises should take place provided there is no increase in symptoms.</p>
+<h2 id="initial-exercises-2">Initial Exercises</h2>
+<p>Groin squeezes</p>
+<p>Begin this exercise by lying in the position demonstrated with a rolled towel or ball between your knees (figure 2). Slowly squeeze the ball between your knees tightening your groin muscles (adductors). Hold for 5 seconds and repeat 10 times as hard as possible pain free.</p>
+<p>Figure 2 - Groin squeezes</p>
+<h2 id="groin-stretch">Groin Stretch</h2>
+<p>Begin this exercise by standing tall with your back straight and your feet approximately twice shoulder width apart. Gently lunge to one side, keeping the other knee straight, until you feel a stretch in the groin (figure 3). Hold for 5 seconds and repeat 10 times at a mild to moderate stretch provided the exercise is pain free.</p>
+<p>106</p>
+<h2 id="common-mode-of-symptoms-treatment">COMMON MODE OF SYMPTOMS TREATMENT</h2>
+<h2 id="tendon-injury">TENDON INJURY</h2>
+<h2 id="injuries">INJURIES</h2>
+<p>Supraspinatus Most tendon Tendinitis Rest the painful area, and avoid Tendinitis, injuries are the usually causes any activity that makes the pain result of gradual pain, stiffness, worse. Biceps wear and tear to and loss of Tendinitis, the tendon from strength in the Apply ice or cold packs for 10 to overuse or affected area. 15 minutes at a time, as often as 2 Tennis elbow, aging. Anyone can have a The pain may get times an hour, for the first 72 Golfers elbow, tendon injury. worse when you hours. Keep using ice as long as it But people who use the tendon. helps.</p>
+<p>Patellar make the same tendinitis motions over You may have Take over-the-counter pain and over in their more pain and relievers such jobs, sports, or stiffness during as acetaminophen or nsaids (such daily activities the night or when as ibuprofen or naproxen) if you are more likely you get up in the need them. to damage a morning. tendon. Do gentle range-of- The area may be motion exercises and stretching to A tendon injury tender, red, can happen prevent stiffness. warm, or swollen suddenly or little if there is by little. You are inflammation. As soon as you are better, you can more likely to return to your activity, but take it have a sudden You may notice easy for a while.</p>
+<p>Don't start at the injury if the a crunchy sound same level as before your injury. tendon has been or feeling when Build back to your previous level weakened over you use the slowly, and stop if it hurts. Warm time. tendon. up before you exercise, and do some gentle stretching afterward. After the activity, apply ice to prevent pain and swelling.</p>
+<p>107</p>
+<h2 id="supraspinatus-tendinitis">SUPRASPINATUS TENDINITIS-</h2>
+<p>The supraspinatus muscles helps abduct (lift up sideways) the arm. Any friction between the tendon and the acromion is normally reduced by the subacromial bursa - a fluid filled sac between the supraspinatus tendon and the acromion.Sometimes, with wear and tear supraspinatus tendinitis results, which is commonly associated with inflammation of the bursa - subacromial bursitis.</p>
+<p>There may even be little tears in the tendon fibres - partial tears or sometimes even complete tears. Tendinitis and partial tears in the supraspinatus tendon causes a 'painful arc' since as the person elevates his arm sideways, the tendon begins to impinge under the acromion throught the middle part of the arc, and this is usually relieved as the arm reaches 180 degrees (vertical).</p>
+<h2 id="physiotherapy">PHYSIOTHERAPY-</h2>
+<p>The goals of the acute phase are to relieve pain and inflammation, prevent muscle atrophy without exacerbating the pain, reestablishnonpainful range of motion, and normalize the arthrokinematics of the shoulder complex.</p>
+<p>Range-of-motion exercises may include pendulum exercises and symptom-limited, active-assisted range-of-motion exercises. Joint mobilization may be included with inferior, anterior, and posterior glides in the scapular plane. Strengthening exercises should be isometric in nature and work on the external rotators, internal rotators, biceps, deltoid, and scapular stabilizers (ie, rhomboids, trapezius, serratus anterior, latissimusdorsi, pectoralis major).</p>
+<p>108 Shoulder self strengthening exercises -</p>
+<h2 id="tennis-elbow">TENNIS ELBOW -</h2>
+<p>Tennis elbow or lateral epicondylitis is a condition in which the outer part of the elbow becomes sore and tender. It is commonly caused by non-inflammatory, chronic degenerative changes in the tendon that attaches the forearm muscle extensor carpi radialisbrevis (ECRB) to the elbow. It is most prevalent in middle age.</p>
+<h2 id="physiotherapy-2">PHYSIOTHERAPY-</h2>
+<p>109 Stretches and progressive strengthening exercises involving use of weights or elastic bands to increase pain free grip strength and forearm strength can be helpful.</p>
+<p>110</p>
+<h2 id="golfer-s-elbow">GOLFER`S ELBOW-</h2>
+<p>Golfer's elbow, or medial epicondylitis, is an inflammatory condition of the medial epicondyle of the elbow. It is in some ways similar to tennis elbow. The condition is called Golfer's Elbow because in making a golf swing this tendon is stressed, especially if a non-overlapping (baseball style) grip is used; many people, however, who develop the condition have never handled a golf club.</p>
+<h2 id="patellar-tendinitis">PATELLAR TENDINITIS-</h2>
+<p>Patellar tendinitis (patellar tendinopathy, also known as jumper's knee), is a relatively common cause of pain in the inferior patellar region in athletes. It is common with frequent jumping and studies have shown it may be associated with stiff ankle movement and ankle sprain.</p>
+<h2 id="physiotherapy-3">PHYSIOTHERAPY-</h2>
+<p>A variety of physical therapy techniques can help reduce the symptoms associated with patellar tendinitis, including:</p>
+<p>Stretching exercises. Regular, steady stretching exercises can reduce muscle spasm and help lengthen the muscle-tendon unit. Don't bounce during your stretch.</p>
+<p>Strengthening exercises. Weak thigh muscles contribute to the strain on your patellar tendon. Eccentric exercises, which involve lowering your leg very slowly after you extend your knee, are particularly helpful.</p>
+<p>Patellar tendon strap. A strap that applies pressure to your patellar tendon can help to distribute force away from the tendon itself and direct it through the strap instead. This may help relieve pain.</p>
+<p>111 112</p>
+<h2 id="ligament-injuries">LIGAMENT INJURIES</h2>
+<h2 id="sprain">Sprain</h2>
+<p>Defn :-sprain is the injury to capsulo-ligamentous strucure</p>
+<h2 id="causes-2">Causes-</h2>
+<p>Caused by forces that stretches small or all fibres or ligament beyond its elastic limit producing some degree of rupture of fibres</p>
+<p>The function of capsulo-ligamentous structure is to produce static stability &amp; to protect the joint through proprioceptive stimuli</p>
+<p>Types-:</p>
+<p>Depending upon severity 3 types:</p>
+<p>Severity depends upon magnitude , force, direction of force and duration of force</p>
+<p>GRADE 1:</p>
+<p> A few fibres are damaged.</p>
+<p> Localised swelling.</p>
+<p> Pain.</p>
+<p> Tenderness.</p>
+<p> Clinical and functional integrity of ligament is lost.</p>
+<p> Clinical integrity is evaluated by stress test</p>
+<p> Functional integrity is determined by various functional activities</p>
+<p>GRADE 2:</p>
+<p> Many fibres damaged but not all.</p>
+<p> Clinical as well as functional integrity of ligament is impaired.</p>
+<p> With stress test ,hypomobility or instability can b detected</p>
+<p> Functionally patient find some disability</p>
+<p> Joint effusion could be</p>
+<p> Swelling, pain , loss of movement are more</p>
+<p>113 GRADE 3:</p>
+<p> Complete rupture</p>
+<p> Since there is no intact nerve ending left , there is no pain</p>
+<p> At the time of injury with complete rupture of capsule the effusion fluid tracks out of the joint so swelling will be less</p>
+<p> In the absence of swelling and pain, one could confine to do movement and activity. In competitive sports there is incidence of complete injury following which the sports person could get up and confine to resume the activity. Since they are in a highly motivated state, pain threshold is too high so pain is less</p>
+<p> Later on spasm may develop to protect the joint from instability, which may give rise to some pain and loss of movement which is inappropriate to severity of injury</p>
+<p> Instability can be determined by comparing joint excursion of the injured joint with that of uninjured extremity.</p>
+<p>C/F:</p>
+<p>HISTORY:</p>
+<p> Mode of onset-Sudden/Insidious</p>
+<p> Mechanism of injury</p>
+<p> H/O Swelling-Slowly(effusion), Fast(haemarthrosis)</p>
+<p> Pain-Localise(superficial or mild injury),Diffuse(Deep structures involved or severe injury)</p>
+<p> Loss of function-whether one could resume activity following injury</p>
+<p> GRADE 1,3-Can resume activity.</p>
+<p> GRADE 2-Cant resume</p>
+<p>EXAMINATION:</p>
+<h2 id="observation">OBSERVATION</h2>
+<p>How the patient came to department - Walking/walking aid/carrying /hopping .</p>
+<p>INSPECTION:</p>
+<p> Inspect the skin for colour</p>
+<p> Ecchymoses at site of direct blow and over site of tissue injury</p>
+<p>114  Swelling - Localised/generalised</p>
+<p> Muscle wasting</p>
+<p> Bony alignment</p>
+<p>PALPATION:</p>
+<p> Check tenderness</p>
+<p>MOVEMENT:</p>
+<p> Active movement</p>
+<p> Passive movement</p>
+<p> Joint play</p>
+<p> Stress test</p>
+<p>MEASUREMENT:</p>
+<p>INVESTIGATION:</p>
+<h2 id="x-ray"> X-RAY</h2>
+<h2 id="stress-x-ray"> STRESS X-RAY</h2>
+<h2 id="ct-scan"> CT-SCAN</h2>
+<p> arthroscopy</p>
+<p>Management:</p>
+<p>PRINCIPLE:</p>
+<p> Regain stability &amp;jrom</p>
+<p> Early return to activities</p>
+<p> Prevent recurrence</p>
+<p>115 METHODS:</p>
+<h2 id="ist-48hrs">Ist 48hrs</h2>
+<p>R - rest</p>
+<p>I - ice/ immobilisation</p>
+<p>C - compression</p>
+<p>E - elevation</p>
+<p>• Apply ice 20mm, every 2 hourly that help in resolution of oedema.</p>
+<p>• Rest prevent further injury and prevent further bleeding and allow haemotoma to from there by facilitate healing.</p>
+<p>•Compression is applied to prevent further haemorrhage, reduce swelling and protect the joints.</p>
+<p>•Elevation is done for resolution of oedema with gravitational force.</p>
+<p>Next 02 to 03 days</p>
+<p>•Movement can be initiated inside cold wheelpool bath, if fascilitate movement or resist movement according to the position.</p>
+<p>•After 04 to 05 days</p>
+<p>•Warm whirlpool bath continued till full r.o.m achieved.</p>
+<p>•For localise injury ultrasound, followed by deep transverse friction massage and movement can be started.</p>
+<p>To prevent complications:</p>
+<p>•Static contribution of muscle is encouraged</p>
+<p>•Electrical stimulation , irradiation technique is encouraged if contraction isn't possible</p>
+<p>•As pain subsides encourage movement.</p>
+<p>•Wt bearing , running is initiated once full ROM without any swelling, pain</p>
+<p>116 Wt. Programme:</p>
+<p>• Find out single maximum lift on the normal extremity and single maximum lift with involve extremity</p>
+<p>• 10 repetition with single maximum list -10 pound</p>
+<h2 id="rest">Rest</h2>
+<p>03 such set will be given</p>
+<p>• 20 repetition with single maximum list -20 pound.</p>
+<p>• Weight wearing should be done after running followed by icing till the part becomes normal.</p>
+<p>Running Programme:</p>
+<p>Phage- 01 : jogging with 1/4th to ½ mile/day.</p>
+<p>Add 1/4th a mile with every 02-04 days, until one can jog at least 01 mile at a stage.</p>
+<p>Phage- 02: Running 06 -08 times 80 yards 08 point with ½ of natural speed.</p>
+<p>Phage- 03: Run 06 to 08 times 80 yards 08 points at 3/4th of natural speed.</p>
+<p>Phage- 04: Run 06 to 08 times 80 yard 08 points at full speed.</p>
+<p>Phage- 05: Run 06 to 08 times 80 yard 08 times, cutting left to right every 10 yard at 3/4th or natural speed.</p>
+<p>Phage- 06: Run 06 to 08 times 80 yard 08 point cutting left to right with fill speed.</p>
+<p>If the PT develop pain, swelling, limping during every phage start from the beginning from the next day.</p>
+<p>Balance Training :</p>
+<h2 id="stretching">Stretching :-</h2>
+<p>•For lower limb muscles to be stretching are hip flexor, rectus femoris, adductor, piriformis, ITB/TFL, gastro-soleus, hamstring.</p>
+<p>•Endurance training- cycling, rowing, swimming, jogging.</p>
+<p>117</p>
+<h2 id="knee-ligament-injury">KNEE LIGAMENT INJURY</h2>
+<p>There are four main ligaments in the knee that can become injured. During injury, a knee ligament may be sprained (stretched), or sometimes ruptured (torn). Ligament rupture can be partial (just some of the fibres that make up the ligament are torn) or complete (the ligament is torn through completely). Knee ligament injuries can cause pain, swelling, tenderness, bruising and reduced movement of your knee.</p>
+<p>There are four ligaments in the knee that are prone to injury:</p>
+<p>The anterior cruciate ligament (ACL) is one of the two major ligaments in the knee. It connects the thigh bone to the shin bone in the knee. ACL injuries are a common cause of disability in the knee. In the U.S., 95,000 people get them every year. They are more common in women than men. The posterior cruciate ligament (PCL) is the second major ligament in the knee connecting the thigh bone to the shin bone in the knee. The lateral collateral ligament (LCL) connects the thigh bone to the fibula, the smaller bone of the lower leg on the lateral or outer side of the knee. The medial collateral ligament (MCL) also connects the thigh bone to the shin bone on the medial or in side of the knee.</p>
+<p>118</p>
+<h2 id="ligament-mode-of-injury-symptoms-management">LIGAMENT MODE OF INJURY SYMPTOMS MANAGEMENT</h2>
+<p>Anterior Twisting your knee with A popping Quadriceps muscle cruciate the foot planted. sound, or a strengthening. Closed ligament Getting hit on the knee. popping or kinetic chain (CKC) Extending the knee too far. snapping feeling exercises. Range of Jumping and landing on a at the time of Motion exercises. Protective bracing. flexed knee. injury. Swelling Bracing may be necessary Stopping suddenly of your knee. for weightbearing when running Pain in your Activities to decrease Suddenly shifting weight knee. A feeling stress to the healing from one leg to the other. that your knee is ligament or to provide unstable or stability where ligament perhaps giving integrity . way if you try to Progress muscular stand on it. endurance and strengthening exercises Using partial squats, step- ups, leg press, and Heel-raises .</p>
+<p>MEDIAL Isolated injuries to Knee pain on the PRICE (ice, compression, COLLATERAL the medial collateral inner side of the Elevation, LIGAMENT ligament (MCL) knee joint .Knee And protective Can occur from pain when Bracing) valgus forces being bending or • Ambulation training placed across the straightening the With crutches; media joint line of knee. Swollen Weight bearing as the knee. knee. Tolerated</p>
+<h2 id="prom-a-arom">• PROM/A-AROM</h2>
+<p>• Patellar mobilization (grades I and II) • Muscle setting Quadriceps, Hamstrings, and adductors</p>
+<p>119 120 121</p>
+<h2 id="mensci-mode-of-symptoms-management">MENSCI MODE OF SYMPTOMS MANAGEMENT</h2>
+<h2 id="injury">INJURY</h2>
+<p>Medial Insult may occur Meniscal tears Passive manipulative reduction of the menisci when the foot is can cause acute medial meniscus may unlock the fixed locking of the knee. On the ground and knee After acute symptoms have subsided, the femur is rotated Or chronic exercises should be performed in internally, as when symptoms with open-chain and closed-chain positions pivoting, getting intermittent to out of a car, or locking. Pain Improve strength and endurance in receiving a clipping Occurs along the isolated muscle groups and to prepare injury. joint line (due to the patient for functional activities. stress to the coronary Ligament) along with joint swelling and some degree Of quadriceps atrophy.</p>
+<p>Standard Rehabilitation protocol for ligament injury</p>
+<h2 id="in-acl-reconstruction">IN ACL RECONSTRUCTION</h2>
+<h2 id="phase-1-weeks-0-2">Phase 1: Weeks 0-2</h2>
+<h2 id="goals-2">Goals</h2>
+<p>• Protect graft fixation.</p>
+<p>• Minimize effects of immobilization.</p>
+<p>•Control inflammation.</p>
+<p>•No CPM.</p>
+<p>• Achieve full extension, 90 degrees of knee flexion.</p>
+<p>• Educate patient about rehabilitation progress.</p>
+<h2 id="brace">Brace</h2>
+<p>• Locked in extension for ambulation and sleeping (drop- lock brace).</p>
+<h2 id="weight-bearing">Weight-bearing</h2>
+<p>122 • Weight-bearing as tolerated with two crutches.</p>
+<p>• Discontinue crutches as tolerated after 7 days (with demonstrated good quadriceps control).</p>
+<p>Therapeutic exercises</p>
+<p>• Heel slides/wall slides.</p>
+<p>• Quadriceps sets, hamstring sets (electrical stimulation as needed).</p>
+<p>•Patellar mobilization.</p>
+<p>• Non-weight-bearing gastrosoleus, hamstring stretches.</p>
+<p>• Sitting assisted flexion hangs.</p>
+<p>• Prone leg hangs for extension.</p>
+<p>• Straight leg raises (SLR) all planes with brace in full ex- tension until quadriceps strength is sufficient to prevent extension lag.</p>
+<p>123</p>
+<h2 id="phase-2-weeks-2-4">Phase 2: Weeks 2-4</h2>
+<p>Criteria for Progression to Phase 2</p>
+<p>• Good quad set, SLR without extension lag</p>
+<p>• Approximately 90 degrees knee flexion.</p>
+<p>• Full extension.</p>
+<p>•No signs of inflammation.</p>
+<h2 id="goals-3">Goals</h2>
+<p>• Restore normal gait.</p>
+<p>• Restore full ROM.</p>
+<p>124 • Protect graft fixation.</p>
+<p>• Improve strength, endurance, and proprioception to prepare for functional activities.</p>
+<h2 id="weight-bearing-2">Weight-bearing</h2>
+<p>•Patellar tendon graft-continue ambulation with brace locked in extension, may unlock brace for sitting and sleeping, may remove brace for ROM exercises.</p>
+<p>• Hamstring graft and allograft-may discontinue brace use when normal gait pattern and quadriceps control are achieved.</p>
+<h2 id="therapeutic-exercises">Therapeutic Exercises</h2>
+<p>• Mini-squats 0-30 degrees.</p>
+<p>• Stationary bike (begin with high seat, low tension).</p>
+<p>• Closed-chain extension (leg press 0-30 degrees).</p>
+<p>• Toe raises.</p>
+<p>• Continue hamstring stretches, progress to weight-bearing gastrocsoleus stretches.</p>
+<p>• Continue prone leg hangs with progressively heavier ankle weights until full extension is achieved.</p>
+<p>• Phase 2 functional training</p>
+<h2 id="phase-3-week-6-month-4">Phase 3: Week 6-Month 4</h2>
+<p>Criteria for Progression to Phase 3</p>
+<p>• Normal gait.</p>
+<p>• Full ROM.</p>
+<p>• Sufficient strength and proprioception to initiate functional activities.</p>
+<p>• Stable graft on Lachman and KT1000 testing.</p>
+<h2 id="goals-4">Goals</h2>
+<p>• Improve confidence in the knee.</p>
+<p>• Avoid overstressing graft fixation.</p>
+<p>• Protect the patellofemoral joint.</p>
+<p>125 • Progress strength, power, and proprioception to prepare for functional activities.</p>
+<h2 id="therapeutic-exercises-2">Therapeutic Exercises</h2>
+<p>• Continue flexibility exercises as appropriate for patient.</p>
+<p>•Advance closed-kinetic chain strengthening (one-leg squats, leg press 0-60 degrees).</p>
+<p>• Elliptical stepper, stair stepper.</p>
+<p>• Cross-country skiing machine.</p>
+<p>• Phase 3 functional training (6-12 wk).</p>
+<p>• Phase 4 functional training (12 + wk) .</p>
+<p>s Phase 4: Month 4</p>
+<p>Criteria for Progression to Phase 4</p>
+<p>• Full, painless ROM.</p>
+<p>126 • No evidence of patellofemoral joint irritation.</p>
+<p>• Sufficient strength and proprioception to progress functional activities</p>
+<p>• Physician clearance to initiate advanced closed-kinetic chain exercises and functional progression.</p>
+<p>• Stable graft on Lachman and KT1000 testing.</p>
+<h2 id="goal">Goal</h2>
+<p>•Return to unrestricted activities.</p>
+<h2 id="therapeutic-exercises-3">Therapeutic Exercises</h2>
+<p>•Continue and progress flexibility and strengthening programs.</p>
+<p>Phase 5 functional training</p>
+<p>Phase 5: Return to Sports</p>
+<p>Criteria for Progression to Phase 5</p>
+<p>• No patellofemoral joint or soft tissue complaints.</p>
+<p>•All criteria met for return to sports.</p>
+<p>127 • Physician clearance to resume full activity.</p>
+<h2 id="goals-5">Goals</h2>
+<p>• Safe return to athletics.</p>
+<p>• Maintenance of strength, endurance, and proprioception.</p>
+<p>• Patient education concerning any possible limitations.</p>
+<h2 id="brace-2">Brace</h2>
+<p>• Functional brace may be recommended by physician for use during sports for the first 1-2 yr after surgery for psychological confidence.</p>
+<h2 id="therapeutic-exercises-4">Therapeutic Exercises</h2>
+<p>• Gradual return to sports participation.</p>
+<p>• Maintenance program for strength and endurance.</p>
+<p>•Agility and sport-specific drills progressed.</p>
+<h2 id="non-operative-treatment-of-pcl-injury">NON OPERATIVE TREATMENT OF PCL INJURY</h2>
+<h2 id="phase-1">Phase 1</h2>
+<h2 id="days-1-7">Days 1-7</h2>
+<p>•ROM 0-60 degrees.</p>
+<p>• Weight-bearing with two crutches.</p>
+<p>• Electrical muscle stimulation to quadriceps.</p>
+<p>• Exercises</p>
+<p>• Quadriceps sets.</p>
+<p>• SLR.</p>
+<p>• Hip adduction and abduction.</p>
+<p>• Mini-squats/leg press (0-45 degrees).</p>
+<p>128</p>
+<h2 id="weeks-2-3">Weeks 2-3</h2>
+<p>• ROM 0-60 degrees.</p>
+<p>• Weight-bearing without crutches.</p>
+<p>• Progress exercises using weights.</p>
+<p>• Bike (week 3) for ROM.</p>
+<p>• Pool program.</p>
+<p>• Leg press (0-60 degrees).</p>
+<h2 id="phase-2">Phase 2</h2>
+<h2 id="week-3">Week 3</h2>
+<p>• ROM to tolerance.</p>
+<p>• Discontinue brace.</p>
+<p>• Bike, Stairmaster, rowing.</p>
+<p>• Progress exercises with weights.</p>
+<p>• Mini-squat (0-60 degrees).</p>
+<p>• Leg press (0-60 degrees) .</p>
+<p>• Step-ups.</p>
+<p>• Hip abduction and adduction.</p>
+<p>• Toe-calf raises.</p>
+<h2 id="weeks-5-6">Weeks 5-6</h2>
+<p>•Continue all exercises.</p>
+<p>• Fit functional brace.</p>
+<p>• Pool running.</p>
+<h2 id="phase-3">Phase 3</h2>
+<h2 id="weeks-8-12">Weeks 8-12</h2>
+<p>129 • Begin running program.</p>
+<p>•Continue all strengthening exercises.</p>
+<p>• Gradual return to sports activities.</p>
+<p>•Criteria to return to sports</p>
+<p>•No change in laxity.</p>
+<p>• No pain, tenderness, or swelling.</p>
+<p>• Satisfactory clinical examination.</p>
+<p>• Functional testing 85% of contralateral knee.</p>
+<p>• Quadriceps strength 85% of contralateral knee.</p>
+<p>130 131</p>
+<h2 id="pcl-reconstruction">PCL RECONSTRUCTION</h2>
+<h2 id="general-guidelines">General Guidelines</h2>
+<p>•No open-chain exercises.</p>
+<p>• Caution against posterior tibial translation (gravity, muscle action).</p>
+<p>• No CPM.</p>
+<p>• Resistance for hip PREs is placed above the knee for hip abduction and adduction; resistance may be distal for hip flexion.</p>
+<h2 id="phase-1-weeks-0-4">Phase 1: Weeks 0-4</h2>
+<h2 id="goals-6">Goals</h2>
+<p>• Protect healing bony and soft tissue structures.</p>
+<p>• Minimize the effects of immobilization</p>
+<p>• Early protected ROM (protection against posterior tibial sagging).</p>
+<p>• PREs for quadriceps, hip, and calf, with emphasis on limiting patella femoral joint compression and posterior tibial translation.</p>
+<p>• Patient education for a clear understanding of limitations and expectations of the rehabilitation process and need for supporting proximal tibia and avoiding sag.</p>
+<h2 id="bracing">Bracing</h2>
+<p>• Brace locked at 0 degrees for 1 wk.</p>
+<p>• At 1 wk after surgery, brace is unlocked for passive. ROM done by physical therapist or athletic trainer.</p>
+<p>• Patient is instructed in self-administered passive ROM with the brace on, with emphasis on supporting the proximal tibia.</p>
+<h2 id="weight-bearing-3">Weight-bearing</h2>
+<p>• As tolerated with crutches, brace locked in extension.</p>
+<p>132</p>
+<h2 id="special-considerations">Special Considerations</h2>
+<p>• Pillow under proximal posterior tibia at rest to prevent posterior sag.</p>
+<h2 id="therapeutic-exercises-5">Therapeutic Exercises</h2>
+<p>• Patellar mobilization.</p>
+<p>• Prone passive flexion and extension.</p>
+<p>• Quadriceps sets.</p>
+<p>• SLR.</p>
+<p>•Hip abduction and adduction.</p>
+<p>• Ankle pumps.</p>
+<p>• Hamstring and calf stretching.</p>
+<p>•Calf exercise with Thera-band, progressing to standing calf raise with full knee extension.</p>
+<p>•Standing hip extension from neutral.</p>
+<p>• Functional electrical stimulation (may be used for trace to poor quadriceps contraction).</p>
+<h2 id="phase-2-weeks-4-12">Phase 2: Weeks 4-12</h2>
+<p>Criteria for Progression to Phase 2</p>
+<p>• Good quadriceps control (good quadriceps set, no sag with SLR).</p>
+<p>• Approximately 60 degrees knee flexion.</p>
+<p>• Full knee extension.</p>
+<p>•No signs of active inflammation.</p>
+<h2 id="goals-7">Goals</h2>
+<p>133 • Increase ROM (flexion).</p>
+<p>• Restore normal gait.</p>
+<p>•Continue quadriceps strengthening and hamstring flexibility.</p>
+<h2 id="bracing-2">Bracing</h2>
+<p>•4-6 wk: brace is unlocked for controlled gait training only (patient may walk with brace unlocked while at- tending physical therapy or when at home).</p>
+<p>•6-8 wk: brace is unlocked for all activities.</p>
+<p>• 8 wk: brace is discontinued (as allowed by physician).</p>
+<h2 id="weight-bearing-4">Weight-bearing</h2>
+<p>• 4-8 wk: weight-bearing as tolerated with crutches.</p>
+<p>• 8 wk: may discontinue crutches if patient exhibits</p>
+<p>•No quadriceps lag with SLR.</p>
+<p>• Full knee extension.</p>
+<p>• Knee flexion 90-100 degrees.</p>
+<p>• Normal gait pattern (patient can use one crutch or cane until normal gait is achieved).</p>
+<h2 id="therapeutic-exercises-6">Therapeutic Exercises</h2>
+<h2 id="weeks-4-8">Weeks 4-8</h2>
+<p>• Wall slides (0-45 degrees).</p>
+<p>• Mini-squats (0-45 degrees).</p>
+<p>• Leg press (0-60 degrees).</p>
+<p>• Four-way hip exercises for flexion, abduction, adduction, extension from neutral with knee fully extended.</p>
+<p>•Ambulation in pool (work on restoration of normal heel-toe gait pattern in chest-deep water).</p>
+<h2 id="weeks-8-12-2">Weeks 8-12</h2>
+<p>134 • Stationary bike (foot placed forward on pedal without use of toe clips to minimize hamstring activity, seat set slightly higher than normal.</p>
+<p>• Stairmaster, elliptical stepper, Nordic-Trac.</p>
+<p>• Balance and proprioception activities.</p>
+<p>• Seated calf raises.</p>
+<p>• Leg press (0-90 degrees).</p>
+<h2 id="phase-3-months-3-6">Phase 3: Months 3-6</h2>
+<p>Criteria for Progression to Phase 3</p>
+<p>• Full, pain-free ROM (Note: it is not unusual for flexion to be lacking 10-15 degrees for up to 5 months after surgery).</p>
+<p>• Normal gait.</p>
+<p>•Good to normal quadriceps strength.</p>
+<p>• No patellofemoral complaints.</p>
+<p>• Clearance by physician to begin more concentrated closed- kinetic chain progression.</p>
+<h2 id="goals-8">Goals</h2>
+<p>• Restore any residual loss of motion that may prevent functional progression.</p>
+<p>• Progress functionally and prevent patellofemoral irritation.</p>
+<p>• Improve functional strength and proprioception using closed- kinetic chain exercises.</p>
+<p>• Continue to maintain quadriceps strength and hamstring flexibility.</p>
+<h2 id="therapeutic-exercises-7">Therapeutic Exercises</h2>
+<p>•Continue closed - kinetic chain exercise progression.</p>
+<p>• Treadmill walking.</p>
+<p>• Jogging in pool with wet vest or belt.</p>
+<p>• Swimming (no frog kick).</p>
+<p>135</p>
+<h2 id="phase-4-month-6-full-activity">Phase 4: Month 6-Full Activity</h2>
+<p>Criteria for Progression to Phase 4</p>
+<p>• No significant patellofemoral or soft tissue irritation.</p>
+<p>• Presence of necessary joint ROM, muscle strength,endurance, and proprioception to safely return to athletic participation.</p>
+<h2 id="goals-9">Goals</h2>
+<p>• Safe and gradual return to athletic participation.</p>
+<p>•Maintenance of strength, endurance, and function.</p>
+<h2 id="therapeutic-exercises-8">Therapeutic Exercises</h2>
+<p>•Continue closed- kinetic chain exercise progression.</p>
+<p>• Sport-specific functional progression, which may include but is not limited to</p>
+<p>• Slide board.</p>
+<p>• Jog/run progression.</p>
+<p>• Figure-of-eight, carioca, backward running, cutting.</p>
+<p>• Jumping (plyometrics).</p>
+<p>Criteria for Return to Sports Goals</p>
+<p>• Full, pain-free ROM.</p>
+<p>• Satisfactory clinical examination.</p>
+<p>• Quadriceps strength 85% of contralateral leg.</p>
+<p>• Functional testing 85% of contralateral leg.</p>
+<p>•No change in laxity testing.</p>
+<h2 id="mcl-injury">MCL INJURY</h2>
+<p>136</p>
+<h2 id="phase-1-2">Phase 1</h2>
+<h2 id="goals-10">Goals</h2>
+<p>• Normal gait.</p>
+<p>• Minimal swelling.</p>
+<p>• Full ROM.</p>
+<p>• Baseline quadriceps control.</p>
+<h2 id="cryotherapy">Cryotherapy</h2>
+<p>• Therapeutic cold via ice packs or other means is applied to the medial aspect of the knee for 20 min every 3-4 hr for the first 48 hr.</p>
+<p>• Early cryotherapy provides anesthesia and local vasoconstriction to minimize initial heamorrhage and reduce secondary edema. Leg elevation also helps limit swelling.</p>
+<h2 id="weight-bearing-5">Weight-bearing</h2>
+<p>• Weight-bearing is allowed as tolerated.</p>
+<p>• Crutches are used until the patient ambulates without a limp, which takes approximately 1 wk.</p>
+<p>• For grades 2 and 3 sprains, a lightweight hinged brace is worn. The brace should protect against valgus stresses of daily living, but not restrict motion or inhibit muscle function. The brace is worn at all times except for bathing during the initial 3-4 wk.</p>
+<p>• Knee immobilizers and full-leg braces are discouraged because they tend to inhibit motion and prolong the period of disability.</p>
+<h2 id="exercises">Exercises</h2>
+<p>•ROM exercises are begun immediately. A cold whirlpool may make these exercises easier.</p>
+<p>• Exercises such as towel extension exercises and prone hangs are used to obtain extension or hyperextension equal to the contralateral side. A heavy shoe or light ankle weight can be used with prone hangs to aid extension.</p>
+<p>• To promote flexion, the patient sits at the end of a table, allowing gravity to aid in flexion. The uninjured limb assists by gently pushing the injured leg into further flexion.</p>
+<p>• A similar technique of the uninjured limb assisting can be used during supine wall slides.</p>
+<p>137 • To achieve greater than 90 degrees of flexion, heel slides are done with the patient sitting and grabbing the ankle to flex the knee farther.</p>
+<p>• A stationary bicycle also aids in the restoration of motion. The bicycle seat is initially set as high as possible and gradually lowered to increase flexion.</p>
+<p>• Isometric quadriceps sets and SLR are begun immediately to minimize muscle atrophy.</p>
+<p>• Electrical stimulation may be helpful by limiting reflex muscle inhibition.</p>
+<h2 id="phase-2-2">Phase 2</h2>
+<h2 id="goal-2">Goal</h2>
+<p>• Restoration of the strength of the injured leg to approximately 80-90% of the uninjured leg.</p>
+<h2 id="bracing-3">Bracing</h2>
+<p>• Continued use of the lightweight hinged brace.</p>
+<h2 id="exercises-2">Exercises</h2>
+<p>• Strengthening exercise begins with 4-inch step-ups and 30-degree squats without weights.</p>
+<p>• Light resistance exercises of knee extensions, leg presses, and curls on a standard isotonic weight bench or dedicated resistance machine. Sets with lighter weights but a higher number of repetitions are usually used.</p>
+<p>• Recurrent pain and swelling are signs of too rapid progression. If they occur, the strengthening program should be slowed.</p>
+<p>•Upper body, aerobic, and further lower extremity conditioning are achieved with swimming, stationary cycling, and/or a stair climber.</p>
+<h2 id="phase-3-2">Phase 3</h2>
+<h2 id="goals-11">Goals</h2>
+<p>•Completion of a running program.</p>
+<p>•Completion of series of sport-specific activities.</p>
+<h2 id="bracing-4">Bracing</h2>
+<p>• Continued use of the brace is recommended during this phase and for the rest of the athletic season. This may protect against further injury and at least provides psychologic support.</p>
+<p>138</p>
+<h2 id="exercises-3">Exercises</h2>
+<p>• A progressive running program commences with fast- speed walking and advances to light jogging, straight- line running, and then sprinting. Next, agility is achieved with cutting and pivoting activities such as figure-of-eight drills and cariocas.</p>
+<p>• If pain or swelling occurs, the program is amended appropriately.</p>
+<p>•Continued input from a trainer or physical therapist will be helpful in providing progress reports and guidance in appropriate performance of the activities.</p>
+<p>Return to Sport</p>
+<p>• Permitted when the athlete can complete a functional testing program including a long run, progressively more rapid sprints, cutting and pivoting drills, and appropriate sport-specific tests.</p>
+<h2 id="meniscal-repair">MENISCAL REPAIR</h2>
+<h2 id="phase-1-weeks-0-2-2">Phase 1: Weeks 0-2</h2>
+<h2 id="goals-12">Goals</h2>
+<p>• Full motion.</p>
+<p>• No effusion.</p>
+<p>• Full weight-bearing.</p>
+<h2 id="weight-bearing-6">Weight-bearing</h2>
+<p>• As tolerated.</p>
+<h2 id="treatment-2">Treatment</h2>
+<p>• ROM as tolerated (0-90 degrees).</p>
+<p>• Cryotherapy.</p>
+<p>• Electrical stimulation as needed.</p>
+<p>• Isometric quadriceps sets.</p>
+<p>•SLR. 139</p>
+<h2 id="phase-2-weeks-2-4-2">Phase 2: Weeks 2-4</h2>
+<p>Criteria for Progression to Phase 2</p>
+<p>• Full motion.</p>
+<p>•No effusion.</p>
+<p>• Full weight-bearing.</p>
+<h2 id="goals-13">Goals</h2>
+<p>• Improved quadriceps strength.</p>
+<p>• Normal gait.</p>
+<h2 id="therapeutic-exercises-9">Therapeutic Exercises</h2>
+<p>• Closed-kinetic chain resistance exercises 0-90 degrees.</p>
+<p>• Bike and swim as tolerated.</p>
+<p>• Early-phase functional training.</p>
+<h2 id="phase-3-weeks-4-8">Phase 3: Weeks 4-8</h2>
+<p>Criteria for Progression to Phase 3</p>
+<p>• Normal gait.</p>
+<p>• Sufficient strength and proprioception for advanced functional training.</p>
+<h2 id="goals-14">Goals</h2>
+<p>•Strength and functional testing at least 85% of contralateral side.</p>
+<p>• Discharge from physical therapy to full activity.</p>
+<h2 id="therapeutic-exercises-10">Therapeutic Exercises</h2>
+<p>•Strength work as needed.</p>
+<p>• Sport-specific functional progression.</p>
+<p>140 • Advanced-phase functional training.</p>
+<p>LCL (talo fibular ligament of ankle)SPRAIN</p>
+<h2 id="phase-1-acute-phase">Phase 1: Acute Phase</h2>
+<h2 id="timing">Timing</h2>
+<p>• Grade 1 sprain: 1-3 days.</p>
+<p>• Grade 2 sprain: 2-4 days.</p>
+<p>• Grade 3 sprain: 3-7 days.</p>
+<h2 id="goals-15">Goals</h2>
+<p>• Decrease swelling.</p>
+<p>• Decrease pain.</p>
+<p>• Protect from re injury.</p>
+<p>• Maintain appropriate weight-bearing status.</p>
+<h2 id="protection-options">Protection Options</h2>
+<p>• Taping.</p>
+<p>• Functional bracing.</p>
+<p>• Removable cast boot (some grade 2 and most grade 3 sprains),</p>
+<p>•Rest (crutches to promote ambulation without gait deviation).</p>
+<p>Ice</p>
+<p>• Cryocuff ice machine.</p>
+<p>• Ice bags.</p>
+<p>• Ice with other modalities (interferential, high-voltage galvanic stimulation, ultra- sound).</p>
+<h2 id="light-compression">Light Compression</h2>
+<p>• Elastic (Ace) wrap.</p>
+<p>141 • TED hose.</p>
+<p>• Vasopneumatic pump.</p>
+<h2 id="elevation">Elevation</h2>
+<p>• Above the heart (combined with ankle pumps).</p>
+<h2 id="phase-2-subacute-phase">Phase 2: Subacute Phase</h2>
+<h2 id="timing-2">Timing</h2>
+<p>• Grade 1 sprain: 2-4 days.</p>
+<p>• Grade 2 sprain: 3-5 days.</p>
+<p>• Grade 3 sprain: 4-8 days.</p>
+<h2 id="goals-16">Goals</h2>
+<p>• Decrease swelling.</p>
+<p>• Decrease pain.</p>
+<p>• Increase pain-free ROM.</p>
+<p>• Begin strengthening.</p>
+<p>• Begin non-weight-bearing proprioceptive training.</p>
+<p>• Provide protective support as needed.</p>
+<p>Modalities to Decrease Pain and Swelling</p>
+<p>• Ice or contrast baths.</p>
+<p>• Electrical stimulation (high-voltage galvanic or interferential) .</p>
+<p>• Ultrasound.</p>
+<p>• Cross-friction massage (gently).</p>
+<p>• Soft orthotics with I /8 - to 3/16'inch lateral wedge if needed.</p>
+<h2 id="weight-bearing-7">Weight-bearing</h2>
+<p>142 • Progress weight-bearing as symptoms permit.</p>
+<p>• Partial weight-bearing to full weight-bearing if no signs of antalgic gait are present.</p>
+<h2 id="therapeutic-exercises-11">Therapeutic Exercises</h2>
+<p>• Active ROM exercises</p>
+<p>•Dorsiflexion</p>
+<p>• Inversion</p>
+<p>• Foot circles</p>
+<p>• Plantar flexion</p>
+<p>• Eversion</p>
+<p>• Alphabet</p>
+<p>• Use of Aqua Ankle in cold water for gentle strengthening and ROM.</p>
+<p>• Strength exercises</p>
+<p>• Isometric in pain free range</p>
+<p>• Toe curls with towel (place weight on towel to sprains. increase resistance).</p>
+<p>• Pick up objects with toes (tissue, marbles).</p>
+<p>• Proprioceptive training</p>
+<p>• Seated Biomechanical Ankle Platform System (BAPS board)</p>
+<p>• Wobble board.</p>
+<p>• Ankle disc.</p>
+<p>• Stretching</p>
+<p>• Passive ROM-only dorsiflexion and plantar flexion intensity in pain-free range, nor eversion or inversion.</p>
+<p>• Joint mobilization (grades I, 2, and 3 for dorsiflexion)</p>
+<p>• Achilles stretch (gentle).</p>
+<p>143</p>
+<h2 id="phase-3-rehabilitative-phase">Phase 3: Rehabilitative Phase</h2>
+<h2 id="timing-3">Timing</h2>
+<p>• Grade 1 sprain: 1 wk.</p>
+<p>•Grade 2 sprain: 2 wk.</p>
+<p>• Grade 3 sprain: 3 wk.</p>
+<h2 id="goal-3">Goal</h2>
+<p>• Increase pain-free ROM.</p>
+<p>• Progress strengthening.</p>
+<p>• Progress proprioceptive training.</p>
+<p>• Increase pain-free activities of daily living.</p>
+<p>• Pain-free full weight-bearing and uncompensated gait.</p>
+<h2 id="therapeutic-exercises-12">Therapeutic Exercises</h2>
+<p>• Stretching</p>
+<p>•Gastrocnemius and soleus with increased intensity</p>
+<p>•Joint mobilizations (grades 1-2 and 3 for dorsiflexion ,plantar inversion, eversion; hold inversion)</p>
+<h2 id="strengthening">Strengthening</h2>
+<p>• Weight-bearing exercises</p>
+<p>144 • Heel raises</p>
+<p>•Toe raises</p>
+<p>•Stair steps.</p>
+<p>•Quarter squats.</p>
+<p>•Eccentric/concentric and isotonics (Therabandand cuff weights)</p>
+<p>•Inversion</p>
+<p>• Eversion</p>
+<p>•Plantar flexion</p>
+<p>• Dorsiflexion</p>
+<p>• Peroneal strengthening.</p>
+<p>•Isokinetics.</p>
+<p>• Proprioceptive training (progress from non-weight- bearing/controlled weight-bearing stage to full weight- bearing</p>
+<p>•Standing BAPS board.</p>
+<p>•Standing wobble board.</p>
+<p>• KAT system.</p>
+<p>• Single-leg balance activities (stable to unstable surfaces, without to with distractions)</p>
+<p>•Continue modalities as needed, specifically after exercises to prevent recurrence of pain and swelling.</p>
+<p>• Supportive taping, bracing, and orthotics used as needed. Typically, we finish the athletic season with supportive bracing in an effort to avoid reinjury.</p>
+<p>Phase 4: Return to Activity or Functional Phase</p>
+<h2 id="timing-4">Timing</h2>
+<p>• Grade 1 sprain: 1-2 wk.</p>
+<p>•Grade 2 sprain: 2-3 wk.</p>
+<p>• Grade 3 sprain: 3 -6 wk.</p>
+<p>145</p>
+<h2 id="goals-17">Goals</h2>
+<p>• Regain full strength.</p>
+<p>• Normal biomechanics.</p>
+<p>•Return to participation.</p>
+<p>•Protection and strengthening of any mild residual joint instability.</p>
+<h2 id="therapeutic-exercises-13">Therapeutic Exercises</h2>
+<p>•Continue progression of ROM and strengthening exercises.</p>
+<p>• Sport-specific strengthening and training are imperative.</p>
+<p>Running progression</p>
+<p>•Unloaded jogging on ZUNI</p>
+<p>•Unloaded running on ZUNI.</p>
+<p>• Alternate jog-walk-jog on smooth, straight surfaces.</p>
+<p>•Alternate sprint-jog-sprint on smooth, straight surfaces.</p>
+<p>•Figure-of-eights.</p>
+<p>•Zig-zag cutting.</p>
+<p>• Agility drills</p>
+<p>• Back pedaling.</p>
+<p>•Side stepping.</p>
+<p>•Carioca.</p>
+<p>• Plyometrics specific to each sport.</p>
+<p>•Progress weight-bearing multidirectional balance exercises and movement activities</p>
+<p>Return to Competition</p>
+<p>•When above skills are accomplished at full speed, athlete may return to practice.</p>
+<p>146 •When full practice is tolerated, competition can be resumed.</p>
+<p>• Some type of ankle support is recommended for the first several months. We typically use a low-profile Aircast or the Bledsoe Ultimate Ankle Brace.</p>
+<h2 id="phase-5-prophylactic-phase">Phase 5: Prophylactic Phase</h2>
+<h2 id="goal-4">Goal</h2>
+<p>• Prevent injury.</p>
+<h2 id="therapeutic-exercises-14">Therapeutic Exercises</h2>
+<p>• Functional drills.</p>
+<p>• Multidirectional balance board activities.</p>
+<p>• Prophylactic strengthening (emphasis on peroneal eversion).</p>
+<p>• Prophylactive protective support as needed.</p>
+<p>147</p>
+<h2 id="injury-to-capsules">INJURY TO CAPSULES</h2>
+<h2 id="pathomechanics">Pathomechanics: -</h2>
+<p>- so also muscle becomes atrophy &amp; weak because of diffuse. So, chance of injury is high.</p>
+<h2 id="management">Management: -</h2>
+<p>aim -</p>
+<p>• prevent further injury</p>
+<p>• promote healing</p>
+<p>• prevent secondary complications such as disuse atrophy, stiffness, loss of propioception, etc...</p>
+<p>• early return to activities</p>
+<p>• prevent recurrence</p>
+<h2 id="methods">Methods -</h2>
+<p>&lt;48 hours</p>
+<p>- rice protocol</p>
+<p>- hvpgs/ift/fs/tens to facilitate resolution of effusion, facilitate muscle contraction, relief pain and promote healing</p>
+<p>- if voluntary static contraction is not possible then it can be facilitated by electrical stimulation or indirectly by irradiation method.</p>
+<p>&gt;48 hours</p>
+<p>- encourage movement in a controlled manner, so as to avoid stress over the injured tissue. With movement the intraarticular pressure alters. Positive intra articular pressure disperseeffusion fluid out of the joint and help in pain relief.</p>
+<p>- early movement prevent adhesion formation and stiffness, provide nutrition to joint structure and stimulate propioceptors etc...</p>
+<p>- to promote healing, heat therapy after 48- 72 hours can be used.</p>
+<p>148 - for localized capsular lesion, ultrasound followed by dtfm and movements is helpful.</p>
+<p>- once full rom without swelling &amp; pain, muscle strength 60 - 70 % of normal with adequate stability is achieved, weight bearing can be allowed.</p>
+<h2 id="strengthening-2">Strengthening: -</h2>
+<p>O muscle strength is very important to reinforce capsuloligamentous structure.</p>
+<p>O strengthening can be achieved by static exercise, multiangle isometric contraction, active free and progressive resisted exercise.</p>
+<p>-stretching of various tight tissues</p>
+<p>-endurance - cycling, rowing, progressive walking, etc...</p>
+<p>-balance training</p>
+<p>initiated once full weight bearing is allowed, patient can return back to activities once strength becomes 80% of normal</p>
+<h2 id="injury-to-articular-cartilage">INJURY TO ARTICULAR CARTILAGE</h2>
+<p>Artricular cartliage provide a smooth frictionless surface to facilitate movement.</p>
+<p>cells - chondrocyte</p>
+<p>fibres - collagen fibre + elastic fibre + reticular fibres</p>
+<p>ground substance - mucopolysaccharide +water</p>
+<p>Articular cartilage has 3 layers: -</p>
+<p>O basal layer fibres oriented vertically that will anchor to the underlying bone that prevent slippage of cartilage under various kind of load.</p>
+<p>O intermediate layer fibres oriented haphazardly. It attenuates energy.</p>
+<p>O superficial layer fibres oriented horizontally to became smooth frictionless surface.</p>
+<p>O articular cartilage is avascular and aneural. Its metabolic capacity is poor. Once damaged it cannot be repaired. So, once articular cartilage is completely damaged and fracture occurs, healing occurs with fibrous tissue. So smooth articular surface is lost that interferes with movement. Therefore patient develops early degenerative arthritis.</p>
+<p>149</p>
+<h2 id="management-2">Management: -</h2>
+<p>the management for intra articular injury is early movements.</p>
+<p>-early non weight bearing movement helps in remodelling and smoothen articular surface.</p>
+<p>-early weight bearing may lead to further damage</p>
+<p>-with early non weight bearing movement gradually there occurs diffrentiation of cells where fibroblasts get cinverted into immature chondrocyte.</p>
+<p>-in case of intraarticular # the injured tissue come directly in contact with highly vascular subchondral bone, which facilitate healing.</p>
+<p>150</p>
+<h2 id="fracture">FRACTURE</h2>
+<p>Bone is also a viscoelastic tissue. When it is subjected to load after elastic limit rupture can occur.</p>
+<p>Type of fracture</p>
+<p>transverse # - stable</p>
+<p>oblique # - unstable</p>
+<p>spiral # - twisted force,</p>
+<p>comminuted # - heals faster</p>
+<p>green stick # - in children ( crack without displacement )</p>
+<p>fracture results in bleeding ( sharp edge of # segment )</p>
+<p>associated soft tissue damage slow down fracture healing.</p>
+<h2 id="c-f">C/f: -</h2>
+<p> h/o injury</p>
+<p> pain</p>
+<p> redness</p>
+<p> swelling</p>
+<p> crepitus</p>
+<p> deformity</p>
+<p> undue movement at fracture site</p>
+<p> more pain on squeezing the bone</p>
+<p> moving body parts</p>
+<p>** no pain - no #</p>
+<p>Rx-</p>
+<p>Emergency treatment:</p>
+<p>support the part /splinting the part before transporting</p>
+<p>151 If it is upper limb support with chest.</p>
+<p>If it is lower limb tie with other limb to porevent further damage.</p>
+<p>if possible correct deformity gently to proper anatomical position.</p>
+<p>if significant resistant is felt the part should be splinted as it is .</p>
+<p>if correct protective gear is available like pillow, cardboard ,stick, magazines,umbrella you can use that.</p>
+<p>immedieately check for circulation ..if circulation is impaired either due to kink in blood vessels, injury to blood vessels by sharp edge of the # segment, vasospasm due to injury to sympathetic nerve.</p>
+<p>First try to correct the deformity to restore the peripheral pulsation.</p>
+<p>Complications:</p>
+<p>1. Hypovolaemic shock</p>
+<h2 id="2-ards">2. ARDS</h2>
+<p>3. Associated injury to soft tissue , neurovasular structures.</p>
+<p>4. Fat embolism</p>
+<p>5. Stiffness of joint due to prolong immobilisation</p>
+<p>(limitation may be due to malunion ,intra-articular# limit jrom to a greater extent)</p>
+<p>6.Disuse atrophy</p>
+<p>7.Adaptive shortening</p>
+<p>8.Compartment syndrome</p>
+<p>Stages:</p>
+<p>• Compression over nerve by fluid</p>
+<p>• Neuropraxia</p>
+<p>• Vascular supply impair</p>
+<p>• Axonotomesis</p>
+<p>• Ischaemia&amp; necrosis to muscles</p>
+<p>152 • Fibrous tissue formation</p>
+<p>• Contracture &amp; deformity</p>
+<p>Vic-pain on stretching of muscles</p>
+<p>9. Malunion- following # there is displacement of bone by muscle .bone if united in displaced position gives rise to malunion</p>
+<p> over-riding of bone does not gives bio-mechanical</p>
+<p> translation of bone abnormality.</p>
+<p> slight rotational deformity gives rise to problem.</p>
+<p>e.g. In # of neck of humerus the position is int. Rotation . So patient has to do ext. Rotation to normalise the deformty. so function with ext. Rotation of patient get impaired.</p>
+<p>10. Delayed union- - hypovascularity</p>
+<p>-metabolic disease (dm)</p>
+<p>-improper immobilisation</p>
+<p>* intra-capsular # flushed with synovial fluid that impair haematoma formation due to lack of soft tissue contact also union gets impaired/delayed.</p>
+<p>11. Non-union- infection</p>
+<p>-soft tissue inter position</p>
+<p> results in pseudoarthrosis and impairment of function</p>
+<p>12. Fibrosis and adhesion of muscles -</p>
+<p>overlying muscle gets damaged by sharp edge of # segment that heals with fibrosis and adhesion</p>
+<p>muscle gets adherent with callus it becomes very difficult to mobilise and regain jrom.</p>
+<p>13. Vessel injury:</p>
+<p>153  by sharp edge of # segment , there may occur vasospasm due to injury of sympathetic plexus , thrombosis of vessels due to intimal damage</p>
+<p> there may be kink due to # edge or deformity</p>
+<p>14.Peripheral nerve injury-</p>
+<p>• direct consequences of trauma</p>
+<p>• sharp edge of the #segment</p>
+<p>• Blood vessel injury</p>
+<p>• nerve injury gradually occur in case of gradually progressing deformity</p>
+<p>• nerve injury can occur if the nerve gets entrapped with callus</p>
+<h2 id="15-rsd">15.RSD-</h2>
+<p> sympathetic in origin</p>
+<p> mainly injury due to median nerve (probable cause)</p>
+<p> incidence reduced due to early movement</p>
+<p>16.Myositisossificans-</p>
+<p> commonly involve elbow , hip, knee</p>
+<p> usually 50% cases get resolved with rest and immobilisation</p>
+<p>17.Swelling-</p>
+<p>immediate complication due to -</p>
+<p>lack of muscle pump during immobilisation</p>
+<p>tight plaster</p>
+<p>avascularity may lead to vasodilatation and oedema</p>
+<p>if the part is kept in dependent position then associated peripheral nerve injury</p>
+<p>154 following plaster removal there is loss of skeletal muscle tone as well as external support by plaster</p>
+<p>gradually build up muscle tone by resisted exercise crepe bandage can be used during activities, to prevent oedema</p>
+<p>Physiotherapy during immobilisation:</p>
+<p>I. Part should be kept in elevation</p>
+<p>Ii. Encourage active movement of uninvolved joints</p>
+<p>Iii. Static exercises of involved muscles of splinted joints</p>
+<p>(in case of long leg plaster cast static muscle contraction not only prevents disuse atrophy but also induce relaxation and prevents adaptive shortening of muscle)</p>
+<p>I. Static contraction of muscles compresses over the # site that accelerate osteogenesis</p>
+<p>After plaster removal:</p>
+<p> problems are swelling ,pain, limitation of movt., atrophy, stiffness, skin become dry, scaly, loss of function.</p>
+<p> to supple the skin any superficial heat modality like PWB is preferred</p>
+<p> to reduce oedema--elevation, static exercises ,compressive dressing</p>
+<p> for pain relief --</p>
+<p> for swelling (acute): ice therapy</p>
+<p> for sub acute swelling: contrast bath, hydrostatic pressure helps in reduction oedema</p>
+<p>-electrical modalities-like IFT can be used</p>
+<p>-mobilisation-recently healing # (&lt;3months) passive manipulation techniques are contraindicated.</p>
+<p>--jrom can be improved by relaxing muscles around it with application of moist heat and hold and relax tech. To relax and lengthen the muscle</p>
+<p>--rhythmical, active and active assisted, non wt bearing pendular type movt.</p>
+<p>--slow and sustained stretching/mobilisation with over pressure can be started gradually</p>
+<p>155 After consolidation, once the union becomes complete</p>
+<p>-- forced passive movt and accessory movts can be started</p>
+<p>-static exercise followed by active movt and progressive resisted exercise to strengthen the muscle .</p>
+<p>For muscle weakness - faradic stimulation helps in reducing the pain as well as for strengthening of the disused and weak muscle</p>
+<p>-functional re-education for the patient to return back to activities by PNF technique</p>
+<p>156</p>
+<hr style="border:none;border-top:1px solid var(--border);margin:2.6em 0 1.4em">
+<nav class="sib" style="justify-content:space-between;display:flex;flex-wrap:wrap"><a href="20-prescription-guidelines.html">&larr; Prescription Guidelines and Orthotic Fabrication</a> <a href="index.html">Index</a> <a href="22-assessment-oa-rheumatology.html">Assessment of Osteoarthritis and Rheumatological Conditions &rarr;</a></nav>
+</main></div>
+<footer><div class="wrap">Compiled study notes &middot; for academic revision. Original clinical content &copy; respective authors (Magee, Dutton, Gross et&nbsp;al. and others).</div></footer>
+</body>
+</html>

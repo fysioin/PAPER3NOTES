@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lower Limb Fracture Assessment Form &middot; Paper 3 MSK Assessment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf7f5; --surface:#fffdfb; --surface-2:#f3ece6; --border:rgba(35,32,29,.12);
+  --text:#23201d; --text-dim:#6b635b; --accent:#b4491f; --accent-dim:#f3ddd3;
+  --accent2:#4f6b3a; --accent2-dim:#e3ebd8; --mono:#8a4b1f;
+  --font-head:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --font-body:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --maxw:74ch;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#191715; --surface:#211e1b; --surface-2:#2a2622; --border:rgba(255,255,255,.10);
+    --text:#ece7e1; --text-dim:#a79e94; --accent:#e07a4f; --accent-dim:#3a241b;
+    --accent2:#9dbb7e; --accent2-dim:#26301d; --mono:#d99a6a;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);
+  font-size:17px;line-height:1.72;-webkit-text-size-adjust:100%;
+  background-image:radial-gradient(circle at 12% -8%,var(--accent-dim),transparent 42%),
+    radial-gradient(circle at 100% 0%,var(--accent2-dim),transparent 38%);
+  background-attachment:fixed;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--surface) 70%,transparent);
+  backdrop-filter:blur(8px);position:sticky;top:0;z-index:20}
+header.top .bar{max-width:var(--maxw);margin:0 auto;padding:14px 22px;display:flex;
+  align-items:center;justify-content:space-between;gap:14px}
+.brand{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text-dim)}
+.brand b{color:var(--accent);font-weight:600}
+nav.sib{font-family:var(--font-mono);font-size:12.5px;display:flex;gap:16px}
+main{padding:40px 0 80px}
+h1{font-family:var(--font-head);font-weight:400;font-size:clamp(30px,5vw,46px);line-height:1.1;
+  margin:.2em 0 .5em;letter-spacing:-.01em}
+h2{font-family:var(--font-head);font-weight:400;font-size:clamp(21px,3vw,28px);line-height:1.2;
+  margin:1.9em 0 .5em;padding-bottom:.24em;border-bottom:1px solid var(--border)}
+h3{font-family:var(--font-body);font-weight:600;font-size:16.5px;margin:1.4em 0 .4em;
+  color:var(--accent2)}
+p{margin:0 0 1.02em;overflow-wrap:break-word}
+blockquote{margin:1.3em 0;padding:12px 18px;border-left:3px solid var(--accent);
+  background:var(--surface-2);color:var(--text-dim);font-size:15px;border-radius:0 8px 8px 0}
+.lead{font-family:var(--font-head);font-size:clamp(19px,2.4vw,23px);line-height:1.45;
+  color:var(--text-dim);max-width:60ch;margin:0 0 1.6em}
+.crumb{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.06em;color:var(--text-dim);
+  text-transform:uppercase}
+.toc{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 22px;
+  margin:0 0 2.2em}
+.toc h4{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--text-dim);margin:0 0 10px}
+.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:34px}
+@media(max-width:640px){.toc ol{columns:1}}
+.toc li{margin:.18em 0;font-size:14.5px;break-inside:avoid}
+footer{border-top:1px solid var(--border);padding:26px 22px 46px;color:var(--text-dim);
+  font-size:13px;text-align:center}
+footer .wrap{max-width:var(--maxw)}
+/* index */
+.hero{padding:56px 0 30px}
+.hero .eyebrow{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin:8px 0 10px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 20px;
+  display:flex;flex-direction:column;gap:8px;transition:transform .18s ease,border-color .18s ease}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card .num{font-family:var(--font-mono);font-size:12px;color:var(--accent);letter-spacing:.1em}
+.card h3{margin:0;font-family:var(--font-head);font-weight:400;font-size:21px;color:var(--text);
+  line-height:1.2}
+.card p{margin:0;font-size:14px;color:var(--text-dim);line-height:1.5}
+.grouphd{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--text-dim);margin:2.4em 0 .9em;padding-bottom:.5em;border-bottom:1px solid var(--border)}
+.tag{font-family:var(--font-mono);font-size:11px;color:var(--accent2);border:1px solid var(--border);
+  border-radius:999px;padding:2px 9px;align-self:flex-start}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="bar"><div class="brand"><b>Paper&nbsp;3</b> &middot; MSK Assessment</div><nav class="sib"><a href="index.html">Index</a></nav></div></header>
+<div class="wrap"><main>
+<div class="crumb">Paper 3 &middot; MSK Assessment</div>
+<h1>Lower Limb Fracture Assessment Form</h1>
+<p class="lead">Faithful study notes transcribed from the Paper 3 MSK assessment compilation (based on David J. Magee, <em>Orthopedic Physical Assessment</em>, 6th ed., and companion material).</p>
+<nav class="toc"><h4>On this page</h4><ol><li><a href="#lower-limb-evaluation-format">Lower Limb Evaluation Format</a></li><li><a href="#lower-limb-fracture-assesstment-form">LOWER LIMB FRACTURE ASSESSTMENT FORM</a></li><li><a href="#radiology">Radiology</a></li><li><a href="#hypertension">Hypertension</a></li><li><a href="#osteoporosis">Osteoporosis</a></li><li><a href="#swelling">Swelling</a></li><li><a href="#edema-swelling">Edema/Swelling</a></li><li><a href="#pulse">Pulse</a></li><li><a href="#jss-college-of-physiotherapy">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-1-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 1/12</a></li><li><a href="#lower-limb-evaluation-format-2">Lower Limb Evaluation Format</a></li><li><a href="#right-left">Right Left</a></li><li><a href="#thigh">Thigh</a></li><li><a href="#forearm">Forearm</a></li><li><a href="#hand">Hand</a></li><li><a href="#jss-college-of-physiotherapy-2">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-2-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 2/12</a></li><li><a href="#lower-limb-evaluation-format-3">Lower Limb Evaluation Format</a></li><li><a href="#transfer-bed-chair-bed">Transfer-bed -chair-bed</a></li><li><a href="#sit-stand">Sit-stand</a></li><li><a href="#balance">Balance</a></li><li><a href="#expected-function-prognosis">Expected Function (Prognosis)</a></li><li><a href="#smart-goals">SMART GOALS</a></li><li><a href="#jss-college-of-physiotherapy-3">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-3-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 3/12</a></li><li><a href="#lower-limb-evaluation-format-4">Lower Limb Evaluation Format</a></li><li><a href="#clinical-reasoning">Clinical Reasoning</a></li><li><a href="#special">Special</a></li><li><a href="#hypothesis-reasoning">Hypothesis / Reasoning</a></li><li><a href="#surgical-history-incision">Surgical History - Incision /</a></li><li><a href="#activity-status">Activity Status</a></li><li><a href="#healing">Healing</a></li><li><a href="#scar-grading">Scar (grading)</a></li><li><a href="#edema-swelling-2">Edema/Swelling</a></li><li><a href="#jss-college-of-physiotherapy-4">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-4-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 4/12</a></li><li><a href="#lower-limb-evaluation-format-5">Lower Limb Evaluation Format</a></li><li><a href="#examination">Examination</a></li><li><a href="#clinical">Clinical</a></li><li><a href="#identify">Identify</a></li><li><a href="#strength-mmt">Strength (MMT)</a></li><li><a href="#jss-college-of-physiotherapy-5">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-5-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 5/12</a></li><li><a href="#lower-limb-evaluation-format-6">Lower Limb Evaluation Format</a></li><li><a href="#independent">Independent</a></li><li><a href="#mode-reasoning">Mode Reasoning</a></li><li><a href="#mobility">Mobility</a></li><li><a href="#jss-college-of-physiotherapy-6">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-6-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 6/12</a></li><li><a href="#lower-limb-evaluation-format-7">Lower Limb Evaluation Format</a></li><li><a href="#arom">AROM -</a></li><li><a href="#modalities">Modalities</a></li><li><a href="#jss-college-of-physiotherapy-7">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-7-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 7/12</a></li><li><a href="#lower-limb-evaluation-format-8">Lower Limb Evaluation Format</a></li><li><a href="#cold-pack">- COLD PACK</a></li><li><a href="#cpm">- CPM</a></li><li><a href="#jss-college-of-physiotherapy-8">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-8-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 8/12</a></li><li><a href="#lower-limb-evaluation-format-9">Lower Limb Evaluation Format</a></li><li><a href="#progress-notes">Progress Notes</a></li><li><a href="#exercise">Exercise</a></li><li><a href="#es">(ES)</a></li><li><a href="#jss-college-of-physiotherapy-9">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-9-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 9/12</a></li><li><a href="#lower-limb-evaluation-format-10">Lower Limb Evaluation Format</a></li><li><a href="#arom-2">AROM -</a></li><li><a href="#stretching-knee-hip-active">Stretching Knee /Hip - Active</a></li><li><a href="#functional">Functional</a></li><li><a href="#jss-college-of-physiotherapy-10">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-10-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 10/12</a></li><li><a href="#lower-limb-evaluation-format-11">Lower Limb Evaluation Format</a></li><li><a href="#nwb-ttwb-pwb-we">NWB,TTWB,PWB,We</a></li><li><a href="#home">Home</a></li><li><a href="#hep">(HEP)</a></li><li><a href="#jss-college-of-physiotherapy-11">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-11-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 11/12</a></li><li><a href="#lower-limb-evaluation-format-12">Lower Limb Evaluation Format</a></li><li><a href="#jss-college-of-physiotherapy-12">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-12-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 12/12</a></li></ol></nav>
+<h2 id="lower-limb-evaluation-format">Lower Limb Evaluation Format</h2>
+<h2 id="lower-limb-fracture-assesstment-form">LOWER LIMB FRACTURE ASSESSTMENT FORM</h2>
+<p>Demographic Data:</p>
+<p>Name : Age: Gender: IP Number: Occupation: Address:</p>
+<p>History relevant to present condition:</p>
+<p>Mode of injury: orthopedics management: surgical management:</p>
+<p>Investigation:</p>
+<p>Lab reports</p>
+<h2 id="radiology">Radiology</h2>
+<p>Co-Morbidities:</p>
+<p>Diabetes mellitus</p>
+<h2 id="hypertension">Hypertension</h2>
+<h2 id="osteoporosis">Osteoporosis</h2>
+<p>Observation:</p>
+<p>General body appearance Limb is positioned in BB splint with traction-Yes/No Position of comfort adapted by patient when not in traction (if any): Extent of cast/external fixator/ Surgical Incision</p>
+<h2 id="swelling">Swelling</h2>
+<p>Drain(if any)</p>
+<p>Palpation:</p>
+<h2 id="edema-swelling">Edema/Swelling</h2>
+<p>Capillary refill Muscle spasm/guarding (if relevant)</p>
+<h2 id="pulse">Pulse</h2>
+<h2 id="jss-college-of-physiotherapy">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-1-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 1/12</h2>
+<h2 id="lower-limb-evaluation-format-2">Lower Limb Evaluation Format</h2>
+<p>Testing:</p>
+<p>Sensory Examination:</p>
+<p>*In area below the fracture (Present/Absent)</p>
+<p>Pain Examination:</p>
+<p>pain in area other than the fracture area (if relevant) Screening of other limbs</p>
+<p>Motor Examination:</p>
+<p>Muscle Girth:</p>
+<h2 id="right-left">Right Left</h2>
+<h2 id="thigh">Thigh</h2>
+<p>Leg Arm</p>
+<h2 id="forearm">Forearm</h2>
+<h2 id="hand">Hand</h2>
+<p>Range of motion:</p>
+<p>ROM of Joint proximal and distal to the Active range fracture site</p>
+<p>Muscle strength:</p>
+<p>-Manual Muscle Testing of joints proximal and distal to fracture site.</p>
+<p>Functional Movement analysis :</p>
+<p>- Lying to side lying / sitting - Sit to stand - Walking - Stair climbing</p>
+<p>Functional Evaluation:</p>
+<h2 id="jss-college-of-physiotherapy-2">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-2-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 2/12</h2>
+<h2 id="lower-limb-evaluation-format-3">Lower Limb Evaluation Format</h2>
+<p>FIM Bed mobility</p>
+<h2 id="transfer-bed-chair-bed">Transfer-bed -chair-bed</h2>
+<h2 id="sit-stand">Sit-stand</h2>
+<h2 id="balance">Balance</h2>
+<h2 id="expected-function-prognosis">Expected Function (Prognosis)</h2>
+<p>Proximal and distal joint mobility/strength Self dependency during bed mobility/transfer/sit to stand/gait</p>
+<p>Plan of Care: Pre-operative/Post-Operative</p>
+<h2 id="smart-goals">SMART GOALS</h2>
+<p>Treatment Plan:</p>
+<p>*Treatment based on recent evidence /guidelines</p>
+<p>Progress Note:</p>
+<p>Functional range with assistance/without assistance Active Lower limb function</p>
+<p>Discharge Goals:</p>
+<p>No swelling in ankle/knee Functional range of joints proximal and distal to fracture Minimal dependency while transfer Ambulation upto 50 mts with assistive device Can climb atleast 5 steps with crutch/canes</p>
+<p>Home -exercise Program:</p>
+<p>Exercise diagram No. of sets Repetition Do's Don't</p>
+<p>Follow-Up:</p>
+<h2 id="jss-college-of-physiotherapy-3">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-3-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 3/12</h2>
+<h2 id="lower-limb-evaluation-format-4">Lower Limb Evaluation Format</h2>
+<h2 id="clinical-reasoning">Clinical Reasoning</h2>
+<p>Clinical relevance /</p>
+<h2 id="special">Special</h2>
+<p>contributing factors / Important Information attention</p>
+<h2 id="hypothesis-reasoning">Hypothesis / Reasoning</h2>
+<p>Healing / degenerative Age changes /osteoporosis/ balance / strength / mobility Reason for surgery</p>
+<h2 id="surgical-history-incision">Surgical History - Incision /</h2>
+<p>HT/IHD/DM/ osteoporosis / type of implant previous trauma Surgical Relevant medical conditions history and Presenting complaints (list) Previous Functional status co- Relevant Past history ( Body</p>
+<h2 id="activity-status">Activity Status</h2>
+<p>morbidities Function status/ Activity Status) / contributing factors Assisted devices used for that may influence the supports, transfers and exercise planning) mobility To get information on the Lab To correlate with the present level infection, inflammation investigation condition of the patient and to test the level of calcium precursors To identify the type ,extent of Radiology Severity of the injury fracture BMI General - ( whole body To understand obesity / appearance) overweight contributing to OA, Joint loading</p>
+<h2 id="healing">Healing</h2>
+<p>Surgical Incision, Swelling, (stages-inflammatory/ Presence of drain tubes Observation remodelling etc.,)</p>
+<h2 id="scar-grading">Scar (grading)</h2>
+<p>Position of comfort adapted To understand which position by patient when not in relieves pain and also it traction (if any): would help in educating them regarding the position of limb</p>
+<p>Extent of cast/external To understand the mobility fixator/ Surgical Incision and stability of proximal and distal joint</p>
+<h2 id="edema-swelling-2">Edema/Swelling</h2>
+<p>Palpation Sign of inflammation/Pain</p>
+<p>Capillary refill To understand peripheral perfusion(normal/decrease)</p>
+<h2 id="jss-college-of-physiotherapy-4">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-4-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 4/12</h2>
+<h2 id="lower-limb-evaluation-format-5">Lower Limb Evaluation Format</h2>
+<p>Sensory To understand if there is any</p>
+<h2 id="examination">Examination</h2>
+<p>nerve involment pain If pain intensity is more then other motor examination should not be performed. Discuss with To identify flags, relate to nurse in surgical history,healing, charge medication regarding pain medication and patient need to be followed up after pain reduction. Girth measurement (differentiate between Tests for swelling / wasting) Relate with observation effusion / - Limb Oedema (identify</p>
+<h2 id="clinical">Clinical</h2>
+<p>possible causes Test - Homan's sign reasoning (decreased mobility , DVT, etc.,) Active Range of Motion of Perform on Movement pattern, quantity, joints proximal and distal to plinth not on muscle activity, kinematics, fracture site. bed in supine protective mechanism) and sitting to</p>
+<h2 id="identify">Identify</h2>
+<p>evaluate the - Lag muscle - Muscle inhibition activity - Muscle power (torque) Strength of muscles proximal</p>
+<h2 id="strength-mmt">Strength (MMT)</h2>
+<p>and distal to fracture site. Perform test to rule out To observe the activity of Isometric Resisted Test tightness of muscle capsule or muscles Functional Movement - Lying to side lying / analysis sitting - Sit to stand ( relate with normal pattern, - Walking identify the possible - Stair climbing</p>
+<h2 id="jss-college-of-physiotherapy-5">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-5-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 5/12</h2>
+<h2 id="lower-limb-evaluation-format-6">Lower Limb Evaluation Format</h2>
+<p>structure)</p>
+<p>Total assist/ max/mod/min assist /</p>
+<h2 id="independent">Independent</h2>
+<p>Movement pattern at Functional Status knee ( available flexion)</p>
+<p>Distance walked</p>
+<p>(observe for discomfort during function and gait)</p>
+<p>balance -sitting and standing</p>
+<p>PT Plan of care</p>
+<p>Pre- op / Prehabilitation</p>
+<h2 id="mode-reasoning">Mode Reasoning</h2>
+<p>Exercise counselling To Gain confidence</p>
+<p>Upper limb exercise Assistance in mobility / crutches</p>
+<p>Bed mobility exercise To prevent DVT, Pressure sores</p>
+<p>Activation for Quads/ hams/ Hip Exercises to affected side( knee/ Hip and Abd/Extensors / Calf muscles ankle) ( aid in re-education during inhibition post- surgery)</p>
+<p>training for Quads/ hams/ Hip Abd/Extensors Exercises to Un affected side (knee/ Hip / Calf muscles and ankle) ( aid in re-education during inhibition post- surgery) Functional education and training</p>
+<h2 id="mobility">Mobility</h2>
+<p>Post operative</p>
+<p>Treatment Reasoning / Progression Progress note Gain confidence Exercise education Decrease Pain Understand the underlying Pain rating (VAS /</p>
+<h2 id="jss-college-of-physiotherapy-6">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-6-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 6/12</h2>
+<h2 id="lower-limb-evaluation-format-7">Lower Limb Evaluation Format</h2>
+<p>causes of pain NPRS), quality and - Cryotherapy - Inflammatory compliance at each visit. - CPM - Chronic - Positioning - Structural - Muscle activation ( active - Muscle guarding exercise / isometric - Effusion exercises) - Cryotherapy ( once in every 6 hours till 6th post Support /bracing ( to avoid op day) knee contractures/ FFD as patient tends to keep in resting position because of pain) Oedema control - Compression - Active exercises with - Elevation elevation - ST mobilization (If - Activity modification required) (elevation in between with active exercises) Restore ROM Increase Range of motion Increasing each visit (10- 15 days) Active extension without lag</p>
+<h2 id="arom">AROM -</h2>
+<p>Note: ROM returning to prior Identify active structure level. function (Activation/ If they had contracture, they Inhibition) are more likely to have in post op</p>
+<p>- Quadriceps sets - Straight leg raise (SLR) - Supine heel slides, - Short arc Extension - Sit to stand - Supine leg press (on pillows )</p>
+<p>Slowly progress to - Resisted exercises ( minimal weights / 30% EST RM) in available range - Controlled flexion and extension in high Sitting ( support if required) - Static cycle</p>
+<h2 id="modalities">Modalities</h2>
+<p>- Electrical Stimulation</p>
+<h2 id="jss-college-of-physiotherapy-7">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-7-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 7/12</h2>
+<h2 id="lower-limb-evaluation-format-8">Lower Limb Evaluation Format</h2>
+<h2 id="cold-pack">- COLD PACK</h2>
+<h2 id="cpm">- CPM</h2>
+<p>Safe transfers and ambulation Distance ( 50 meters) Increase incrementally at with assistive device Observe and train use of knee each visit ( 10- 25%) flexion during gait Add functional training for lower limb ( sit to stand, stepping, stair climbing, over obstacles) Prevention of Tightness and Positioning / brace ( 0 degrees Progress to stretching Contracture while sleeping / resting in bed exercises and ST mobilization if tightness Skin / Incisional scar Active exercises during sitting of structures are identified Joint - PF joint / Capsule Stretching exercises</p>
+<p>ST mobilization / scar mobilization Gait training / Mobility Based to type of implant Progress to decide on weight bearing - Normal gait without NWB-TTWB-PWB- assistive device Weight bearing as tolerated - Stair climbing (WBAT) - ( walker / crutches/ - Gait obstacles canes) Home exercise program (HEP)</p>
+<h2 id="jss-college-of-physiotherapy-8">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-8-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 8/12</h2>
+<h2 id="lower-limb-evaluation-format-9">Lower Limb Evaluation Format</h2>
+<h2 id="progress-notes">Progress Notes</h2>
+<p>Components 0- 2 weeks 3-6 weeks 6-12 weeks - Emphasis on - Emphasis on - Emphasis on</p>
+<h2 id="exercise">Exercise</h2>
+<p>Importance of Exercise Importance of precautions and education - Provide education on strength, balance and preventive "hurt (vs) harm function measures - Cryotherapy - Positioning of Knee and related joints Pain must decrease - Muscle activation during rest at this stage. - Pain must (active exercise / decrease at this isometric exercises) Pain during movement stage. - Support /bracing ( to must be identified and avoid knee patient must be given - Identify pain contractures/ FFD as exercise education. due to fatigue, Pain patient tends to keep in educate patient resting position Eg.</p>
+<p>Pain at the end of appropriately because of pain) flexion may be due to Pain must decrease stretch in anterior - Identify gradually after 24 - 48 structures / Qaud structures hours, indicate if there is (identify and treat the causing pain increase. cause) (possibly due to Observe for pain pattern tight structure ) during movements. Educate about pain, during exercise - Compression - ST mobilization Usually minimal - Elevation Oedema - Active exercises of or no swelling at - ST mobilization (If knee with elevation. this stage.</p>
+<p>required) - Ultra sound (US) - Flexion - CPM -Knee (0-100) contracture/ scar (progress to 125) Modalities - Moist heat - TENS if necessary - ES (Pain and - Contrast bath - Cryotherapy (once in - Cryotherapy after oedema - Whirl pool bath every 6 hours till 6th exercises management) or pool ( after 6 post op day) weeks and - Electrical Stimulation incision is</p>
+<h2 id="es">(ES)</h2>
+<p>completely healed)</p>
+<h2 id="jss-college-of-physiotherapy-9">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-9-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 9/12</h2>
+<h2 id="lower-limb-evaluation-format-10">Lower Limb Evaluation Format</h2>
+<h2 id="arom-2">AROM -</h2>
+<p>Identify active structures limiting ROM and function AROM - expected (Activation/ Inhibition) 0 - 110 active / passive IF inhibited start with Increasing each visit facilitation techniques ( If not achieved continue (10-15 days) toward EST / Isometric exercise) exercise as 2 weeks 125 degrees flexion, and 0 degrees</p>
+<h2 id="stretching-knee-hip-active">Stretching Knee /Hip - Active</h2>
+<p>extension. Use techniques based on Exercises examination &amp; reasoning Resisted exercises - Functional - Passive structure - 1 RM evaluation movements (re- tightness (use static (Functional - leg education) stretching) press) - Lateral and - Active structure - Theraband standing multidirectional shortening (use PNF total knee extension movements techniques ) (TKE) - Strengthening - High sitting exercise (1RM Achieve 0 degrees active exercises (knee 60% to 80%) extension without lag extension and - Quadriceps, hip (100 degrees flexion, and 0 flexion) with weights and core degrees extension - - Hip ( weights at strengthening increase to 110 degrees at thigh) nd - emphasis on use Restore the end of 2 week) - Stand to sit / bed of the affected ROM - Quadriceps sets transfer training side during - Straight leg raise (SLR) Proprioception and function such as - Patellar glides Neuromuscular re- rising from (mobilization) education sitting - Supine heel slides, - Gait / movement/ - Stand to sit - Short arc Extension balance /weight (independent) - Sit to stand squats transfers) - Proprioception - Supine leg press (on - Standing balance training pillows ) training - even and - Progress - Resisted exercises uneven surface</p>
+<h2 id="functional">Functional</h2>
+<p>(minimal weights / (wobble board) training for 30% RM) in available - Progress to single lower limb range leg standing ( with without support - Controlled flexion and short duration and increased in extension in high progress the repetition Sitting ( support if incrementally) and distance required) - Add functional (sit to stand, - Static cycle / pedo training for lower stepping, stair cycle limb (with support if climbing, over required) (sit to obstacles) Note: ROM returning to stand, stepping, stair prior level. climbing, over If they had contracture, obstacles) they are more likely to have in post op</p>
+<h2 id="jss-college-of-physiotherapy-10">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-10-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 10/12</h2>
+<h2 id="lower-limb-evaluation-format-11">Lower Limb Evaluation Format</h2>
+<p>- Increase distance incrementally at each visit ( 10%) - Full With assistive device - Normal gait Weight bearing with - Distance at patients without assistive no of minimal comfort device support</p>
+<h2 id="nwb-ttwb-pwb-we">NWB,TTWB,PWB,We</h2>
+<p>ight bearing as - Stairs with - Attain normal tolerated (WBAT) - reciprocal gait Safe transfers kinematics and (walker / crutches/ for without and weight bearing canes) increase support ambulation incrementally day by - Independent - Temporal and day (based on transfers to and Spatial parameters of evaluation) from the bed/ gait normalization - Observe and train use ground and training of knee flexion during - Independent gait function - Stairs with assistance (rail support)</p>
+<p>Positioning / brace ( 0 degrees while sleeping / resting in bed Tightness Progress to stretching Active exercises during ST mobilization and exercises and ST sitting Stretching ( static) Contracture mobilization if tight Stretching exercises</p>
+<p>ST mobilization / scar mobilization</p>
+<h2 id="home">Home</h2>
+<p>HEP written based on HEP written based on HEP written based exercise patient goals with special patient goals with on patient goals program precautions special precautions with dos and don'ts</p>
+<h2 id="hep">(HEP)</h2>
+<p>- PROM to be achieved with minimal force - Lifting more - Watch incision for - Avoid rapid forced than 10 kgs signs of separation during Gait and during and/or infection. Precautions functional functional - Keep incision strain at movements ( sit to activities a minimum, watch stand etc.,) - Body weight blanching during - Incision/ infection (maintenance) flexion to monitor this. issues / scar - Avoid running and jumping</p>
+<h2 id="jss-college-of-physiotherapy-11">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-11-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 11/12</h2>
+<h2 id="lower-limb-evaluation-format-12">Lower Limb Evaluation Format</h2>
+<p>- Continuing improvement in ROM - No extension lag - Improvement in - Achievement of quadriceps function, - Improvement in ROM, ROM Progression gait and activity muscle function and criteria tolerance gait over the first 2 - No extensor lag - Single crutch or a weeks. cane - Walking short distances without anassistive device. - Non-antalgic gait pattern</p>
+<p>Knee range - 110 Functional range - 100 degrees achieved degrees achieved Gait - 100 meters with Gait - 50 meters with - Achievement of minimum support or 50 Discharge minimal support / No ROM 0-125 meters without support summary support HEP - adherence Stair climbing minimum Stair climbing minimum 4 10 steps up and down steps up and down with support HEP - adherence</p>
+<p>If goals are NOT achieved and patient is maximally dependent for ADL Note then refer to Physical Medicine and Rehabilitation centre (PMRC) -JSSH for further evaluation and rehabilitation. If Patient is moderately dependent for ADL refer to Physiotherapy OPD If patient is not stable with co-morbidities and not willing to stay inPMR/visit OPD,refer Home care physiotherapy</p>
+<h2 id="jss-college-of-physiotherapy-12">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-12-12">DEPT OF MUSCULOSKELETAL AND SPORTS Page 12/12</h2>
+<p>Chapter 6 Materials and Technology 149</p>
+<p>post instrument that is used to measure the resistance to the of a noncellular polyurethane derivative that possesses good compression/hardness of a material.) Polyethylene foams are shock-attenuating characteristics.34 Viscolas (Viscolas Corp., commercially available under trade names such as Plastazote Soddy Daisy, Tenn.), another type of viscoelastic solid, has (Hackettstown, N.J.), Pe-Lite, Evazote (Bakelite Xylonite Ltd., been found to attenuate skeletal shock at heel strike in the tibia Croydon, U.K.), and Aliplast (Alimed Inc., Dedham, Mass.). to half the normal load.15,35 Two other viscoelastic polymers Various polyethylene foams are used in the manufacture of soft used to fabricate orthotic prosthetic components are Viscolite and rigid orthoses, depending on the density of the material. (Polymer Dynamics, Inc., Allentown, Pa.) and PQ (Riecken's Plastazote is a low-temperature, heat-formable foam that has Orthotic Laboratories, Evansville, Ind.). been used successfully in the treatment and prevention of neu- ropathic foot lesions.22-25 Its light weight and forgiving qual-</p>
+<hr style="border:none;border-top:1px solid var(--border);margin:2.6em 0 1.4em">
+<nav class="sib" style="justify-content:space-between;display:flex;flex-wrap:wrap"><a href="18-upper-limb-fracture-assessment-form.html">&larr; Upper Limb Fracture Assessment Form</a> <a href="index.html">Index</a> <a href="20-prescription-guidelines.html">Prescription Guidelines and Orthotic Fabrication &rarr;</a></nav>
+</main></div>
+<footer><div class="wrap">Compiled study notes &middot; for academic revision. Original clinical content &copy; respective authors (Magee, Dutton, Gross et&nbsp;al. and others).</div></footer>
+</body>
+</html>

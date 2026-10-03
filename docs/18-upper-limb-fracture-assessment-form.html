@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upper Limb Fracture Assessment Form &middot; Paper 3 MSK Assessment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf7f5; --surface:#fffdfb; --surface-2:#f3ece6; --border:rgba(35,32,29,.12);
+  --text:#23201d; --text-dim:#6b635b; --accent:#b4491f; --accent-dim:#f3ddd3;
+  --accent2:#4f6b3a; --accent2-dim:#e3ebd8; --mono:#8a4b1f;
+  --font-head:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --font-body:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --maxw:74ch;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#191715; --surface:#211e1b; --surface-2:#2a2622; --border:rgba(255,255,255,.10);
+    --text:#ece7e1; --text-dim:#a79e94; --accent:#e07a4f; --accent-dim:#3a241b;
+    --accent2:#9dbb7e; --accent2-dim:#26301d; --mono:#d99a6a;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);
+  font-size:17px;line-height:1.72;-webkit-text-size-adjust:100%;
+  background-image:radial-gradient(circle at 12% -8%,var(--accent-dim),transparent 42%),
+    radial-gradient(circle at 100% 0%,var(--accent2-dim),transparent 38%);
+  background-attachment:fixed;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--surface) 70%,transparent);
+  backdrop-filter:blur(8px);position:sticky;top:0;z-index:20}
+header.top .bar{max-width:var(--maxw);margin:0 auto;padding:14px 22px;display:flex;
+  align-items:center;justify-content:space-between;gap:14px}
+.brand{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text-dim)}
+.brand b{color:var(--accent);font-weight:600}
+nav.sib{font-family:var(--font-mono);font-size:12.5px;display:flex;gap:16px}
+main{padding:40px 0 80px}
+h1{font-family:var(--font-head);font-weight:400;font-size:clamp(30px,5vw,46px);line-height:1.1;
+  margin:.2em 0 .5em;letter-spacing:-.01em}
+h2{font-family:var(--font-head);font-weight:400;font-size:clamp(21px,3vw,28px);line-height:1.2;
+  margin:1.9em 0 .5em;padding-bottom:.24em;border-bottom:1px solid var(--border)}
+h3{font-family:var(--font-body);font-weight:600;font-size:16.5px;margin:1.4em 0 .4em;
+  color:var(--accent2)}
+p{margin:0 0 1.02em;overflow-wrap:break-word}
+blockquote{margin:1.3em 0;padding:12px 18px;border-left:3px solid var(--accent);
+  background:var(--surface-2);color:var(--text-dim);font-size:15px;border-radius:0 8px 8px 0}
+.lead{font-family:var(--font-head);font-size:clamp(19px,2.4vw,23px);line-height:1.45;
+  color:var(--text-dim);max-width:60ch;margin:0 0 1.6em}
+.crumb{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.06em;color:var(--text-dim);
+  text-transform:uppercase}
+.toc{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 22px;
+  margin:0 0 2.2em}
+.toc h4{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--text-dim);margin:0 0 10px}
+.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:34px}
+@media(max-width:640px){.toc ol{columns:1}}
+.toc li{margin:.18em 0;font-size:14.5px;break-inside:avoid}
+footer{border-top:1px solid var(--border);padding:26px 22px 46px;color:var(--text-dim);
+  font-size:13px;text-align:center}
+footer .wrap{max-width:var(--maxw)}
+/* index */
+.hero{padding:56px 0 30px}
+.hero .eyebrow{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin:8px 0 10px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 20px;
+  display:flex;flex-direction:column;gap:8px;transition:transform .18s ease,border-color .18s ease}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card .num{font-family:var(--font-mono);font-size:12px;color:var(--accent);letter-spacing:.1em}
+.card h3{margin:0;font-family:var(--font-head);font-weight:400;font-size:21px;color:var(--text);
+  line-height:1.2}
+.card p{margin:0;font-size:14px;color:var(--text-dim);line-height:1.5}
+.grouphd{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--text-dim);margin:2.4em 0 .9em;padding-bottom:.5em;border-bottom:1px solid var(--border)}
+.tag{font-family:var(--font-mono);font-size:11px;color:var(--accent2);border:1px solid var(--border);
+  border-radius:999px;padding:2px 9px;align-self:flex-start}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="bar"><div class="brand"><b>Paper&nbsp;3</b> &middot; MSK Assessment</div><nav class="sib"><a href="index.html">Index</a></nav></div></header>
+<div class="wrap"><main>
+<div class="crumb">Paper 3 &middot; MSK Assessment</div>
+<h1>Upper Limb Fracture Assessment Form</h1>
+<p class="lead">Faithful study notes transcribed from the Paper 3 MSK assessment compilation (based on David J. Magee, <em>Orthopedic Physical Assessment</em>, 6th ed., and companion material).</p>
+<nav class="toc"><h4>On this page</h4><ol><li><a href="#upper-limb-fracture-assesstment-form">UPPER LIMB FRACTURE ASSESSTMENT FORM</a></li><li><a href="#upper-limb-fracture-assesstment-form-2">UPPER LIMB FRACTURE ASSESSTMENT FORM</a></li><li><a href="#radiology">Radiology</a></li><li><a href="#hypertension">Hypertension</a></li><li><a href="#edema-swelling">Edema/Swelling</a></li><li><a href="#pulse">Pulse</a></li><li><a href="#jss-college-of-physiotherapy">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-1-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 1/8</a></li><li><a href="#upper-limb-fracture-assesstment-form-3">UPPER LIMB FRACTURE ASSESSTMENT FORM</a></li><li><a href="#right-left">Right Left</a></li><li><a href="#thigh">Thigh</a></li><li><a href="#forearm">Forearm</a></li><li><a href="#hand">Hand</a></li><li><a href="#hand-function-evaluation">Hand Function Evaluation</a></li><li><a href="#jss-college-of-physiotherapy-2">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-2-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 2/8</a></li><li><a href="#upper-limb-fracture-assesstment-form-4">UPPER LIMB FRACTURE ASSESSTMENT FORM</a></li><li><a href="#expected-function-prognosis">Expected Function (Prognosis)</a></li><li><a href="#smart-goals">SMART GOALS</a></li><li><a href="#jss-college-of-physiotherapy-3">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-3-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 3/8</a></li><li><a href="#upper-limb-fracture-assesstment-form-5">UPPER LIMB FRACTURE ASSESSTMENT FORM</a></li><li><a href="#clinical-reasoning">Clinical Reasoning</a></li><li><a href="#important-information">Important Information</a></li><li><a href="#reasoning">Reasoning</a></li><li><a href="#surgical-history">Surgical History -</a></li><li><a href="#activity-status">Activity Status</a></li><li><a href="#activity-status-2">Activity Status) /</a></li><li><a href="#radiology-2">Radiology</a></li><li><a href="#surgical-incision-healing">Surgical Incision, Healing</a></li><li><a href="#swelling-stages-inflammatory">Swelling, (stages-inflammatory/</a></li><li><a href="#observation-scar-grading">Observation Scar (grading)</a></li><li><a href="#jss-college-of-physiotherapy-4">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-4-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 4/8</a></li><li><a href="#upper-limb-fracture-assesstment-form-6">UPPER LIMB FRACTURE ASSESSTMENT FORM</a></li><li><a href="#edema-swelling-2">Edema/Swelling</a></li><li><a href="#examination-sensory">Examination Sensory</a></li><li><a href="#jss-college-of-physiotherapy-5">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-5-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 5/8</a></li><li><a href="#upper-limb-fracture-assesstment-form-7">UPPER LIMB FRACTURE ASSESSTMENT FORM</a></li><li><a href="#independent">Independent</a></li><li><a href="#functional-status">Functional Status</a></li><li><a href="#mode-reasoning">Mode Reasoning</a></li><li><a href="#jss-college-of-physiotherapy-6">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-6-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 6/8</a></li><li><a href="#upper-limb-fracture-assesstment-form-8">UPPER LIMB FRACTURE ASSESSTMENT FORM</a></li><li><a href="#restore-rom">Restore ROM</a></li><li><a href="#hand-function">Hand Function</a></li><li><a href="#hep">(HEP)</a></li><li><a href="#jss-college-of-physiotherapy-7">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-7-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 7/8</a></li><li><a href="#upper-limb-fracture-assesstment-form-9">UPPER LIMB FRACTURE ASSESSTMENT FORM</a></li><li><a href="#physotherapy-opd">Physotherapy OPD</a></li><li><a href="#jss-college-of-physiotherapy-8">JSS COLLEGE OF PHYSIOTHERAPY</a></li><li><a href="#dept-of-musculoskeletal-and-sports-page-8-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 8/8</a></li></ol></nav>
+<h2 id="upper-limb-fracture-assesstment-form">UPPER LIMB FRACTURE ASSESSTMENT FORM</h2>
+<h2 id="upper-limb-fracture-assesstment-form-2">UPPER LIMB FRACTURE ASSESSTMENT FORM</h2>
+<p>Demographic Data:</p>
+<p>Name : Age: Gender: IP Number: Occupation: Address:</p>
+<p>History relevant to present condition:</p>
+<p>Mode of injury: orthopedics management: surgical management:</p>
+<p>Investigation:</p>
+<p>Lab reports</p>
+<h2 id="radiology">Radiology</h2>
+<p>Co-Morbidities:</p>
+<p>Diabetes mellitus</p>
+<h2 id="hypertension">Hypertension</h2>
+<p>Observation:</p>
+<p>Position of comfort adapted by patient (if any): Extent of cast/external fixator Drain(if any)</p>
+<p>Palpation:</p>
+<h2 id="edema-swelling">Edema/Swelling</h2>
+<p>Capillary refill Muscle spasm/guarding (if relevant)</p>
+<h2 id="pulse">Pulse</h2>
+<h2 id="jss-college-of-physiotherapy">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-1-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 1/8</h2>
+<h2 id="upper-limb-fracture-assesstment-form-3">UPPER LIMB FRACTURE ASSESSTMENT FORM</h2>
+<p>Testing:</p>
+<p>Sensory Examination:</p>
+<p>*In area below the fracture (Present/Absent)</p>
+<p>Pain Examination:</p>
+<p>pain in area other than the fracture area (if relevant) Screening of other limbs</p>
+<p>Motor Examination:</p>
+<p>Muscle Girth:</p>
+<h2 id="right-left">Right Left</h2>
+<h2 id="thigh">Thigh</h2>
+<p>Leg Arm</p>
+<h2 id="forearm">Forearm</h2>
+<h2 id="hand">Hand</h2>
+<p>Range of motion:</p>
+<p>ROM of Joint proximal and distal to Active range the fracture site</p>
+<p>Muscle strength:</p>
+<p>-Manual Muscle Testing of joints proximal and distal to fracture site.</p>
+<p>Functional Evaluation:</p>
+<h2 id="hand-function-evaluation">Hand Function Evaluation</h2>
+<p>Wrist Extension range MCP range IP range Web space</p>
+<h2 id="jss-college-of-physiotherapy-2">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-2-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 2/8</h2>
+<h2 id="upper-limb-fracture-assesstment-form-4">UPPER LIMB FRACTURE ASSESSTMENT FORM</h2>
+<p>Pinch grip</p>
+<p>Kapandji opposite score</p>
+<h2 id="expected-function-prognosis">Expected Function (Prognosis)</h2>
+<p>Hand function Proximal and distal joint mobility</p>
+<p>Plan of Care: Pre-operative/Post-Operative</p>
+<h2 id="smart-goals">SMART GOALS</h2>
+<p>Treatment Plan:</p>
+<p>*Treatment based on recent evidence /guidelines</p>
+<p>Progress Note:</p>
+<p>Functional range with assistance/without assistance Basic hand function</p>
+<p>Discharge Goals:</p>
+<p>No swelling in ankle Normal Scapular kinematics Full ROM of Shoulder Joint (except in case of lateral 1/3rd of clavicle fracture. fracture of proximal head of shoulder)</p>
+<p>Home -exercise Program:</p>
+<p>Exercise diagram No. of sets Repetition Do's Don't</p>
+<p>Follow-Up:</p>
+<h2 id="jss-college-of-physiotherapy-3">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-3-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 3/8</h2>
+<h2 id="upper-limb-fracture-assesstment-form-5">UPPER LIMB FRACTURE ASSESSTMENT FORM</h2>
+<h2 id="clinical-reasoning">Clinical Reasoning</h2>
+<p>Clinical relevance / contributing factors / Special</p>
+<h2 id="important-information">Important Information</h2>
+<p>Hypothesis / attention</p>
+<h2 id="reasoning">Reasoning</h2>
+<p>Healing / degenerative Age changes /osteoporosis/ strength / mobility Reason for surgery</p>
+<h2 id="surgical-history">Surgical History -</h2>
+<p>Incision / type of implant HT/IHD/DM/ osteoporosis Relevant medical / previous trauma Surgical conditions history and Presenting complaints Previous Functional status co- (list)</p>
+<h2 id="activity-status">Activity Status</h2>
+<p>morbidities Relevant Past history ( Body Function status/ Assisted devices used for</p>
+<h2 id="activity-status-2">Activity Status) /</h2>
+<p>supports, transfers and contributing factors mobility that may influence the exercise planning) To get information on the To correlate with the level infection, Lab present condition of inflammation and to test investigation the patient the level of calcium precursors To identify the type</p>
+<h2 id="radiology-2">Radiology</h2>
+<p>,extent of fracture</p>
+<h2 id="surgical-incision-healing">Surgical Incision, Healing</h2>
+<h2 id="swelling-stages-inflammatory">Swelling, (stages-inflammatory/</h2>
+<p>Presence of drain tubes remodelling etc.,)</p>
+<h2 id="observation-scar-grading">Observation Scar (grading)</h2>
+<p>Position of comfort To understand which adapted by patient (if position relieves pain and any): also it would help in</p>
+<h2 id="jss-college-of-physiotherapy-4">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-4-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 4/8</h2>
+<h2 id="upper-limb-fracture-assesstment-form-6">UPPER LIMB FRACTURE ASSESSTMENT FORM</h2>
+<p>educating them regarding the position of limb</p>
+<p>Extent of To understand the mobility cast/external fixator/ and stability of proximal Surgical Incision and distal joint</p>
+<h2 id="edema-swelling-2">Edema/Swelling</h2>
+<p>Palpation Sign of inflammation/Pain</p>
+<p>Capillary refill To understand peripheral perfusion(normal/decrease)</p>
+<p>To understand if there is</p>
+<h2 id="examination-sensory">Examination Sensory</h2>
+<p>any nerve involment pain If pain intensity is more then other motor examination should not be performed. To identify flags, relate to Discuss surgical with nurse history,healing,mediction in charge regarding pain medication and patient need to be followed up after pain reduction. Girth measurement (differentiate between Relate with observation swelling / wasting) - Limb Oedema (identify possible causes Active Range of Movement pattern, Perform on Motion of joints quantity, muscle activity, plinth not proximal and distal to kinematics, protective on bed in</p>
+<h2 id="jss-college-of-physiotherapy-5">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-5-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 5/8</h2>
+<h2 id="upper-limb-fracture-assesstment-form-7">UPPER LIMB FRACTURE ASSESSTMENT FORM</h2>
+<p>fracture site. mechanism) supine and Identify sitting to - Lag evaluate the - Muscle inhibition muscle - Muscle power activity (torque) Strength of muscles Strength (MMT) proximal and distal to fracture site. Total assist/ max/mod/min assist /</p>
+<h2 id="independent">Independent</h2>
+<h2 id="functional-status">Functional Status</h2>
+<p>PT Plan of care</p>
+<p>Pre- op / Prehabilitation</p>
+<h2 id="mode-reasoning">Mode Reasoning</h2>
+<p>Exercise counselling To Gain confidence Unaffected limb exercise To train mobility and strength -Finger movements Affected limb exercise -Isometrics exercise</p>
+<p>Post operative</p>
+<p>Treatment Reasoning / Progression Progress note Gain confidence Exercise education Decrease Pain Understand the underlying Pain rating (VAS / causes of pain NPRS), quality and - Cryotherapy - Inflammatory compliance at each - Positioning - Chronic visit. - Muscle activation ( - Structural active exercise / - Muscle guarding isometric exercises) - Cryotherapy ( once in every 6 hours till 6th</p>
+<h2 id="jss-college-of-physiotherapy-6">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-6-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 6/8</h2>
+<h2 id="upper-limb-fracture-assesstment-form-8">UPPER LIMB FRACTURE ASSESSTMENT FORM</h2>
+<p>post op day) Oedema control - Compression - Active exercises - Elevation with elevation - ST mobilization (If - Activity required) modification (elevation in between with active exercises)</p>
+<h2 id="restore-rom">Restore ROM</h2>
+<p>-Active exercises -Maintain Range of Slowly progress to motion in joints proximal - Resisted exercises and distal to fracture site</p>
+<p>-Isometrics exercises -to active the muscles around fracture site</p>
+<h2 id="hand-function">Hand Function</h2>
+<p>-Wrist extension exercise - MCP,IP ROM exercise -to restore the hand -grip strengthening function exercises</p>
+<p>Safe transfers and No weight bearing on ambulation affected side while transfer or ambulation Home exercise program</p>
+<h2 id="hep">(HEP)</h2>
+<p>If goals are NOT achieved and patient is maximally dependent Note for ADL then refer to Physical Medicine and Rehabilitation centre (PMRC) -JSSH for further evaluation and rehabilitation.</p>
+<h2 id="jss-college-of-physiotherapy-7">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-7-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 7/8</h2>
+<h2 id="upper-limb-fracture-assesstment-form-9">UPPER LIMB FRACTURE ASSESSTMENT FORM</h2>
+<p>If Patient is moderately dependent for ADL refer to</p>
+<h2 id="physotherapy-opd">Physotherapy OPD</h2>
+<p>If patient is not stable with co-morbidities and not willing to stay inPMR/visit OPD,refer Home care physiotherpy</p>
+<h2 id="jss-college-of-physiotherapy-8">JSS COLLEGE OF PHYSIOTHERAPY</h2>
+<h2 id="dept-of-musculoskeletal-and-sports-page-8-8">DEPT OF MUSCULOSKELETAL AND SPORTS Page 8/8</h2>
+<hr style="border:none;border-top:1px solid var(--border);margin:2.6em 0 1.4em">
+<nav class="sib" style="justify-content:space-between;display:flex;flex-wrap:wrap"><a href="17-recent-advances.html">&larr; Recent Advances</a> <a href="index.html">Index</a> <a href="19-lower-limb-fracture-assessment-form.html">Lower Limb Fracture Assessment Form &rarr;</a></nav>
+</main></div>
+<footer><div class="wrap">Compiled study notes &middot; for academic revision. Original clinical content &copy; respective authors (Magee, Dutton, Gross et&nbsp;al. and others).</div></footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Classification of Functioning, Disability and Health (ICF) &middot; Paper 3 MSK Assessment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf7f5; --surface:#fffdfb; --surface-2:#f3ece6; --border:rgba(35,32,29,.12);
+  --text:#23201d; --text-dim:#6b635b; --accent:#b4491f; --accent-dim:#f3ddd3;
+  --accent2:#4f6b3a; --accent2-dim:#e3ebd8; --mono:#8a4b1f;
+  --font-head:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --font-body:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --maxw:74ch;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#191715; --surface:#211e1b; --surface-2:#2a2622; --border:rgba(255,255,255,.10);
+    --text:#ece7e1; --text-dim:#a79e94; --accent:#e07a4f; --accent-dim:#3a241b;
+    --accent2:#9dbb7e; --accent2-dim:#26301d; --mono:#d99a6a;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);
+  font-size:17px;line-height:1.72;-webkit-text-size-adjust:100%;
+  background-image:radial-gradient(circle at 12% -8%,var(--accent-dim),transparent 42%),
+    radial-gradient(circle at 100% 0%,var(--accent2-dim),transparent 38%);
+  background-attachment:fixed;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--surface) 70%,transparent);
+  backdrop-filter:blur(8px);position:sticky;top:0;z-index:20}
+header.top .bar{max-width:var(--maxw);margin:0 auto;padding:14px 22px;display:flex;
+  align-items:center;justify-content:space-between;gap:14px}
+.brand{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text-dim)}
+.brand b{color:var(--accent);font-weight:600}
+nav.sib{font-family:var(--font-mono);font-size:12.5px;display:flex;gap:16px}
+main{padding:40px 0 80px}
+h1{font-family:var(--font-head);font-weight:400;font-size:clamp(30px,5vw,46px);line-height:1.1;
+  margin:.2em 0 .5em;letter-spacing:-.01em}
+h2{font-family:var(--font-head);font-weight:400;font-size:clamp(21px,3vw,28px);line-height:1.2;
+  margin:1.9em 0 .5em;padding-bottom:.24em;border-bottom:1px solid var(--border)}
+h3{font-family:var(--font-body);font-weight:600;font-size:16.5px;margin:1.4em 0 .4em;
+  color:var(--accent2)}
+p{margin:0 0 1.02em;overflow-wrap:break-word}
+blockquote{margin:1.3em 0;padding:12px 18px;border-left:3px solid var(--accent);
+  background:var(--surface-2);color:var(--text-dim);font-size:15px;border-radius:0 8px 8px 0}
+.lead{font-family:var(--font-head);font-size:clamp(19px,2.4vw,23px);line-height:1.45;
+  color:var(--text-dim);max-width:60ch;margin:0 0 1.6em}
+.crumb{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.06em;color:var(--text-dim);
+  text-transform:uppercase}
+.toc{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 22px;
+  margin:0 0 2.2em}
+.toc h4{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--text-dim);margin:0 0 10px}
+.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:34px}
+@media(max-width:640px){.toc ol{columns:1}}
+.toc li{margin:.18em 0;font-size:14.5px;break-inside:avoid}
+footer{border-top:1px solid var(--border);padding:26px 22px 46px;color:var(--text-dim);
+  font-size:13px;text-align:center}
+footer .wrap{max-width:var(--maxw)}
+/* index */
+.hero{padding:56px 0 30px}
+.hero .eyebrow{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin:8px 0 10px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 20px;
+  display:flex;flex-direction:column;gap:8px;transition:transform .18s ease,border-color .18s ease}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card .num{font-family:var(--font-mono);font-size:12px;color:var(--accent);letter-spacing:.1em}
+.card h3{margin:0;font-family:var(--font-head);font-weight:400;font-size:21px;color:var(--text);
+  line-height:1.2}
+.card p{margin:0;font-size:14px;color:var(--text-dim);line-height:1.5}
+.grouphd{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--text-dim);margin:2.4em 0 .9em;padding-bottom:.5em;border-bottom:1px solid var(--border)}
+.tag{font-family:var(--font-mono);font-size:11px;color:var(--accent2);border:1px solid var(--border);
+  border-radius:999px;padding:2px 9px;align-self:flex-start}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="bar"><div class="brand"><b>Paper&nbsp;3</b> &middot; MSK Assessment</div><nav class="sib"><a href="index.html">Index</a></nav></div></header>
+<div class="wrap"><main>
+<div class="crumb">Paper 3 &middot; MSK Assessment</div>
+<h1>International Classification of Functioning, Disability and Health (ICF)</h1>
+<p class="lead">Faithful study notes transcribed from the Paper 3 MSK assessment compilation (based on David J. Magee, <em>Orthopedic Physical Assessment</em>, 6th ed., and companion material).</p>
+<h2 id="international-classification-of-functioning-disability">INTERNATIONAL CLASSIFICATION OF FUNCTIONING, DISABILITY</h2>
+<h2 id="and-health-icf">AND HEALTH (ICF)</h2>
+<p> The International Classification of Functioning, Disability and Health (ICF) is a framework for describing functioning and disability in relation to a health condition.  It provides a common language and framework for describing the level of function of a person within their unique environment or in other words we can, what a person with a specific health condition can do in a standard environment (their level of capacity), also what they actually do in their usual environment (their level of performance).</p>
+<p> The ICF is a framework to approach patient care that shifts the conceptual emphasis away from negative connotations such as disability and places focus on the positive abilities of the individual at the patient level rather than the systems level.  ICF can be used to promote a shared understanding of the influences on functioning and disability.  ICF was chosen as one model that aligned well with the different disciplines and therefore would promote inter professional communication in learning activities.  The ICF reflects the multi dimensions of functioning, disability and health in a model that has relevance across a range of health disciplines, and has the potential to provide a common language in inter professional education.</p>
+<p> ICF provides a systematic means of engaging with patients, carers and interprofessional team members. Enhances respect, collaborative leadership, job satisfaction, trust relationships and accountability between team members, as well as a culture of on-going learning.</p>
+<h2 id="use-of-icf-in-musculoskeletal-diagnosis">USE OF ICF IN MUSCULOSKELETAL DIAGNOSIS</h2>
+<p> Impairments are the problems an individual may have in body function (physiological functions of body systems) or structure (anatomical parts of the body).  Activity limitations are difficulties an individual may have in executing tasks or actions. Activity limitations can include limitations in the performance of cognitive and learning skills, communication skills, functional mobility skills (FMS) (such as transfers, walking, lifting or carrying objects), and activities of daily living (ADL). Basic activities of daily living (BADL) include self- care activities of toileting, hygiene, bathing, dressing, eating, drinking, and social (interpersonal) interactions.</p>
+<p> Performance qualifiers indicate the extent of participation restriction (difficulty) in performing tasks or actions in an individual's current real-life environment.  All aspects of the physical, social, and attitudinal world constitute the environment.  Participation restrictions are problems an individual may experience in involvement in life situations and societal interactions. Categories of life roles include home management, work (job/school/play), and community/leisure.  These include instrumental activities of daily living (IADL) such as housecleaning, preparing meals, shopping, telephoning, and managing finances, as well as work and leisure activities (e.g., sports, recreation, trips).</p>
+<p> Environmental factors make up the physical, social, and attitudinal environment in which people live and function.  Factors range from products and technology (for personal use in daily living, mobility and transportation, communication) and physical factors (home environment, terrain, climate) to social support and relationships (family, friends, personal care providers), attitudes (individual and societal), and institutions and laws (housing, communication, transportation, legal, financial services, and policies).</p>
+<p>ICF Core Set for Osteoporosis  With the ICF it is now possible to define the typical spectrum of problems in functioning of patients with osteoporosis under consideration of environmental factors in a more systematic way using a globally agreed-upon language.  The preparatory phase included a systematic literature review, a Delphi exercise and an empirical data collection using the ICF checklist: • The systematic literature review was performed to identify and compare the concepts contained in outcome measures of randomized, controlled clinical trials published from 1991-2000 involving patients with osteoporosis.</p>
+<p>• The international expert survey (via email) using the Delphi technique was conducted with 21 health professionals, experts on the treatment of persons with osteoporosis, to identify the set of domains that best describe the prototypical spectrum of problems in functioning and health in persons with osteoporosis from the of health professional perspective. ICF Core Sets for Ankylosing Spondylitis</p>
+<hr style="border:none;border-top:1px solid var(--border);margin:2.6em 0 1.4em">
+<nav class="sib" style="justify-content:space-between;display:flex;flex-wrap:wrap"><a href="23-ergonomics.html">&larr; Ergonomics</a> <a href="index.html">Index</a></nav>
+</main></div>
+<footer><div class="wrap">Compiled study notes &middot; for academic revision. Original clinical content &copy; respective authors (Magee, Dutton, Gross et&nbsp;al. and others).</div></footer>
+</body>
+</html>
