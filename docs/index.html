@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper 3 &middot; MSK Assessment Notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf7f5; --surface:#fffdfb; --surface-2:#f3ece6; --border:rgba(35,32,29,.12);
+  --text:#23201d; --text-dim:#6b635b; --accent:#b4491f; --accent-dim:#f3ddd3;
+  --accent2:#4f6b3a; --accent2-dim:#e3ebd8; --mono:#8a4b1f;
+  --font-head:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --font-body:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --maxw:74ch;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#191715; --surface:#211e1b; --surface-2:#2a2622; --border:rgba(255,255,255,.10);
+    --text:#ece7e1; --text-dim:#a79e94; --accent:#e07a4f; --accent-dim:#3a241b;
+    --accent2:#9dbb7e; --accent2-dim:#26301d; --mono:#d99a6a;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);
+  font-size:17px;line-height:1.72;-webkit-text-size-adjust:100%;
+  background-image:radial-gradient(circle at 12% -8%,var(--accent-dim),transparent 42%),
+    radial-gradient(circle at 100% 0%,var(--accent2-dim),transparent 38%);
+  background-attachment:fixed;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--surface) 70%,transparent);
+  backdrop-filter:blur(8px);position:sticky;top:0;z-index:20}
+header.top .bar{max-width:var(--maxw);margin:0 auto;padding:14px 22px;display:flex;
+  align-items:center;justify-content:space-between;gap:14px}
+.brand{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text-dim)}
+.brand b{color:var(--accent);font-weight:600}
+nav.sib{font-family:var(--font-mono);font-size:12.5px;display:flex;gap:16px}
+main{padding:40px 0 80px}
+h1{font-family:var(--font-head);font-weight:400;font-size:clamp(30px,5vw,46px);line-height:1.1;
+  margin:.2em 0 .5em;letter-spacing:-.01em}
+h2{font-family:var(--font-head);font-weight:400;font-size:clamp(21px,3vw,28px);line-height:1.2;
+  margin:1.9em 0 .5em;padding-bottom:.24em;border-bottom:1px solid var(--border)}
+h3{font-family:var(--font-body);font-weight:600;font-size:16.5px;margin:1.4em 0 .4em;
+  color:var(--accent2)}
+p{margin:0 0 1.02em;overflow-wrap:break-word}
+blockquote{margin:1.3em 0;padding:12px 18px;border-left:3px solid var(--accent);
+  background:var(--surface-2);color:var(--text-dim);font-size:15px;border-radius:0 8px 8px 0}
+.lead{font-family:var(--font-head);font-size:clamp(19px,2.4vw,23px);line-height:1.45;
+  color:var(--text-dim);max-width:60ch;margin:0 0 1.6em}
+.crumb{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.06em;color:var(--text-dim);
+  text-transform:uppercase}
+.toc{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 22px;
+  margin:0 0 2.2em}
+.toc h4{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--text-dim);margin:0 0 10px}
+.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:34px}
+@media(max-width:640px){.toc ol{columns:1}}
+.toc li{margin:.18em 0;font-size:14.5px;break-inside:avoid}
+footer{border-top:1px solid var(--border);padding:26px 22px 46px;color:var(--text-dim);
+  font-size:13px;text-align:center}
+footer .wrap{max-width:var(--maxw)}
+/* index */
+.hero{padding:56px 0 30px}
+.hero .eyebrow{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin:8px 0 10px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 20px;
+  display:flex;flex-direction:column;gap:8px;transition:transform .18s ease,border-color .18s ease}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card .num{font-family:var(--font-mono);font-size:12px;color:var(--accent);letter-spacing:.1em}
+.card h3{margin:0;font-family:var(--font-head);font-weight:400;font-size:21px;color:var(--text);
+  line-height:1.2}
+.card p{margin:0;font-size:14px;color:var(--text-dim);line-height:1.5}
+.grouphd{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--text-dim);margin:2.4em 0 .9em;padding-bottom:.5em;border-bottom:1px solid var(--border)}
+.tag{font-family:var(--font-mono);font-size:11px;color:var(--accent2);border:1px solid var(--border);
+  border-radius:999px;padding:2px 9px;align-self:flex-start}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="bar">
+<div class="brand"><b>Paper&nbsp;3</b> &middot; MSK Assessment</div>
+<nav class="sib"><a href="#core">Core</a><a href="#additional">Additional</a><a href="#forms">Forms</a></nav>
+</div></header>
+<div class="wrap">
+<section class="hero">
+<div class="eyebrow">Musculoskeletal Physiotherapy &middot; Paper 3</div>
+<h1>Introduction to Assessment &amp; Basic Assessment Methods</h1>
+<p class="lead">A structured, faithful transcription of the Paper 3 MSK assessment compilation &mdash;
+screening of the spine and limbs, special tests, diagnostic imaging, fracture assessment forms and
+applied topics. Based chiefly on David J. Magee, <em>Orthopedic Physical Assessment</em>, 6th ed.,
+with companion material from Dutton, Gross et&nbsp;al. and others.</p>
+</section>
+<h2 class="grouphd">Paper 3 — Core Screening & Assessment Modules</h2>
+<div class="grid">
+<a class="card" href="01-introduction-to-assessment.html"><span class="num">MODULE 01</span><h3>Introduction to Assessment and Basic Assessment Methods</h3><span class="tag">12,343 words</span></a>
+<a class="card" href="02-screening-head-and-neck.html"><span class="num">MODULE 02</span><h3>Screening the Head and Neck</h3><span class="tag">4,345 words</span></a>
+<a class="card" href="03-screening-cervical-spine.html"><span class="num">MODULE 03</span><h3>Screening of Cervical Spine</h3><span class="tag">3,361 words</span></a>
+<a class="card" href="04-screening-lumbar-spine.html"><span class="num">MODULE 04</span><h3>Screening of Lumbar Spine</h3><span class="tag">5,078 words</span></a>
+<a class="card" href="05-screening-shoulder.html"><span class="num">MODULE 05</span><h3>Screening of Shoulder</h3><span class="tag">10,044 words</span></a>
+<a class="card" href="06-screening-elbow.html"><span class="num">MODULE 06</span><h3>Screening of Elbow</h3><span class="tag">2,844 words</span></a>
+<a class="card" href="07-screening-forearm-hand-wrist.html"><span class="num">MODULE 07</span><h3>Screening of Upper Extremity (Forearm, Hand, Wrist)</h3><span class="tag">5,652 words</span></a>
+<a class="card" href="08-screening-knee.html"><span class="num">MODULE 08</span><h3>Screening of Knee</h3><span class="tag">6,813 words</span></a>
+<a class="card" href="09-screening-hip.html"><span class="num">MODULE 09</span><h3>Screening of Hip</h3><span class="tag">4,836 words</span></a>
+<a class="card" href="10-screening-pelvis.html"><span class="num">MODULE 10</span><h3>Screening of Pelvis</h3><span class="tag">5,806 words</span></a>
+<a class="card" href="11-screening-thigh-ankle-foot.html"><span class="num">MODULE 11</span><h3>Screening of Thigh, Ankle and Foot</h3><span class="tag">7,600 words</span></a>
+</div>
+<h2 class="grouphd">Additional Modules & Applied Topics</h2>
+<div class="grid">
+<a class="card" href="12-direct-access-and-self-referral.html"><span class="num">MODULE 12</span><h3>Direct Access and Self-Referral</h3><span class="tag">8,072 words</span></a>
+<a class="card" href="13-physiotherapy-diagnosis-msk.html"><span class="num">MODULE 13</span><h3>Physiotherapy Diagnosis in the Musculoskeletal System</h3><span class="tag">23,444 words</span></a>
+<a class="card" href="14-msk-special-tests.html"><span class="num">MODULE 14</span><h3>Musculoskeletal Physical Therapy I &amp; II — Special Tests</h3><span class="tag">5,633 words</span></a>
+<a class="card" href="15-diagnostic-imaging-msk.html"><span class="num">MODULE 15</span><h3>Investigation Methods / Diagnostic Imaging in MSK</h3><span class="tag">2,417 words</span></a>
+<a class="card" href="16-exercise-testing-msk.html"><span class="num">MODULE 16</span><h3>Exercise Testing in Musculoskeletal Disease, Injury and Dysfunction</h3><span class="tag">2,606 words</span></a>
+<a class="card" href="17-recent-advances.html"><span class="num">MODULE 17</span><h3>Recent Advances</h3><span class="tag">766 words</span></a>
+<a class="card" href="21-soft-tissue-injury.html"><span class="num">MODULE 21</span><h3>Soft Tissue Injury and Repair</h3><span class="tag">10,706 words</span></a>
+<a class="card" href="22-assessment-oa-rheumatology.html"><span class="num">MODULE 22</span><h3>Assessment of Osteoarthritis and Rheumatological Conditions</h3><span class="tag">4,523 words</span></a>
+<a class="card" href="23-ergonomics.html"><span class="num">MODULE 23</span><h3>Ergonomics</h3><span class="tag">502 words</span></a>
+<a class="card" href="24-icf.html"><span class="num">MODULE 24</span><h3>International Classification of Functioning, Disability and Health (ICF)</h3><span class="tag">652 words</span></a>
+</div>
+<h2 class="grouphd">Assessment Forms & Prescription Guidelines</h2>
+<div class="grid">
+<a class="card" href="18-upper-limb-fracture-assessment-form.html"><span class="num">MODULE 18</span><h3>Upper Limb Fracture Assessment Form</h3><span class="tag">903 words</span></a>
+<a class="card" href="19-lower-limb-fracture-assessment-form.html"><span class="num">MODULE 19</span><h3>Lower Limb Fracture Assessment Form</h3><span class="tag">2,517 words</span></a>
+<a class="card" href="20-prescription-guidelines.html"><span class="num">MODULE 20</span><h3>Prescription Guidelines and Orthotic Fabrication</h3><span class="tag">2,747 words</span></a>
+</div>
+<p style="margin-top:2.4em;color:var(--text-dim);font-size:13.5px">
+24 modules &middot; full document coverage. Each module is a single self-contained page.</p>
+</div>
+<footer><div class="wrap">Compiled study notes for academic revision. Original clinical content &copy; respective authors.</div></footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Screening of Elbow &middot; Paper 3 MSK Assessment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf7f5; --surface:#fffdfb; --surface-2:#f3ece6; --border:rgba(35,32,29,.12);
+  --text:#23201d; --text-dim:#6b635b; --accent:#b4491f; --accent-dim:#f3ddd3;
+  --accent2:#4f6b3a; --accent2-dim:#e3ebd8; --mono:#8a4b1f;
+  --font-head:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --font-body:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --maxw:74ch;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#191715; --surface:#211e1b; --surface-2:#2a2622; --border:rgba(255,255,255,.10);
+    --text:#ece7e1; --text-dim:#a79e94; --accent:#e07a4f; --accent-dim:#3a241b;
+    --accent2:#9dbb7e; --accent2-dim:#26301d; --mono:#d99a6a;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);
+  font-size:17px;line-height:1.72;-webkit-text-size-adjust:100%;
+  background-image:radial-gradient(circle at 12% -8%,var(--accent-dim),transparent 42%),
+    radial-gradient(circle at 100% 0%,var(--accent2-dim),transparent 38%);
+  background-attachment:fixed;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--surface) 70%,transparent);
+  backdrop-filter:blur(8px);position:sticky;top:0;z-index:20}
+header.top .bar{max-width:var(--maxw);margin:0 auto;padding:14px 22px;display:flex;
+  align-items:center;justify-content:space-between;gap:14px}
+.brand{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text-dim)}
+.brand b{color:var(--accent);font-weight:600}
+nav.sib{font-family:var(--font-mono);font-size:12.5px;display:flex;gap:16px}
+main{padding:40px 0 80px}
+h1{font-family:var(--font-head);font-weight:400;font-size:clamp(30px,5vw,46px);line-height:1.1;
+  margin:.2em 0 .5em;letter-spacing:-.01em}
+h2{font-family:var(--font-head);font-weight:400;font-size:clamp(21px,3vw,28px);line-height:1.2;
+  margin:1.9em 0 .5em;padding-bottom:.24em;border-bottom:1px solid var(--border)}
+h3{font-family:var(--font-body);font-weight:600;font-size:16.5px;margin:1.4em 0 .4em;
+  color:var(--accent2)}
+p{margin:0 0 1.02em;overflow-wrap:break-word}
+blockquote{margin:1.3em 0;padding:12px 18px;border-left:3px solid var(--accent);
+  background:var(--surface-2);color:var(--text-dim);font-size:15px;border-radius:0 8px 8px 0}
+.lead{font-family:var(--font-head);font-size:clamp(19px,2.4vw,23px);line-height:1.45;
+  color:var(--text-dim);max-width:60ch;margin:0 0 1.6em}
+.crumb{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.06em;color:var(--text-dim);
+  text-transform:uppercase}
+.toc{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 22px;
+  margin:0 0 2.2em}
+.toc h4{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--text-dim);margin:0 0 10px}
+.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:34px}
+@media(max-width:640px){.toc ol{columns:1}}
+.toc li{margin:.18em 0;font-size:14.5px;break-inside:avoid}
+footer{border-top:1px solid var(--border);padding:26px 22px 46px;color:var(--text-dim);
+  font-size:13px;text-align:center}
+footer .wrap{max-width:var(--maxw)}
+/* index */
+.hero{padding:56px 0 30px}
+.hero .eyebrow{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin:8px 0 10px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 20px;
+  display:flex;flex-direction:column;gap:8px;transition:transform .18s ease,border-color .18s ease}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card .num{font-family:var(--font-mono);font-size:12px;color:var(--accent);letter-spacing:.1em}
+.card h3{margin:0;font-family:var(--font-head);font-weight:400;font-size:21px;color:var(--text);
+  line-height:1.2}
+.card p{margin:0;font-size:14px;color:var(--text-dim);line-height:1.5}
+.grouphd{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--text-dim);margin:2.4em 0 .9em;padding-bottom:.5em;border-bottom:1px solid var(--border)}
+.tag{font-family:var(--font-mono);font-size:11px;color:var(--accent2);border:1px solid var(--border);
+  border-radius:999px;padding:2px 9px;align-self:flex-start}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="bar"><div class="brand"><b>Paper&nbsp;3</b> &middot; MSK Assessment</div><nav class="sib"><a href="index.html">Index</a></nav></div></header>
+<div class="wrap"><main>
+<div class="crumb">Paper 3 &middot; MSK Assessment</div>
+<h1>Screening of Elbow</h1>
+<p class="lead">Faithful study notes transcribed from the Paper 3 MSK assessment compilation (based on David J. Magee, <em>Orthopedic Physical Assessment</em>, 6th ed., and companion material).</p>
+<nav class="toc"><h4>On this page</h4><ol><li><a href="#paper-3-screening-of-elbow">PAPER 3 SCREENING OF ELBOW</a></li><li><a href="#patient-history">Patient History</a></li><li><a href="#examination">EXAMINATION</a></li><li><a href="#active-movements">Active Movements</a></li><li><a href="#passive-movement">Passive Movement</a></li><li><a href="#resisted-isometric-movement">Resisted Isometric Movement</a></li><li><a href="#functional-assessment">Functional Assessment</a></li><li><a href="#special-test">Special Test</a></li><li><a href="#median-nerve-c6-c8-t1">Median Nerve (C6-C8, T1)</a></li><li><a href="#anterior-interosseous-nerve">Anterior Interosseous Nerve</a></li><li><a href="#ulnar-nerve-c7-c8-t1">Ulnar Nerve (C7-C8, T1)</a></li><li><a href="#radial-nerve-c5-c8-t1">Radial Nerve (C5-C8, T1)</a></li><li><a href="#joint-play-movement">Joint Play Movement</a></li><li><a href="#palpation">Palpation</a></li><li><a href="#anterior-aspect">Anterior Aspect</a></li><li><a href="#cubital-fossa">Cubital Fossa</a></li><li><a href="#medial-aspect">Medial Aspect</a></li><li><a href="#medial-ulnar-collateral-ligament">Medial (Ulnar) Collateral Ligament</a></li><li><a href="#lateral-aspect">Lateral Aspect</a></li><li><a href="#lateral-epicondyle">Lateral Epicondyle</a></li><li><a href="#posterior-aspect">Posterior Aspect</a></li><li><a href="#diagnostic-imaging">Diagnostic Imaging</a></li><li><a href="#plain-film-radiography">Plain Film Radiography</a></li><li><a href="#arthrography">Arthrography</a></li><li><a href="#magnetic-resonance">Magnetic Resonance</a></li><li><a href="#xerography">Xerography</a></li><li><a href="#references">References</a></li></ol></nav>
+<h2 id="paper-3-screening-of-elbow">PAPER 3 SCREENING OF ELBOW</h2>
+<p>CONTENTS : 1. Patient history 2. Observation 3. Examination 4. Palpation 5. Diagnostic Imaging 6. References</p>
+<h2 id="patient-history">Patient History</h2>
+<p>1. How old is the patient? 2. What was the mechanism of injury 3. How long has the patient had the problem? 4. 4. What are the details of the present pain and other symptoms? 5. 5. Are there any activities that increase or decrease the pain? 6. 6. Are there any positions that relieve the pain? Patients often protectively hold the elbow to the side (in the resting position) and hold the wrist for support, especially in acute conditions. 7. 7. Is there any indication of deformity, bruising (Figure 6-6), wasting, or muscle spasm? 8. 8. Are any movements impaired? 9. 9. What is the patient unable to do functionally? Which hand is dominant? 10.What is the patient's usual activity or pastime?</p>
+<p>Have any of these activities been altered or increased in the past month? 11.11. Does the patient complain of any abnormal nerve distribution pain? 12.Does the patient have a history of previous overuse injury or trauma? Observation : The patient must be suitably undressed so that both arms are exposed to allow the examiner to compare the two sides. If the history indicates an insidious onset of elbow problems, the examiner should take the time to observe full body posture, especially the neck and shoulder areas, for possible referral of symptoms. In males, the normal carrying angle is 5° to 10°; in females, it is 10° to 15°.</p>
+<p>If the carrying angle is more than 15°, it is called cubitus valgus; if it is less than 5° to 10°, it is called cubitus varus If there has been a fracture or epiphyseal injury to the distal humerus and a cubitus varus results, a gun stock deformity may occur in full extension . If swelling exists, all three joints of the elbow complex are affected because they have a common capsule. The examiner should look for normal bony and softtissue contours anteriorly and posteriorly. Often, athletes (such as, pitchers, other throwers, and rodeo riders) have a much larger forearm because of muscle and bone hypertrophy on the dominant side. The examiner should note whether the patient can assume the normal position of function of the elbow.</p>
+<p>A normal functional position is 90° of flexion with the forearm midway between supination and pronation.9 The forearm may also be considered to be in a functional position when slightly pronated, as in writing. From this position, forward flexion of the shoulder along with slightly more elbow flexion (up to 120°) enables the person to bring food to the mouth; supination of the forearm decreases the amount of shoulder flexion necessary to accomplish this olecranon process of the ulna and the medial and lateral epicondyles of the humerus normally form an isosceles triangle. When the arm is fully extended, the three points normally form a straight line.The isosceles triangle is sometimes called the triangle sign.</p>
+<p>If there is a fracture, dislocation, or degeneration leading to loss of bone or cartilage, the distance between the apex and the base decreases and the isosceles triangle no longer exists. The triangle can be measured on x-ray films.</p>
+<h2 id="examination">EXAMINATION</h2>
+<h2 id="active-movements">Active Movements</h2>
+<p>Active Movements of the Elbow Complex • Flexion of the elbow (140° to 150°) • Extension of the elbow (0° to 10°) • Supination of the forearm (90°) • Pronation of the forearm (80° to 90°) • Combined movements (if necessary) • Repetitive movements (if necessary) • Sustained positions (if necessary) When the arm is fully extended, the three points normally form a straight line.10 The isosceles triangle sign. Active elbow extension is 0°, although up to a 10° hyperextension may be exhibited, especially in women. This hyperextension is considered normal if it is equal on both sides and there is no history of trauma. Normally, the movement is arrested by the locking of the olecranon process of the ulna into the olecranon fossa of the humerus. In some cases, under violent compressive loads (e.g., gymnastics, weight lifting), the olecranon process may act as a pivot, resulting in posterior dislocation of the elbow. This mechanism of injury is more likely to occur in someone with elbows that normally hyperextended. Active supination should be 90° so that the palm faces up. The examiner should ensure that the shoulder is not adducted further in an attempt to give the appearance of increased supination or to compensate for a lack of sufficient supination.</p>
+<h2 id="passive-movement">Passive Movement</h2>
+<p>Passive Movements of the Elbow Complex and Normal End Feel • Elbow flexion (tissue approximation) • Elbow extension (bone-to-bone) • Forearm supination (tissue stretch) • Forearm pronation (tissue stretch If the ROM is full on active movements, overpressure may be gently applied to test the end feel in each direction. If the movement is not full, passive movements should be carried out carefully to test the end feel and to test for a capsular pattern. , in thin patients the end feel may be bone to bone as a result of the coronoid process hitting in the coronoid fossa. Likewise, in thin individuals, pronation may be bone to bone. In addition to the end feel tests during passive movements, the examiner should note whether a capsular pattern is present. The capsular pattern for the elbow complex as a whole is more limitation of flexion than extension. the examiner may want to determine whether muscles crossing the elbow are tight. If the muscles are tight, the end feel will be a muscle stretch, and ROM at one of the joints that the muscle passes over will be restricted . Testing length of tight muscles. A, Biceps. B, Triceps. C, Long wrist extensors. D, Long wrist flexors.</p>
+<h2 id="resisted-isometric-movement">Resisted Isometric Movement</h2>
+<p>For proper testing of the muscles of the elbow complex, the movement must be resisted and isometric. Muscle flexion power around the elbow is greatest in the range of 90° to 110° with the forearm supinated. At 45° and 135°, flexion power is only 75% of maximum.9 Isometrically, research shows that men are two times stronger than women at the elbow; extension is 60% of flexion, and pronation is about 85% of supination. To perform the resisted isometric tests, the patient is seated. Positioning for resisted isometric movements. A, Elbow extension. B, Elbow flexion. C, Forearm supination. D, Forearm pronation. E, Wrist flexion. F, Wrist extension.</p>
+<h2 id="functional-assessment">Functional Assessment</h2>
+<p>When assessing the elbow, it is important to remember that the elbow is the middle portion of an integral upper limb kinetic chain. It allows the hand to be positioned in space, helps stabilize the upper extremity for power and detailed work activities, and provides power to the arm for lifting activities.15 Motion in the elbow allows the hand to be positioned so that daily functions can be performed easily. Thus, functionally, the elbow is often one part of a functional assessment that may also involve the shoulder and/or hand.</p>
+<h2 id="special-test">Special Test</h2>
+<p>For ligamentous instability: Ligamentous valgus instability test Ligamentous varus instability test Moving valgus stress test • For biceps rupture (third-degree strain): Popeye sign (proximal long head of biceps) • For lateral epicondylitis (epicondylalgia): Cozen's test Mill's test • For neurological dysfunction: Elbow flexion test (ulnar nerve) Pinch grip test (anterior interosseous branch of median nerve) Reflexes and Cutaneous Distribution The reflexes around the elbow that are often checked include the biceps (C5- C6), brachioradialis (C5-C6), and triceps (C7-C8). The examiner should also assess the dermatomes around the elbow and the cutaneous distribution of the various nerves, noting any difference. Peripheral Nerve Injuries About the Elbow</p>
+<h2 id="median-nerve-c6-c8-t1">Median Nerve (C6-C8, T1)</h2>
+<p>In the elbow region, the median nerve proper can be injured by trauma (e.g., lacerations, fractures, dislocations), by systemic disease, and especially by compression and/or traction. The median nerve may also be pinched or compressed above the elbow as it passes under the ligament of Struthers, an anomalous structure found in approximately 1% of the population . The ligament runs from an abnormal spur on the shaft of the humerus to the medial epicondyle of the humerus. Because the brachial artery sometimes accompanies the nerve through this tunnel, it may also be compressed, resulting in possible vascular as well as neurological symptoms.</p>
+<p>In this case, the neurological involvement would include weakness of the pronator teres muscle and of those muscles affected by the pronator syndrome (see later discussion). The condition may also be called the humerus supracondylar process syndrome. Pressure in the ligament of Struthers area leads to motor loss and sensory loss of the median nerve. Initially, the patient complains of pain and paresthesia in the elbow and forearm; abnormality of motor function is secondary. With time, however, motor function is also affected, with wrist and finger flexion as well as thumb movements being most affected.</p>
+<p>A second area of compression of the median nerve as it passes through the elbow occurs where it passes through the two heads of pronator teres (pronator syndrome). In this case, the pronator teres remains normal, but the other muscles supplied by the median nerve (see Table 6-2) are affected, as is its sensory distribution. Pronation is possible, but weakness is evident as pronation is loaded. Resisted pronation with elbow and wrist flexion for 30 to 60 seconds • Resisted elbow flexion and supination • Resisted long finger flexion at the proximal interphalangeal joint • Direct pressure over the proximal aspect of pronator teres during pronation It is interesting to note that one of the tests is similar to Mill's test for lateral epicondylitis.</p>
+<p>The results should be compared with the good side, and production of the patient's symptoms is considered a positive test.</p>
+<h2 id="anterior-interosseous-nerve">Anterior Interosseous Nerve</h2>
+<p>The anterior interosseous nerve, which is a branch of the median nerve, is sometimes pinched or entrapped as it passes between the two heads of the pronator teres muscle, leading to pain and functional impairment of the flexor pollicis longus, the lateral half of the flexor digitorum profundus, and the pronator quadratus muscles. The condition is called anterior interosseous nerve syndrome is characterized by a pinch deformity. The deformity results from the paralysis of the flexors of the index finger and thumb. This leads to extension of the distal interphalangeal joint of the index finger and the interphalangeal joint of the thumb. The resulting pinch is pulp to pulp rather than tip to tip. It has been reported that the nerve may also be injured with a forearm fracture . With anterior interosseous syndrome, there is no sensory loss, because the anterior interosseous nerve is a motor nerve; signs and symptoms of the condition are related to motor function.</p>
+<h2 id="ulnar-nerve-c7-c8-t1">Ulnar Nerve (C7-C8, T1)</h2>
+<p>In the elbow region, the ulnar nerve is most likely to be injured, compressed, or stretched in the cubital tunnel .In fact, it is a common entrapment neuropathy, second only to carpal tunnel syndrome. The ulnar nerve may be injured or compressed as a result of swelling (e.g., trauma, pregnancy), osteophytes, arthritic diseases, trauma, or repeated microtrauma. In fact, it is a common entrapment neuropathy, second only to carpal tunnel syndrome. The ulnar nerve may be injured or compressed as a result of swelling (e.g., trauma, pregnancy), osteophytes, arthritic diseases, trauma, or repeated microtrauma.</p>
+<p>Compression is altered as the elbow moves from extension (decreased) to flexion (increased), causing traction on the nerve, and is further enhanced if a significant cubitus valgus is present.53,54 Symptoms therefore are more likely to occur when the elbow is flexed. It is usually in the cubital tunnel area that the ulnar nerve is affected, leading to tardy ulnar palsy. If the problem is the result of restriction in the cubital tunnel, direct pressure over the tunnel may reproduce or exacerbate the symptoms Tardy ulnar palsy implies that the symptoms of nerve injury come on long after the patient has been injured; this delayed reaction seems to be unique to the ulnar nerve.</p>
+<p>Although most common in adults, it has been reported in children, and in children the delay has been up to 29 months.55 In adults, the possibility of a double crush injury (at cervical spine and elbow) should always be considered. Injury to the ulnar nerve in the cubital tunnel affects the flexor carpi ulnaris and the ulnar half of the flexor digitorum profundus in the forearm, the hypothenar eminence in the hand (flexor digiti minimi, abductor digiti minimi, opponens digiti minimi, and adductor pollicis), the interossei, and the third and fourth lumbrical muscles (see Table 6-2).</p>
+<p>Commonly, patients cannot fully adduct the little finger and hold the finger abducted and extended, because the denervated palmar interosseous muscle cannot oppose the abductor digiti minimi .</p>
+<h2 id="radial-nerve-c5-c8-t1">Radial Nerve (C5-C8, T1)</h2>
+<p>The radial nerve may be injured near the elbow if there is a fracture of the shaft of the humerus. The nerve may be damaged as it winds around behind the humerus in the radial groove. Injury may occur at the time of the fracture, or the nerve may get caught in the callus of fracture healing. Because the radial nerve supplies all of the extensor muscles of the arm, only the triceps is spared with this type of injury, and even it may show some weakness. The major branch of the radial nerve in the forearm is the posterior interosseous nerve, which is given off in front of the lateral epicondyle of the humerus.</p>
+<p>This branch may compress as it passes between the two heads of the supinator in the arcade or canal of Frohse, a fibrous arch in the supinator muscle occurring in 30% of the population . Compression can lead to functional involvement of the forearm extensor muscles and functional wrist drop, and so the patient has difficulty or is unable to stabilize the wrist for proper hand function. Diagnosis of this condition is often delayed because there is no sensory deficit. Direct pressure over the supinator muscle while resisting supination may elicit weakness of supination or tenderness.</p>
+<p>The major branch of the radial nerve in the forearm is the posterior interosseous nerve, which is given off in front of the lateral epicondyle of the humerus.This branch may compress as it passes between the two heads of the supinator in the arcade or canal of Frohse, a fibrous arch in the supinator muscle occurring in 30% of the population.Compression can lead to functional involvement of the forearm extensor muscles and functional wrist drop, and so the patient has difficulty or is unable to stabilize the wrist for proper hand function. Diagnosis of this condition is often delayed because there is no sensory deficit. Direct pressure over the supinator muscle while resisting supination may elicit weakness of supination or tenderness.</p>
+<p>of extensor carpi radialis brevis and its fascia, and at the distal border of supinator. This condition, sometimes called radial tunnel syndrome, may mimic tennis elbow. If the patient has a persistent form of tennis elbow, a possible nerve lesion or cervical problem should be considered. A third area of pathology is compression of the supererficial branch of the radial nerve as it passes under the tendon of the brachioradialis. This branch is sensory only, and the patient complains primarily of nocturnal pain along the dorsum of the wrist, thumb, and web space. Trauma, a tight cast, any swelling in the area, or forearm pronation with wrist flexion and ulnar deviation may cause the compression and produce paresthesia.</p>
+<p>Direct pressure at the junction of extensor carpi radialis longus and brachioradialis may also reproduce the paresthesia or numbness. The condition is referred to as cheiralgia paresthetica or Wartenberg disease/sign.</p>
+<h2 id="joint-play-movement">Joint Play Movement</h2>
+<p>Joint Play Movements of the Elbow Complex • Radial deviation of the ulna and radius on the humerus • Ulnar deviation of the ulna and radius on the humerus • Distraction of the olecranon from the humerus in 90° of flexion • Anteroposterior glide of the radius on the humerus</p>
+<h2 id="palpation">Palpation</h2>
+<p>Palpation around the elbow. A, Olecranon fossa. B, Posterolateral aspect of the elbow. C, Posteromedial aspect of the elbow.</p>
+<h2 id="anterior-aspect">Anterior Aspect</h2>
+<h2 id="cubital-fossa">Cubital Fossa</h2>
+<p>Coronoid Process and Head of Radius.</p>
+<h2 id="medial-aspect">Medial Aspect</h2>
+<p>Medial Epicondyle.</p>
+<h2 id="medial-ulnar-collateral-ligament">Medial (Ulnar) Collateral Ligament</h2>
+<p>Ulnar Nerve.</p>
+<h2 id="lateral-aspect">Lateral Aspect</h2>
+<h2 id="lateral-epicondyle">Lateral Epicondyle</h2>
+<p>Lateral (Radial) Collateral Ligament. Annular Ligament.</p>
+<h2 id="posterior-aspect">Posterior Aspect</h2>
+<p>Olecranon Process and Olecranon Bursa. Triceps Muscle.</p>
+<h2 id="diagnostic-imaging">Diagnostic Imaging</h2>
+<h2 id="plain-film-radiography">Plain Film Radiography</h2>
+<p>Common X-Ray Views of the Elbow (Depending on Pathology) • Anteroposterior view • Lateral view at 90° flexion • Cubital tunnel view • Anteroposterior internal oblique view • Anteroposterior external oblique view (trauma)</p>
+<h2 id="arthrography">Arthrography</h2>
+<p>the views seen in normal elbow arthrograms. With the advent of magnetic resonance imaging (MRI), this technique is seldom used today.</p>
+<h2 id="magnetic-resonance">Magnetic Resonance</h2>
+<p>Imaging MRI is used to differentiate bone and soft tissues. Because of its high soft-tissue contrast, MRI, a noninvasive technique is able to discriminate among bone marrow, cartilage, tendons, nerves, and vessels without the use of a contrast medium. The technique is used to demonstrate tendon ruptures, collateral ligament ruptures, cubital tunnel pathology, epicondylitis, and osteochondritis dissecans.</p>
+<h2 id="xerography">Xerography</h2>
+<p>Can illustrate the detailed borders of the various structures around the elbow</p>
+<h2 id="references">References</h2>
+<p>David J. magee : orthopedic physical assessment 6th edition .</p>
+<hr style="border:none;border-top:1px solid var(--border);margin:2.6em 0 1.4em">
+<nav class="sib" style="justify-content:space-between;display:flex;flex-wrap:wrap"><a href="05-screening-shoulder.html">&larr; Screening of Shoulder</a> <a href="index.html">Index</a> <a href="07-screening-forearm-hand-wrist.html">Screening of Upper Extremity (Forearm, Hand, Wrist) &rarr;</a></nav>
+</main></div>
+<footer><div class="wrap">Compiled study notes &middot; for academic revision. Original clinical content &copy; respective authors (Magee, Dutton, Gross et&nbsp;al. and others).</div></footer>
+</body>
+</html>

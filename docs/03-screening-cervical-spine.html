@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Screening of Cervical Spine &middot; Paper 3 MSK Assessment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf7f5; --surface:#fffdfb; --surface-2:#f3ece6; --border:rgba(35,32,29,.12);
+  --text:#23201d; --text-dim:#6b635b; --accent:#b4491f; --accent-dim:#f3ddd3;
+  --accent2:#4f6b3a; --accent2-dim:#e3ebd8; --mono:#8a4b1f;
+  --font-head:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --font-body:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --maxw:74ch;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#191715; --surface:#211e1b; --surface-2:#2a2622; --border:rgba(255,255,255,.10);
+    --text:#ece7e1; --text-dim:#a79e94; --accent:#e07a4f; --accent-dim:#3a241b;
+    --accent2:#9dbb7e; --accent2-dim:#26301d; --mono:#d99a6a;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);
+  font-size:17px;line-height:1.72;-webkit-text-size-adjust:100%;
+  background-image:radial-gradient(circle at 12% -8%,var(--accent-dim),transparent 42%),
+    radial-gradient(circle at 100% 0%,var(--accent2-dim),transparent 38%);
+  background-attachment:fixed;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--surface) 70%,transparent);
+  backdrop-filter:blur(8px);position:sticky;top:0;z-index:20}
+header.top .bar{max-width:var(--maxw);margin:0 auto;padding:14px 22px;display:flex;
+  align-items:center;justify-content:space-between;gap:14px}
+.brand{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text-dim)}
+.brand b{color:var(--accent);font-weight:600}
+nav.sib{font-family:var(--font-mono);font-size:12.5px;display:flex;gap:16px}
+main{padding:40px 0 80px}
+h1{font-family:var(--font-head);font-weight:400;font-size:clamp(30px,5vw,46px);line-height:1.1;
+  margin:.2em 0 .5em;letter-spacing:-.01em}
+h2{font-family:var(--font-head);font-weight:400;font-size:clamp(21px,3vw,28px);line-height:1.2;
+  margin:1.9em 0 .5em;padding-bottom:.24em;border-bottom:1px solid var(--border)}
+h3{font-family:var(--font-body);font-weight:600;font-size:16.5px;margin:1.4em 0 .4em;
+  color:var(--accent2)}
+p{margin:0 0 1.02em;overflow-wrap:break-word}
+blockquote{margin:1.3em 0;padding:12px 18px;border-left:3px solid var(--accent);
+  background:var(--surface-2);color:var(--text-dim);font-size:15px;border-radius:0 8px 8px 0}
+.lead{font-family:var(--font-head);font-size:clamp(19px,2.4vw,23px);line-height:1.45;
+  color:var(--text-dim);max-width:60ch;margin:0 0 1.6em}
+.crumb{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.06em;color:var(--text-dim);
+  text-transform:uppercase}
+.toc{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 22px;
+  margin:0 0 2.2em}
+.toc h4{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--text-dim);margin:0 0 10px}
+.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:34px}
+@media(max-width:640px){.toc ol{columns:1}}
+.toc li{margin:.18em 0;font-size:14.5px;break-inside:avoid}
+footer{border-top:1px solid var(--border);padding:26px 22px 46px;color:var(--text-dim);
+  font-size:13px;text-align:center}
+footer .wrap{max-width:var(--maxw)}
+/* index */
+.hero{padding:56px 0 30px}
+.hero .eyebrow{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin:8px 0 10px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 20px;
+  display:flex;flex-direction:column;gap:8px;transition:transform .18s ease,border-color .18s ease}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card .num{font-family:var(--font-mono);font-size:12px;color:var(--accent);letter-spacing:.1em}
+.card h3{margin:0;font-family:var(--font-head);font-weight:400;font-size:21px;color:var(--text);
+  line-height:1.2}
+.card p{margin:0;font-size:14px;color:var(--text-dim);line-height:1.5}
+.grouphd{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--text-dim);margin:2.4em 0 .9em;padding-bottom:.5em;border-bottom:1px solid var(--border)}
+.tag{font-family:var(--font-mono);font-size:11px;color:var(--accent2);border:1px solid var(--border);
+  border-radius:999px;padding:2px 9px;align-self:flex-start}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="bar"><div class="brand"><b>Paper&nbsp;3</b> &middot; MSK Assessment</div><nav class="sib"><a href="index.html">Index</a></nav></div></header>
+<div class="wrap"><main>
+<div class="crumb">Paper 3 &middot; MSK Assessment</div>
+<h1>Screening of Cervical Spine</h1>
+<p class="lead">Faithful study notes transcribed from the Paper 3 MSK assessment compilation (based on David J. Magee, <em>Orthopedic Physical Assessment</em>, 6th ed., and companion material).</p>
+<nav class="toc"><h4>On this page</h4><ol><li><a href="#patient-history">Patient History</a></li><li><a href="#observation">Observation</a></li><li><a href="#examination">Examination</a></li><li><a href="#palpation">Palpation</a></li><li><a href="#diagnostic-imaging">Diagnostic Imaging</a></li><li><a href="#references">References</a></li><li><a href="#patient-history-2">PATIENT HISTORY</a></li><li><a href="#observation-2">OBSERVATION</a></li><li><a href="#examination-2">EXAMINATION</a></li><li><a href="#active-movements">Active Movements</a></li><li><a href="#passive-movements">Passive Movements</a></li><li><a href="#resisted-isometric-movements">Resisted Isometric Movements</a></li><li><a href="#scanning-examination">Scanning Examination</a></li><li><a href="#myotomes">Myotomes</a></li><li><a href="#cervical-myotomes">Cervical Myotomes</a></li><li><a href="#sensory-scanning-examination">Sensory Scanning Examination</a></li><li><a href="#functional-assessment">Functional Assessment</a></li><li><a href="#neck-disability-index-ndi">Neck Disability Index (NDI)</a></li><li><a href="#special-tests">Special Tests</a></li><li><a href="#erb-duchenne-paralysis">Erb-Duchenne Paralysis</a></li><li><a href="#klumpke-dejerine-klumpke-paralysis">Klumpke (Dejerine-Klumpke) Paralysis</a></li><li><a href="#brachial-plexus-birth-palsy">Brachial Plexus Birth Palsy</a></li><li><a href="#joint-play-movement">Joint Play Movement</a></li><li><a href="#palpation-2">Palpation</a></li><li><a href="#posterior-aspect">Posterior Aspect</a></li><li><a href="#external-occipital-protuberance">External Occipital Protuberance</a></li><li><a href="#lateral-aspect">Lateral Aspect</a></li><li><a href="#anterior-aspect">Anterior Aspect</a></li><li><a href="#paranasal-sinuses">Paranasal Sinuses</a></li><li><a href="#first-three-ribs">First Three Ribs</a></li><li><a href="#supraclavicular-fossa">Supraclavicular Fossa</a></li><li><a href="#diagnostic-imaging-2">Diagnostic Imaging</a></li><li><a href="#plain-film-radiography">Plain Film Radiography</a></li><li><a href="#computed-tomography">Computed Tomography</a></li><li><a href="#myelography">Myelography</a></li><li><a href="#magnetic-resonance-imaging">Magnetic Resonance Imaging</a></li><li><a href="#xeroradiography">Xeroradiography</a></li><li><a href="#references-2">References</a></li></ol></nav>
+<p>Paper 3 : Screening of cervical Spine Contents :</p>
+<h2 id="patient-history">Patient History</h2>
+<h2 id="observation">Observation</h2>
+<h2 id="examination">Examination</h2>
+<h2 id="palpation">Palpation</h2>
+<h2 id="diagnostic-imaging">Diagnostic Imaging</h2>
+<h2 id="references">References</h2>
+<h2 id="patient-history-2">PATIENT HISTORY</h2>
+<p>1. What is the patient's age? 2. What are the symptoms, and which are most severe? 3. What was the mechanism of injury? 4. Has the patient had neck pain before? 5. What is the patient's usual activity or pastime? 6. Did the head strike anything, or did the patient lose consciousness? 7. Did the symptoms come on right away? 8. What are the sites and boundaries of the pain? 9. Is there any radiation of pain? 10. Is the pain affected by laughing, coughing, sneezing, or straining? 11. Does the patient have any headaches? If so, where? How frequently do they occur? 12. Does a position change alter the headache or pain? 13. Is paresthesia (a "pins and needles" feeling) present? 14. Does the patient experience any tingling in the extremities? 15.</p>
+<p>Are there any lower limb symptoms? 16. Does the patient have any difficulty walking? Does the patient have problems with balance? Does the patient stumble when walking, have trouble walking in the dark, or walk with feet wide apart? 17. Does the patient experience dizziness, faintness, or seizures? What is the degree, frequency, and duration of the dizziness? Is it associated with certain head positions or body positions? 18. Does the patient exhibit or complain of any sympathetic symptoms? 19. Is the condition improving, worsening or staying the same? 20. Which activities aggravate the problem? Which activities ease the problem? Are there any head or neck positions that the patient finds particularly bothersome? 21.</p>
+<p>Does the patient complain of any restrictions when performing movement? 22. Is the patient a mouth breather? 23. Is there any difficulty in swallowing (dysphagia), or have there been any voice changes? 24. What can be learned about the patient's sleeping position? Is there any problem sleeping? How many pillows does the patient use, and what type are they (e.g., feather, foam, buckwheat)? 25. Does the patient display any cognitive dysfunction?</p>
+<h2 id="observation-2">OBSERVATION</h2>
+<p>For a proper observation, the patient must be suitably undressed. However, the examiner should also watch the patient as he or she enters the examination room, and before or while he or she undresses. The spontaneous movements of these activities can be very helpful in determining the patient's problems. For example, can the patient easily move the head when undressing? A male patient should wear only shorts, and a female patient should wear a bra and shorts for this part of the assessment. In some cases, the bra may have to be removed to determine whether there are any problems, such as thoracic outlet syndrome, thoracic symptoms being referred to the cervical spine, or functional restriction of movement of the ribs.</p>
+<p>The examiner should note the willingness of the patient to move and the patterns of movement demonstrated. The facial expression of the patient can often give the examiner an indication of the amount of pain the patient is experiencing. The patient may be seated or standing. Usually, a standing posture is best because the posture of the whole body can be observed Abnormalities in one area frequently affect another area. For example, excessive lumbar lordosis may cause a "poking" chin to compensate for the lumbar deformity and to maintain the body's center of gravity. In the cervical spine region, the examiner should note the following: Head and Neck Posture.</p>
+<p>Is the head in the midline, and does the patient have a normal lordotic curvature (30° to 40°)? This curvature along with the other spinal curvatures in the lower spine provides a shock absorption mechanism for the spine and helps the body maintain its center of gravity.57 From the front, the chin should be in line with the sternum (manubrium) and from the side, the ears should be in line with the shoulder and the forehead vertical. Is there evidence of torticollis (congenital or acquired) vertebra, usually C3 to C5)), or other neck deformity? Does the patient exhibit a poking chin or a "military posture?" A habitual poking chin can result in adaptive shortening of the occipital muscles.</p>
+<p>It also causes the cervical spine to change alignment resulting in increased stress of the facet joints and posterior discs and other posterior elements.The position may also lead to weaknesses of the deep neck flexors was described a cervical "upper crossed syndrome" to show the effect of a "poking chin" posture on the muscles. Does the head sit in the middle of the shoulders? Is the head tilted or rotated to one side or the other, indicating possible torticollis? Does this posture appear to be habitual (in other words, does the patient always go back to this posture)? Habitual posture may result from postural compensation, weak muscles, hearing loss, temporomandibular joint problems, or wearing of bifocals or trifocals.</p>
+<p>The trapezius neckline should be equal on both sides. Head and neck posture should be checked with the patient sitting and then standing, and any differences should be noted. Shoulder Levels Usually the shoulder on the dominant side will be slightly lower than that on the nondominant side. With injury, the injured side may be elevated to provide protection (e.g., upper trapezius and/or levator scapulae) or because of muscle spasm. Rounded shoulders may be the result of or the cause of a poking chin. Rounding also causes the scapulae to protract, the humerus to medially rotate, and the anterior structures of the shoulder to tighten.</p>
+<p>Muscle Spasm or Any Asymmetry Is there any atrophy of the deltoid muscle (axillary nerve palsy) or torticollis (muscle spasm, tightness, or prominence of the sternocleidomastoid muscle)? Facial Expression The examiner should observe the patient's facial expression as the patient moves from position to position, makes different movements, and explains the problem. Such observation should give the examiner an idea of how much the patient is subjectively suffering. Bony and Soft-Tissue Contours If the cervical spine is injured, the head tends to be tilted and rotated away from the pain, and the face is tilted upward. If the patient is hysterical, the head tends to be tilted and rotated toward the pain, and the face is tilted down.</p>
+<p>Evidence of Ischemia in Either Upper Limb The examiner should note any altered coloration of the skin, ulcers, or vein distention as evidence of upper limb ischemia. Normal Sitting Posture The nose should be in line with the manubrium and xiphoid process of the sternum. From the side the ear lobe should be in line with the acromion process and the high point on the iliac crest for proper postural alignment. The normal curve of the cervical spine is a lordotic type of curve. Referred pain from conditions, such as spondylosis, tends to occur in the shoulder and arm rather than the neck.</p>
+<h2 id="examination-2">EXAMINATION</h2>
+<p>A complete examination of the cervical spine must be performed, including the neck and both upper limbs. Many of the symptoms that occur in an upper limb originate from the neck. Unless there is a history of definite trauma to a peripheral joint, an upper limb scanning examination must be performed to rule out problems within the neck.</p>
+<h2 id="active-movements">Active Movements</h2>
+<p>The first movements that are carried out are the active movements of the cervical spine with the patient in the sitting position. The examiner is looking for differences in range of movement and in the patient's willingness to do the movement. The ROM taking place in this phase is the summation of all movements of the entire cervical spine, not just at one level. This combined movement allows for greater mobility in the cervical spine while still providing a firm support for the trunk and appendages.</p>
+<p>The ROM available in the cervical spine is the result of many factors, such as the flexibility of the intervertebral discs, the shape and inclination of the articular processes of the facet joints, and the slight laxity of the ligaments and joint capsules. Female patients tend to have a greater active range of motion than males, except in flexion, but the differences are not great. The range available decreases with age, except rotation at C1 to C2, which may increase. The movements should be done in a particular order so that the most painful movements are done last, and no residual pain is carried over from the previous movement.1 If the patient has complained of pain on specific movements in the history, these movements are done last.</p>
+<p>In the very acute cervical spine, only some movements- those that give the most information-are performed in order to avoid undue exacerbation of symptoms. Active Movements of the Cervical Spine • Flexion • Extension • Side flexion left and right • Rotation left and right • Combined movements (if necessary) • Repetitive movements (if necessary) • Sustained positions (if necessary</p>
+<h2 id="passive-movements">Passive Movements</h2>
+<p>If the patient does not have full ROM or the examiner has not applied overpressure to determine the end feel of the movement, the patient should be asked to lie in a supine position. The examiner then passively tests flexion, extension, side flexion, and rotation, as in the active movements. The passive ROM with the patient supine is normally greater than the active and passive ROM with the patient sitting. For example, in sitting, active side flexion is about 45°, whereas in supine lying, passive side flexion is 75° to 80° with the examiner often able to take the ear to the shoulder. This increased range in the supine position results from relaxation of the muscles that, in sitting, are trying to hold the head up against gravity.</p>
+<p>For the cervical spine, therefore, passive movements with overpressure should be performed along with active movements. Active movements with overpressure at end of range do not give a true impression of end feel for the cervical spine. During passive movements, the examiner can palpate between adjacent vertebra to feel the relative amount of movement on each side. For flexion, the examiner palpates between the mastoid process and the transverse process for movement between C0 and C1) and between the arch of C1 and spinous process of C2 for movement between C1 and C2. For the rest of the cervical spine and upper thoracic spine, the examiner can palpate between the spinous processes at each level while passively and progressively flexing the spine.</p>
+<p>To feel the movement, the examiner will find that as one works down the spine from C2 to C7, more flexion is required to feel the movement. Movement at each segment during side flexion and rotation may be felt by palpating the adjacent transverse processes on each side while doing the movement. To test rotation between the occiput and C1, the examiner holds the patient's head in position and palpates the transverse processes of C1. Passive Movements of the Cervical Spine and Normal End Feel • Flexion (tissue stretch) • Extension (tissue stretch) • Side flexion right and left (tissue stretch) • Rotation right and left (tissue stretch)</p>
+<h2 id="resisted-isometric-movements">Resisted Isometric Movements</h2>
+<p>Resisted Isometric Movements of the Cervical Spine • Flexion • Extension • Side flexion right and left • Rotation right and left The same movements that were done actively (flexion, extension, side flexion, and rotation) are then tested isometrically to determine relative muscle strength of each movement and to compare opposite movements.</p>
+<p>It is better for the examiner to place the patient in the resting position and then say, "Don't let me move you," rather than to tell the patient, "Contract the muscle as hard as possible." In this way, the examiner ensures that the movement is as isometric as possible and that a minimal amount of movement occurs .The examiner should ensure that these movements are done with the cervical spine in the neutral position and that painful movements are done last. Neck flexion tests cranial nerve XI and the C1 and C2 myotomes as well as muscle strength or state.), the examiner is often able to decide which muscle is at fault.</p>
+<p>If, in the history, the patient has complained that certain loaded or combined movements (those movements giving resistance other than gravity) are painful, the examiner should not hesitate to carefully test these movements isometrically to better ascertain the problem. If a neurological injury is suspected, the examiner must carefully assess for muscle weakness to determine the structures injured. If a severe neuropraxia or axonotmesis has occurred, there may be residual weakness even though muscle atrophy may not be evident.</p>
+<h2 id="scanning-examination">Scanning Examination</h2>
+<h2 id="myotomes">Myotomes</h2>
+<h2 id="cervical-myotomes">Cervical Myotomes</h2>
+<p>• Neck flexion: C1 to C2 • Neck side flexion: C3 and cranial nerve XI • Shoulder elevation: C4 and cranial nerve XI • Shoulder abduction/shoulder lateral rotation: C5 • Elbow flexion and/or wrist extension: C6 • Elbow extension and/or wrist flexion: C7 • Thumb extension and/or ulnar deviation: C8 • Abduction and/or adduction of hand intrinsics: T1</p>
+<h2 id="sensory-scanning-examination">Sensory Scanning Examination</h2>
+<p>The examiner then tests sensation by doing a sensory scanning examination. This "sensory scan" is accomplished by running relaxed hands over the patient's head (sides and back); down over the shoulders, upper chest, and back; and down the arms, being sure to cover all aspects of the arm. If any difference is noted between the sides in this "sensation scan," the examiner may then use a pinwheel, pin, cotton batting, or brush (or a combination of these) to map out the exact area of sensory difference and to determine if any sensory difference is due to a nerve root (see later section on reflexes and cutaneous distribution), peripheral nerve, or some other neurological deficit. The sensory scanning examination may also include the testing of reflexes, especially the deep tendon reflexes, to test for upper and lower neuron pathology and pathological reflexes for upper motor neuron pathology, and the performance of selected neurodynamic tests (e.g., upper limb tension test, slump test) if peripheral nerve irritability is suspected.</p>
+<h2 id="functional-assessment">Functional Assessment</h2>
+<p>If, in the history, the patient has complained of functional difficulties or the examiner suspects some functional impairment, a series of functional tests or movements may be performed to determine the patient's functional capacity, keeping in mind the patient's age and health. These tests may include activities of daily living (ADLs) such as the following Functional Assessment of the Cervical Spine • Activities of daily living (ADLs) • Numerical scoring table (if desired) Breathing, Swallowing, Looking Up at the Ceiling, Looking Down at Belt Buckle or Shoe Laces, Shoulder Check, Tuck Chin In, Poke Chin Out, Neck Strength, Paresthesia.</p>
+<h2 id="neck-disability-index-ndi">Neck Disability Index (NDI)</h2>
+<h2 id="special-tests">Special Tests</h2>
+<p>Reflexes and Cutaneous Distribution If the examiner suspects neurological involvement during the assessment, reflex testing and cutaneous sensation should be tested. For the cervical spine, the following reflexes should be checked for differences between the two sides, as shown in Figure 3-65: biceps (C5 to C6), the brachioradialis (C5 to C6), the triceps (C7 to C8), and the jaw jerk (cranial nerve V). Bland32 felt the jaw jerk was a useful diagnostic test. A normal (negative) jaw jerk combined with positive (exaggerated) tendon reflexes in the upper limb suggested the lesion was below the foramen magnum. If both reflexes were abnormal, then the lesion is above the pons. Common Reflexes Checked in Cervical Spine Assessment • Biceps (C5, C6) • Triceps (C7, C8) • Hoffmann sign (if upper motor neuron lesion suspected Brachial Plexus Injuries of the Cervical Spine</p>
+<h2 id="erb-duchenne-paralysis">Erb-Duchenne Paralysis</h2>
+<h2 id="klumpke-dejerine-klumpke-paralysis">Klumpke (Dejerine-Klumpke) Paralysis</h2>
+<h2 id="brachial-plexus-birth-palsy">Brachial Plexus Birth Palsy</h2>
+<p>Burners and Stingers</p>
+<h2 id="joint-play-movement">Joint Play Movement</h2>
+<p>The joint play movements that are carried out in the cervical spine may be general movements (called passive intervertebral movements [PIVMs]) that involve the entire cervical spine (first four below) or specific movements isolated to one segment. As the joint play movements are performed, the examiner should note any decreased ROM, pain, or difference in end feel. Joint Play Movements of the Cervical Spine • Side glide of the cervical spine (general) • Anterior glide of the cervical spine (general) • Posterior glide of the cervical spine (general) • Traction glide of the cervical spine (general) • Rotation of the occiput on C1 (specific) • Posteroanterior central vertebral pressure (specific) • Posteroanterior unilateral vertebral pressure (specific) • Transverse vertebral pressure (specific)</p>
+<h2 id="palpation-2">Palpation</h2>
+<p>If, after completing the examination of the cervical spine, the examiner decides the problem is in another joint, palpation should be delayed until that joint is completely examined. However, during palpation of the cervical spine, the examiner should note any tenderness, trigger points, muscle spasm, or other signs and symptoms that may indicate the source of the pathology. Pain provocation and landmark location has been found to have the greatest intrarater reliability with palpation. As with any palpation, the examiner should note the texture of the skin and surrounding bony and soft tissues on the posterior, lateral, and anterior aspects of the neck.</p>
+<p>Usually, palpation is performed with the patient supine so that maximum relaxation of the neck muscles is possible. However, the examiner may palpate with the patient sitting (patient resting the head on forearms that are resting on something at shoulder height) or lying prone (on a table with a face hole) if it is more comfortable for the patient. To palpate the posterior structures, the examiner stands at the patient's head behind the patient. With the patient lying supine, the patient's head is "cupped" in the examiner's hand while the examiner palpates with the fingers of both hands. For the lateral and anterior structures, the examiner stands at the patient's side.</p>
+<h2 id="posterior-aspect">Posterior Aspect</h2>
+<h2 id="external-occipital-protuberance">External Occipital Protuberance</h2>
+<p>Spinous Processes and Facet Joints of Cervical Vertebrae Mastoid Processes (Below and Behind Ear Lobe</p>
+<h2 id="lateral-aspect">Lateral Aspect</h2>
+<p>Transverse Processes of Cervical Vertebrae Lymph Nodes and Carotid Arteries Temporomandibular Joints, Mandible, and Parotid Glands</p>
+<h2 id="anterior-aspect">Anterior Aspect</h2>
+<p>Hyoid Bone, Thyroid Cartilage, and First Cricoid Ring</p>
+<h2 id="paranasal-sinuses">Paranasal Sinuses</h2>
+<h2 id="first-three-ribs">First Three Ribs</h2>
+<h2 id="supraclavicular-fossa">Supraclavicular Fossa</h2>
+<h2 id="diagnostic-imaging-2">Diagnostic Imaging</h2>
+<p>Imaging techniques should primarily be performed as an adjunct to the clinical examination. The appearance of many degenerative changes or anatomical or congenital variations is relatively high in the cervical spine, and many of the changes have no relationship with the patient's complaints.</p>
+<h2 id="plain-film-radiography">Plain Film Radiography</h2>
+<p>Common X-Ray Views of the Cervical Spine</p>
+<p>• Anteroposterior view • Lateral view • Open mouth of odontoid view (following trauma • Oblique view • Flexion stress view (lateral view in flexion) • Extension stress view (lateral view in extension • Swimmer's view (following trauma)</p>
+<h2 id="computed-tomography">Computed Tomography</h2>
+<p>Computed tomography (CT) helps to delineate the bone and soft-tissue anatomy of the cervical spine in cross section and can show, for example, a disc prolapse. It also shows the true size and extent of osteophytes better than do plain x-rays . CT scans are especially useful for showing bone fragments in the spinal canal after a fracture and bony defects in the vertebral bodies and neural arches. CT scans may be combined with myelography to outline the spinal cord and nerve roots inside the thecal sac CT scans are used only after conventional radiographs have been taken and a need for them is shown.</p>
+<h2 id="myelography">Myelography</h2>
+<p>Myelograms are the modality of choice with brachial plexus avulsions, either Erb-Duchenne paralysis (C5 and C6) or Klumpke paralysis (C7, C8, and T1). They may also be used to demonstrate narrowing in the intervertebral foramen and cervical spinal stenosis. They may be used to outline the contour of the thecal sac, nerve roots, and spinal cord.</p>
+<h2 id="magnetic-resonance-imaging">Magnetic Resonance Imaging</h2>
+<p>This non-invasive technique can differentiate between various soft tissues and bone. Because it shows differences based on water content, magnetic resonance imaging (MRI) can differentiate between the nucleus pulposus and the annulus fibrosus. MRI may be used to reveal disc protrusions, but it has been reported that patients showing these lesions are often asymptomatic, highlighting the fact that diagnostic imaging abnormalities should be considered only in relation to the history and clinical examination. An MRI allows visualization of the nerve roots, spinal cord, and thecal sac as well as the bone and bone marrow. It is also used to identify postoperative scarring and disc herniation. Magnetic resonance angiography is also useful for determining the patency and status of the vertebral artery.</p>
+<h2 id="xeroradiography">Xeroradiography</h2>
+<p>Xeroradiography helps to delineate bone and soft tissue by enhancing the interfaces between tissues.</p>
+<h2 id="references-2">References</h2>
+<p>David J. magee : orthopedic physical assessment 6th edition .</p>
+<hr style="border:none;border-top:1px solid var(--border);margin:2.6em 0 1.4em">
+<nav class="sib" style="justify-content:space-between;display:flex;flex-wrap:wrap"><a href="02-screening-head-and-neck.html">&larr; Screening the Head and Neck</a> <a href="index.html">Index</a> <a href="04-screening-lumbar-spine.html">Screening of Lumbar Spine &rarr;</a></nav>
+</main></div>
+<footer><div class="wrap">Compiled study notes &middot; for academic revision. Original clinical content &copy; respective authors (Magee, Dutton, Gross et&nbsp;al. and others).</div></footer>
+</body>
+</html>
