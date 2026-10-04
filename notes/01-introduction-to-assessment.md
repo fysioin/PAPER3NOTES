@@ -339,3 +339,208 @@ David J. magee : orthopedic physical assessment 6th edition • B) sit and reach
 • Balance is the ability to maintain their equilibrium when moving or when in a stationary position. • Tests: • Strok stand test: stand on toes of one leg with free leg resting on inside of opposite knee. • Standing balance test • Star excursions balance test • Y balance test • Multiple single- leg hop-stabilizations test • Flamingo balance: stand on one;eg while balancing on a beam. • Stick lengthwise test • Beam walk • Balance board test • Bass test • Walk and return field sobriety tests Reaction time • Reaction time is a skill related component that releases to the time between reconizing a stimulus and body movement in response. Ability to react at the moment.
 
 Eg passing the ball at right time to help another player score • Tests for reaction time • Stick ruler drop test (reaction time ruler test) • Click reaction time:online timer to test how quickly you can click your mouse button • Tap reaction time:online test where response to a change in colour of screen is given by tapping the screen • Reaction stick timers: simple devices using gravity to measure reaction time. • Light board reaction timer:for boxers • SVT reaction test: light board reaction time test used by the AFL • Reaction timer gadgets:small electronic devices and games that can measure reaction time. • Groningen reaction time test(for elderly) • Batak reaction board test:commercially available reaction testing time for sports
+
+## Source pages (figures, tables & slides)
+
+These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes) and are reproduced as images so no source content is lost.
+
+![Source page 3](../docs/pages/p003.jpg)
+
+![Source page 10](../docs/pages/p010.jpg)
+
+![Source page 26](../docs/pages/p026.jpg)
+
+![Source page 27](../docs/pages/p027.jpg)
+
+![Source page 28](../docs/pages/p028.jpg)
+
+![Source page 30](../docs/pages/p030.jpg)
+
+![Source page 49](../docs/pages/p049.jpg)
+
+![Source page 50](../docs/pages/p050.jpg)
+
+![Source page 51](../docs/pages/p051.jpg)
+
+![Source page 52](../docs/pages/p052.jpg)
+
+![Source page 53](../docs/pages/p053.jpg)
+
+![Source page 54](../docs/pages/p054.jpg)
+
+![Source page 55](../docs/pages/p055.jpg)
+
+![Source page 56](../docs/pages/p056.jpg)
+
+![Source page 57](../docs/pages/p057.jpg)
+
+![Source page 58](../docs/pages/p058.jpg)
+
+![Source page 59](../docs/pages/p059.jpg)
+
+![Source page 60](../docs/pages/p060.jpg)
+
+![Source page 61](../docs/pages/p061.jpg)
+
+![Source page 62](../docs/pages/p062.jpg)
+
+![Source page 63](../docs/pages/p063.jpg)
+
+![Source page 64](../docs/pages/p064.jpg)
+
+![Source page 65](../docs/pages/p065.jpg)
+
+![Source page 66](../docs/pages/p066.jpg)
+
+![Source page 67](../docs/pages/p067.jpg)
+
+![Source page 68](../docs/pages/p068.jpg)
+
+![Source page 69](../docs/pages/p069.jpg)
+
+![Source page 70](../docs/pages/p070.jpg)
+
+![Source page 71](../docs/pages/p071.jpg)
+
+![Source page 72](../docs/pages/p072.jpg)
+
+![Source page 73](../docs/pages/p073.jpg)
+
+![Source page 74](../docs/pages/p074.jpg)
+
+![Source page 75](../docs/pages/p075.jpg)
+
+![Source page 76](../docs/pages/p076.jpg)
+
+![Source page 77](../docs/pages/p077.jpg)
+
+![Source page 78](../docs/pages/p078.jpg)
+
+![Source page 79](../docs/pages/p079.jpg)
+
+![Source page 80](../docs/pages/p080.jpg)
+
+![Source page 81](../docs/pages/p081.jpg)
+
+![Source page 82](../docs/pages/p082.jpg)
+
+![Source page 83](../docs/pages/p083.jpg)
+
+![Source page 84](../docs/pages/p084.jpg)
+
+![Source page 85](../docs/pages/p085.jpg)
+
+![Source page 86](../docs/pages/p086.jpg)
+
+![Source page 87](../docs/pages/p087.jpg)
+
+![Source page 88](../docs/pages/p088.jpg)
+
+![Source page 89](../docs/pages/p089.jpg)
+
+![Source page 90](../docs/pages/p090.jpg)
+
+![Source page 91](../docs/pages/p091.jpg)
+
+![Source page 92](../docs/pages/p092.jpg)
+
+![Source page 93](../docs/pages/p093.jpg)
+
+![Source page 94](../docs/pages/p094.jpg)
+
+![Source page 95](../docs/pages/p095.jpg)
+
+![Source page 96](../docs/pages/p096.jpg)
+
+![Source page 97](../docs/pages/p097.jpg)
+
+![Source page 98](../docs/pages/p098.jpg)
+
+![Source page 99](../docs/pages/p099.jpg)
+
+![Source page 100](../docs/pages/p100.jpg)
+
+![Source page 101](../docs/pages/p101.jpg)
+
+![Source page 102](../docs/pages/p102.jpg)
+
+![Source page 103](../docs/pages/p103.jpg)
+
+![Source page 104](../docs/pages/p104.jpg)
+
+![Source page 105](../docs/pages/p105.jpg)
+
+![Source page 106](../docs/pages/p106.jpg)
+
+![Source page 107](../docs/pages/p107.jpg)
+
+![Source page 108](../docs/pages/p108.jpg)
+
+![Source page 109](../docs/pages/p109.jpg)
+
+![Source page 111](../docs/pages/p111.jpg)
+
+![Source page 112](../docs/pages/p112.jpg)
+
+![Source page 113](../docs/pages/p113.jpg)
+
+![Source page 114](../docs/pages/p114.jpg)
+
+![Source page 115](../docs/pages/p115.jpg)
+
+![Source page 116](../docs/pages/p116.jpg)
+
+![Source page 117](../docs/pages/p117.jpg)
+
+![Source page 118](../docs/pages/p118.jpg)
+
+![Source page 119](../docs/pages/p119.jpg)
+
+![Source page 120](../docs/pages/p120.jpg)
+
+![Source page 121](../docs/pages/p121.jpg)
+
+![Source page 122](../docs/pages/p122.jpg)
+
+![Source page 123](../docs/pages/p123.jpg)
+
+![Source page 124](../docs/pages/p124.jpg)
+
+![Source page 125](../docs/pages/p125.jpg)
+
+![Source page 126](../docs/pages/p126.jpg)
+
+![Source page 127](../docs/pages/p127.jpg)
+
+![Source page 129](../docs/pages/p129.jpg)
+
+![Source page 130](../docs/pages/p130.jpg)
+
+![Source page 131](../docs/pages/p131.jpg)
+
+![Source page 132](../docs/pages/p132.jpg)
+
+![Source page 133](../docs/pages/p133.jpg)
+
+![Source page 135](../docs/pages/p135.jpg)
+
+![Source page 136](../docs/pages/p136.jpg)
+
+![Source page 137](../docs/pages/p137.jpg)
+
+![Source page 138](../docs/pages/p138.jpg)
+
+![Source page 139](../docs/pages/p139.jpg)
+
+![Source page 140](../docs/pages/p140.jpg)
+
+![Source page 141](../docs/pages/p141.jpg)
+
+![Source page 143](../docs/pages/p143.jpg)
+
+![Source page 144](../docs/pages/p144.jpg)
+
+![Source page 145](../docs/pages/p145.jpg)
+
+![Source page 146](../docs/pages/p146.jpg)
+

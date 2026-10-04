@@ -991,3 +991,18 @@ Sprain, ankle, 118, 119 R Spurling's test, 12, 14 Radial styloid process, Stork 
 ## Index 131
 
 V physical exam, 52-60 treatment plans, 60-64 Vertebral bodies, palpation, 70 Y W Yergason test, 30 Wartenberg sign, 43 Yocum test, 28, 29 Wilson's sign, 104 Wrist and hand pain, Z differential diagnosis, 51 Z-joint disease, 15, 16 history, 51, 52 muscles and innervation, 61 College of Physical Therapy
+
+## Source pages (figures, tables & slides)
+
+These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes) and are reproduced as images so no source content is lost.
+
+![Source page 363](../docs/pages/p363.jpg)
+
+![Source page 381](../docs/pages/p381.jpg)
+
+![Source page 401](../docs/pages/p401.jpg)
+
+![Source page 413](../docs/pages/p413.jpg)
+
+![Source page 471](../docs/pages/p471.jpg)
+

@@ -71,3 +71,10 @@ If the patient is unable to fully extend the knee because of pain, the examiner 
 ## Prone Anterior Drawer Test
 
 • The patient lies prone with the feet extending over the end of the examining table. • With one hand, the examiner pushes the heel steadily forward. • Excessive anterior movement and a sucking in of the skin on both sides of the Achilles tendon indicate a positive sign.
+
+## Source pages (figures, tables & slides)
+
+These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes) and are reproduced as images so no source content is lost.
+
+![Source page 580](../docs/pages/p580.jpg)
+

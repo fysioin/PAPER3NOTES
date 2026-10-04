@@ -2115,3 +2115,16 @@ For muscle weakness - faradic stimulation helps in reducing the pain as well as 
 -functional re-education for the patient to return back to activities by PNF technique
 
 156
+
+## Source pages (figures, tables & slides)
+
+These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes) and are reproduced as images so no source content is lost.
+
+![Source page 650](../docs/pages/p650.jpg)
+
+![Source page 658](../docs/pages/p658.jpg)
+
+![Source page 659](../docs/pages/p659.jpg)
+
+![Source page 669](../docs/pages/p669.jpg)
+

@@ -303,3 +303,20 @@ In the case of thoracic outlet syndromes and other syndromes involving arterial 
 ## References
 
 David J. magee : orthopedic physical assessment 6th edition .
+
+## Source pages (figures, tables & slides)
+
+These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes) and are reproduced as images so no source content is lost.
+
+![Source page 211](../docs/pages/p211.jpg)
+
+![Source page 212](../docs/pages/p212.jpg)
+
+![Source page 214](../docs/pages/p214.jpg)
+
+![Source page 215](../docs/pages/p215.jpg)
+
+![Source page 216](../docs/pages/p216.jpg)
+
+![Source page 223](../docs/pages/p223.jpg)
+

@@ -71,3 +71,58 @@ Patient is asked to relax and the needle is inserted inside the muscle, simultan
 ## Arthroscopy
 
 • Fibreoptic tube is inserted into a joint for direct visualization. • Client must be able to flex the knee; exercises are prescribed for ROM. • Evaluate the neurovascular status of the affected limb frequently. • Analgesics are prescribed. • Monitor for complications.
+
+## Source pages (figures, tables & slides)
+
+These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes) and are reproduced as images so no source content is lost.
+
+![Source page 537](../docs/pages/p537.jpg)
+
+![Source page 538](../docs/pages/p538.jpg)
+
+![Source page 539](../docs/pages/p539.jpg)
+
+![Source page 540](../docs/pages/p540.jpg)
+
+![Source page 541](../docs/pages/p541.jpg)
+
+![Source page 542](../docs/pages/p542.jpg)
+
+![Source page 543](../docs/pages/p543.jpg)
+
+![Source page 544](../docs/pages/p544.jpg)
+
+![Source page 545](../docs/pages/p545.jpg)
+
+![Source page 546](../docs/pages/p546.jpg)
+
+![Source page 547](../docs/pages/p547.jpg)
+
+![Source page 548](../docs/pages/p548.jpg)
+
+![Source page 549](../docs/pages/p549.jpg)
+
+![Source page 550](../docs/pages/p550.jpg)
+
+![Source page 551](../docs/pages/p551.jpg)
+
+![Source page 552](../docs/pages/p552.jpg)
+
+![Source page 553](../docs/pages/p553.jpg)
+
+![Source page 554](../docs/pages/p554.jpg)
+
+![Source page 555](../docs/pages/p555.jpg)
+
+![Source page 556](../docs/pages/p556.jpg)
+
+![Source page 557](../docs/pages/p557.jpg)
+
+![Source page 558](../docs/pages/p558.jpg)
+
+![Source page 559](../docs/pages/p559.jpg)
+
+![Source page 560](../docs/pages/p560.jpg)
+
+![Source page 561](../docs/pages/p561.jpg)
+

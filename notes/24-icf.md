@@ -23,3 +23,14 @@
 ICF Core Set for Osteoporosis  With the ICF it is now possible to define the typical spectrum of problems in functioning of patients with osteoporosis under consideration of environmental factors in a more systematic way using a globally agreed-upon language.  The preparatory phase included a systematic literature review, a Delphi exercise and an empirical data collection using the ICF checklist: • The systematic literature review was performed to identify and compare the concepts contained in outcome measures of randomized, controlled clinical trials published from 1991-2000 involving patients with osteoporosis.
 
 • The international expert survey (via email) using the Delphi technique was conducted with 21 health professionals, experts on the treatment of persons with osteoporosis, to identify the set of domains that best describe the prototypical spectrum of problems in functioning and health in persons with osteoporosis from the of health professional perspective. ICF Core Sets for Ankylosing Spondylitis
+
+## Source pages (figures, tables & slides)
+
+These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes) and are reproduced as images so no source content is lost.
+
+![Source page 773](../docs/pages/p773.jpg)
+
+![Source page 775](../docs/pages/p775.jpg)
+
+![Source page 776](../docs/pages/p776.jpg)
+

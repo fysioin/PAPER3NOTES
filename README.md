@@ -73,6 +73,19 @@ docs/<module>.html    rendered, self-contained HTML page per module
 - Where the source references a textbook, journal or guideline, that reference is
   preserved in the corresponding module.
 
+## Source pages (image-only)
+
+Part of the source PDF is image-only — it has no text layer. These pages are presentation
+slides, anatomical/clinical figures, tables and handwritten notes. The text notes cannot
+contain them, so **each affected module also embeds its source pages as images** under a
+"Source pages (figures, tables & slides)" heading. That way no information from the
+original document is lost, and the source's own diagrams are preserved exactly.
+
+Pages affected: 100 in Module 01 (a physical-fitness assessment deck and early tables/figures),
+25 in Module 15 (imaging), 41 in Module 22 (rheumatology assessment), 11 in Module 20
+(prescription/orthotics), 7 in Module 23 (ergonomics), and smaller sets in Modules 04, 05, 06,
+07, 09, 10, 11, 13, 16, 21 and 24.
+
 ## Publishing
 
 GitHub Pages is served from the `/docs` folder on the default branch. `docs/index.html`

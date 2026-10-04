@@ -213,3 +213,10 @@ For discography, radiopaque dye is injected into the nucleus pulposus. It is not
 ## References
 
 David J. magee : orthopedic physical assessment 6th edition .
+
+## Source pages (figures, tables & slides)
+
+These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes) and are reproduced as images so no source content is lost.
+
+![Source page 171](../docs/pages/p171.jpg)
+

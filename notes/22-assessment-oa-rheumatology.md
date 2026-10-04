@@ -117,3 +117,90 @@ Shoulder Range of Motion Assessment: - Measure active and passive range of motio
 Functional Training: - Incorporate functional exercises that mimic daily activities to ensure a smooth transition back to regular tasks. - Modify the exercises based on the patient's progress and comfort level. Education and Home Program: - Educate the patient on shoulder anatomy, the nature of their condition, and the importance of adherence to the physiotherapy program. - Provide instructions for exercises to be performed at home, emphasizing proper technique. 4. Monitoring and Follow-up: - Regularly reassess the patient's shoulder range of motion, strength, and functional abilities. - Adjust the treatment plan based on the patient's response and any changes in their condition. 5.
 
 Collaboration and Referral: - Maintain communication with the patient's healthcare team, including orthopedic specialists or other relevant professionals. - Consider referral for imaging (X-rays, MRI) if necessary to obtain a more comprehensive understanding of the shoulder condition. 6. Long-Term Maintenance: - Guide the patient on how to maintain the gains achieved through physiotherapy. - Encourage them to continue with a home exercise program and engage in regular physical activity to support shoulder health.
+
+## Source pages (figures, tables & slides)
+
+These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes) and are reproduced as images so no source content is lost.
+
+![Source page 719](../docs/pages/p719.jpg)
+
+![Source page 720](../docs/pages/p720.jpg)
+
+![Source page 721](../docs/pages/p721.jpg)
+
+![Source page 722](../docs/pages/p722.jpg)
+
+![Source page 723](../docs/pages/p723.jpg)
+
+![Source page 724](../docs/pages/p724.jpg)
+
+![Source page 725](../docs/pages/p725.jpg)
+
+![Source page 726](../docs/pages/p726.jpg)
+
+![Source page 727](../docs/pages/p727.jpg)
+
+![Source page 728](../docs/pages/p728.jpg)
+
+![Source page 729](../docs/pages/p729.jpg)
+
+![Source page 730](../docs/pages/p730.jpg)
+
+![Source page 731](../docs/pages/p731.jpg)
+
+![Source page 732](../docs/pages/p732.jpg)
+
+![Source page 733](../docs/pages/p733.jpg)
+
+![Source page 734](../docs/pages/p734.jpg)
+
+![Source page 735](../docs/pages/p735.jpg)
+
+![Source page 736](../docs/pages/p736.jpg)
+
+![Source page 737](../docs/pages/p737.jpg)
+
+![Source page 738](../docs/pages/p738.jpg)
+
+![Source page 739](../docs/pages/p739.jpg)
+
+![Source page 740](../docs/pages/p740.jpg)
+
+![Source page 741](../docs/pages/p741.jpg)
+
+![Source page 742](../docs/pages/p742.jpg)
+
+![Source page 743](../docs/pages/p743.jpg)
+
+![Source page 744](../docs/pages/p744.jpg)
+
+![Source page 745](../docs/pages/p745.jpg)
+
+![Source page 746](../docs/pages/p746.jpg)
+
+![Source page 747](../docs/pages/p747.jpg)
+
+![Source page 748](../docs/pages/p748.jpg)
+
+![Source page 749](../docs/pages/p749.jpg)
+
+![Source page 750](../docs/pages/p750.jpg)
+
+![Source page 751](../docs/pages/p751.jpg)
+
+![Source page 752](../docs/pages/p752.jpg)
+
+![Source page 753](../docs/pages/p753.jpg)
+
+![Source page 754](../docs/pages/p754.jpg)
+
+![Source page 755](../docs/pages/p755.jpg)
+
+![Source page 756](../docs/pages/p756.jpg)
+
+![Source page 757](../docs/pages/p757.jpg)
+
+![Source page 758](../docs/pages/p758.jpg)
+
+![Source page 759](../docs/pages/p759.jpg)
+

@@ -157,3 +157,10 @@ Ultrasonography is a non-irradiation technique that may be used to detect hip ab
 ## References
 
 David J. magee : orthopedic physical assessment 6th edition.
+
+## Source pages (figures, tables & slides)
+
+These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes) and are reproduced as images so no source content is lost.
+
+![Source page 293](../docs/pages/p293.jpg)
+

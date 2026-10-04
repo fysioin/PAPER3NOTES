@@ -243,3 +243,14 @@ If the history and clinical assessment suggest a ligament or fibrocartilage prob
 ## References
 
 David J. magee : orthopedic physical assessment 6th edition .
+
+## Source pages (figures, tables & slides)
+
+These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes) and are reproduced as images so no source content is lost.
+
+![Source page 249](../docs/pages/p249.jpg)
+
+![Source page 250](../docs/pages/p250.jpg)
+
+![Source page 251](../docs/pages/p251.jpg)
+

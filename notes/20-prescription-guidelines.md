@@ -163,3 +163,30 @@ Assessment of Healing Progression: Inflammation Phase: - Evaluate the extent of 
 Collaboration: - Communicate with other healthcare professionals, such as orthopedic surgeons or referring physicians, to ensure a coordinated approach to assessment and treatment. 5. Documentation Accurate and detailed documentation of your assessment findings, interventions, and progress is essential for tracking the patient's healing journey and informing your treatment decisions.
 
 Remember that soft tissue assessment is a dynamic process that evolves as the patient progresses through different phases of healing. As a physiotherapist, your expertise in assessing soft tissue repair will guide your treatment plan to facilitate optimal recovery and functional restoration for your patients.
+
+## Source pages (figures, tables & slides)
+
+These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes) and are reproduced as images so no source content is lost.
+
+![Source page 614](../docs/pages/p614.jpg)
+
+![Source page 615](../docs/pages/p615.jpg)
+
+![Source page 616](../docs/pages/p616.jpg)
+
+![Source page 617](../docs/pages/p617.jpg)
+
+![Source page 618](../docs/pages/p618.jpg)
+
+![Source page 619](../docs/pages/p619.jpg)
+
+![Source page 620](../docs/pages/p620.jpg)
+
+![Source page 621](../docs/pages/p621.jpg)
+
+![Source page 622](../docs/pages/p622.jpg)
+
+![Source page 623](../docs/pages/p623.jpg)
+
+![Source page 624](../docs/pages/p624.jpg)
+
