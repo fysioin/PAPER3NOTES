@@ -82,6 +82,10 @@ footer .wrap{max-width:var(--maxw)}
   border-radius:999px;padding:2px 9px;align-self:flex-start}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
 </style>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f766e">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 <body>
 <header class="top"><div class="bar">
@@ -134,5 +138,6 @@ with companion material from Dutton, Gross et&nbsp;al. and others. Modules whose
 24 modules &middot; full document coverage. Each module is a single self-contained page.</p>
 </div>
 <footer><div class="wrap">Compiled study notes for academic revision. Original clinical content &copy; respective authors.</div></footer>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}</script>
 </body>
 </html>
