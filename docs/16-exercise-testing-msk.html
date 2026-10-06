@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exercise Testing in Musculoskeletal Disease, Injury and Dysfunction &middot; Paper 3 MSK Assessment</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Exercise Testing in Musculoskeletal Disease, Injury and Dysfunction · Paper 3 MSK Assessment</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{
   --bg:#faf7f5; --surface:#fffdfb; --surface-2:#f3ece6; --border:rgba(35,32,29,.12);
@@ -88,34 +89,164 @@ footer .wrap{max-width:var(--maxw)}
 .figure-grid figcaption{font-family:var(--font-mono);font-size:11.5px;color:var(--text-dim);padding:7px 10px;letter-spacing:.04em}
 .srcnote{background:var(--accent2-dim);border-left:3px solid var(--accent2);padding:12px 16px;border-radius:0 8px 8px 0;font-size:14.5px;color:var(--text-dim);margin:1em 0 1.6em}
 </style>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#0f766e">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-</head>
-<body>
-<header class="top"><div class="bar"><div class="brand"><b>Paper&nbsp;3</b> &middot; MSK Assessment</div><nav class="sib"><a href="index.html">Index</a></nav></div></header>
+<link href="manifest.json" rel="manifest"/>
+<meta content="#0f766e" name="theme-color"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<script id="rg-boot">(function(){try{var d=document.documentElement;
+if(localStorage.getItem('rguhs-theme')==='dark')d.classList.add('dark');
+if(localStorage.getItem('rguhs-fit')==='1')d.classList.add('fit');}catch(e){}})();</script><style id="rguhs-teal-theme">
+/* ===== RGUHS teal study theme (injected layer) ===== */
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --ink:#1b1f24; --muted:#5b6472;
+  --line:#e4e7eb; --line-2:#d3d8de;
+  --accent:#0f766e; --accent-ink:#0b5f59; --accent-soft:#e8f3f1;
+  --term:#4a5560; --term-dot:#9aa3ad;
+  --paper:#f6f7f9; --paper2:#eef1f4; --surface:#ffffff; --surface2:#f2f4f7;
+  --surface-2:#f2f4f7; --border:#e4e7eb; --rule:#e4e7eb; --rule-strong:#d3d8de;
+  --text:#1b1f24; --text-dim:#5b6472; --ink-dim:#5b6472;
+  --navy:#0f766e; --terra:#0b5f59; --terra-bg:#e8f3f1; --gold:#0f766e; --gold-bg:#e8f3f1;
+  --accent2:#0b5f59; --accent-dim:#99f6e4; --accent2-dim:#99f6e4;
+  --blue:#0f766e; --bar:#ffffff;
+  --ui-bg:#ffffff; --ui-ink:#1b1f24; --ui-line:rgba(20,30,50,.16); --ui-hover:rgba(20,30,50,.07); --ui-on:#e8f3f1;
+}
+html.dark, html[data-theme="dark"]{
+  --bg:#101216; --panel:#171a1f; --ink:#e7e9ed; --muted:#98a1ac;
+  --line:#262a31; --line-2:#333842;
+  --accent:#5eead4; --accent-ink:#5eead4; --accent-soft:#16292a;
+  --term:#aab2bd; --term-dot:#5a6470;
+  --paper:#101216; --paper2:#171a1f; --surface:#171a1f; --surface2:#1d2126;
+  --surface-2:#1d2126; --border:#262a31; --rule:#262a31; --rule-strong:#333842;
+  --text:#e7e9ed; --text-dim:#98a1ac; --ink-dim:#98a1ac;
+  --navy:#5eead4; --terra:#5eead4; --terra-bg:#16292a; --gold:#5eead4; --gold-bg:#16292a;
+  --accent2:#5eead4; --accent-dim:#16292a; --accent2-dim:#16292a;
+  --blue:#5eead4; --bar:#171a1f;
+  --ui-bg:#1d2126; --ui-ink:#e7e9ed; --ui-line:rgba(255,255,255,.18); --ui-hover:rgba(255,255,255,.09); --ui-on:#16292a;
+}
+html,body{background:var(--bg)!important;color:var(--ink)!important;
+  font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;font-size:17px;line-height:1.68;
+  -webkit-font-smoothing:antialiased;}
+body{background-image:none!important;}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:var(--ink)!important;letter-spacing:normal!important;}
+a{color:var(--accent)!important;}
+a:hover{color:var(--accent-ink)!important;}
+::selection{background:var(--accent-soft);}
+/* top bars / nav */
+.pnav,.top,.bar,.pnav-in,.rtools{background:var(--panel)!important;border-color:var(--line)!important;color:var(--ink)!important;}
+.bar,.top{position:sticky;top:52px;z-index:70;}
+.rtools{display:none!important;}
+.pnav-in a.tab.on{border-color:var(--accent)!important;background:var(--accent-soft)!important;color:var(--accent-ink)!important;}
+.brand,.brand b{color:var(--accent-ink)!important;}
+/* cards / panels */
+.topic,.pcard,.homefoot,.sec-head,.refs,.exam-para,.tbl-wrap,.fig,.stat,.card,
+main article,main section,.crumb,.legend span{
+  background:var(--panel)!important;border-color:var(--line)!important;color:var(--ink)!important;
+  box-shadow:none!important;}
+.topic-top{border-left-color:var(--accent)!important;}
+.exam-para,.stat,.legend span,.t-meta .rbc,.rbc{background:var(--accent-soft)!important;color:var(--accent-ink)!important;border-color:var(--line)!important;}
+.bmnemonic,.bmnemonic::before{background:var(--accent-soft)!important;}
+.stars,.stars-sm,.open,.pcard .open,.ep-label,.kicker,.ptag,.pcard .ptag{color:var(--accent)!important;}
+.stars .dim,.stars-sm .dim{color:var(--line-2)!important;}
+/* tables */
+table{border-collapse:collapse;}
+th{background:var(--accent-soft)!important;color:var(--accent-ink)!important;border-color:var(--line)!important;}
+td{border-color:var(--line)!important;}
+thead th{background:var(--accent)!important;color:#fff!important;}
+html.dark thead th{color:#06231f!important;}
+/* toolbar */
+.rg-toolbar{position:sticky;top:0;z-index:900;display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+  padding:9px 20px;background:var(--panel);border-bottom:1px solid var(--line);font-size:13.5px;font-family:"Segoe UI",Roboto,Arial,sans-serif;}
+.rg-toolbar .lbl{color:var(--muted);font-weight:600;}
+.rg-toolbar .sw{width:22px;height:22px;border-radius:50%;border:1px solid var(--line-2);cursor:pointer;padding:0;}
+.rg-toolbar .sw.yellow{background:#ffe680;} .rg-toolbar .sw.green{background:#a8e6a3;} .rg-toolbar .sw.pink{background:#ffb3d1;}
+.rg-toolbar .btn{border:1px solid var(--line-2);background:var(--panel);color:var(--ink);border-radius:8px;padding:5px 10px;cursor:pointer;font:inherit;font-size:13px;}
+.rg-toolbar .btn:hover{background:var(--accent-soft);border-color:var(--accent);}
+.rg-toolbar .btn.active{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink);font-weight:600;}
+.rg-toolbar .sep{width:1px;height:20px;background:var(--line-2);}
+.rg-toolbar .hint{margin-left:auto;color:var(--muted);font-size:12.5px;}
+html.fit .wrap,html.fit main{max-width:100%!important;}
+/* term popups */
+.term{color:var(--term);border-bottom:1px dotted var(--term-dot);cursor:help;}
+.term:hover{background:var(--accent-soft);border-bottom-color:var(--accent);}
+html.no-notes .term{border-bottom:none;color:inherit;cursor:inherit;background:none;}
+#rg-popup{position:absolute;z-index:1200;max-width:330px;display:none;padding:11px 13px;border-radius:9px;
+  background:#1c1f24;color:#f1f3f6;font-size:14px;line-height:1.5;box-shadow:0 12px 30px rgba(0,0,0,.28);font-family:"Segoe UI",Roboto,Arial,sans-serif;}
+html.dark #rg-popup{background:#2a2f36;color:#eef1f4;border:1px solid var(--line-2);}
+#rg-popup b{color:#fff;}
+mark.hl{border-radius:3px;padding:0 1px;color:inherit;}
+mark.hl.yellow{background:rgba(255,214,0,.38);}
+mark.hl.green{background:rgba(52,199,89,.32);}
+mark.hl.pink{background:rgba(255,90,150,.30);}
+/* glossary */
+.glossary{margin:26px 0;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:6px 18px;}
+.glossary summary{cursor:pointer;font-weight:700;padding:12px 0;}
+.gloss-hint{margin:0 0 8px;color:var(--muted);font-size:13.5px;}
+.glossary ul{font-size:14px;columns:2;column-gap:26px;}
+@media (max-width:680px){.glossary ul{columns:1;}}
+/* notes */
+.rg-fab{position:fixed;right:20px;bottom:20px;z-index:1100;display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:999px;padding:11px 17px;
+  font:inherit;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 10px 26px rgba(0,0,0,.22);font-family:"Segoe UI",Roboto,Arial,sans-serif;}
+html.dark .rg-fab{color:#052622;}
+.rg-drawer{position:fixed;top:0;right:0;height:100%;width:min(430px,92vw);z-index:1300;background:var(--panel);
+  border-left:1px solid var(--line);box-shadow:-12px 0 34px rgba(0,0,0,.2);transform:translateX(102%);
+  transition:transform .22s ease;display:flex;flex-direction:column;font-family:"Segoe UI",Roboto,Arial,sans-serif;}
+.rg-drawer.open{transform:none;}
+.rg-drawer .dhead{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line);}
+.rg-drawer .dhead strong{font-size:16px;}
+.rg-drawer .dclose{border:1px solid var(--line-2);background:var(--panel);color:var(--ink);border-radius:8px;padding:4px 11px;font:inherit;font-size:13px;cursor:pointer;}
+.rg-drawer .dhint{margin:10px 18px 2px;color:var(--muted);font-size:12.5px;}
+.rg-drawer .dbody{overflow:auto;padding:6px 18px 28px;}
+.rg-notes{width:100%;min-height:220px;resize:vertical;padding:10px 11px;font:inherit;font-size:14.5px;line-height:1.55;
+  color:var(--ink);background:var(--bg);border:1px solid var(--line-2);border-radius:8px;}
+.rg-notes:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft);}
+.rg-scrim{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1250;opacity:0;pointer-events:none;transition:opacity .22s ease;}
+.rg-scrim.open{opacity:1;pointer-events:auto;}
+@media print{.rg-toolbar,#rg-popup,.rg-fab,.rg-drawer,.rg-scrim{display:none!important;}}
+</style></head>
+<body><div aria-label="Study tools" class="rg-toolbar" role="toolbar">
+<span class="lbl">Highlight</span>
+<button aria-label="Yellow highlighter" class="sw yellow" data-color="yellow" title="Yellow highlighter"></button>
+<button aria-label="Green highlighter" class="sw green" data-color="green" title="Green highlighter"></button>
+<button aria-label="Pink highlighter" class="sw pink" data-color="pink" title="Pink highlighter"></button>
+<button class="btn" id="rgErase">Erase</button>
+<button class="btn" id="rgClearAll">Clear all</button>
+<span class="sep"></span>
+<button class="btn active" id="rgToggleNotes">Term notes</button>
+<button class="btn" id="rgToggleTheme">Night mode</button>
+<button class="btn" id="rgToggleFit">Fit to screen</button>
+<span class="hint">Select text, then pick a colour. Notes save automatically.</span>
+</div>
+<div id="rg-popup"></div>
+<button aria-expanded="false" class="rg-fab" id="rgNotesFab">✎ Study Notes</button>
+<div class="rg-scrim" id="rgScrim"></div>
+<aside aria-label="Study notes" class="rg-drawer" id="rgDrawer">
+<div class="dhead"><strong>Study Notes</strong><button class="dclose" id="rgDrawerClose">Close</button></div>
+<p class="dhint">Your notes for this page — saved automatically in this browser.</p>
+<div class="dbody"><textarea class="rg-notes" id="rgPageNote" placeholder="Write your notes for this page..."></textarea></div>
+</aside>
+<header class="top"><div class="bar"><div class="brand"><b>Paper 3</b> · MSK Assessment</div><nav class="sib"><a href="index.html">Index</a></nav></div></header>
 <div class="wrap"><main>
-<div class="crumb">Paper 3 &middot; MSK Assessment</div>
+<div class="crumb">Paper 3 · MSK Assessment</div>
 <h1>Exercise Testing in Musculoskeletal Disease, Injury and Dysfunction</h1>
 <p class="lead">Faithful study notes transcribed from the Paper 3 MSK assessment compilation (based on David J. Magee, <em>Orthopedic Physical Assessment</em>, 6th ed., and companion material).</p>
 <nav class="toc"><h4>On this page</h4><ol><li><a href="#exercise-testing-in-musculoskeletal-disease-injury-and">EXERCISE TESTING IN MUSCULOSKELETAL DISEASE, INJURY AND</a></li><li><a href="#dysfunction">DYSFUNCTION</a></li><li><a href="#watson-scaphoid-shift-test">Watson (Scaphoid Shift) Test</a></li><li><a href="#for-lumbar-spine">FOR LUMBAR SPINE</a></li><li><a href="#straight-leg-raising-test">Straight Leg Raising Test</a></li><li><a href="#passive-lumbar-extension-test">Passive Lumbar Extension Test</a></li><li><a href="#for-hip">FOR HIP</a></li><li><a href="#for-knee">For Knee</a></li><li><a href="#ege-s-test">Ege's Test</a></li><li><a href="#mcmurray-test">McMurray Test</a></li><li><a href="#external-lateral-rotation-stress-test-kleiger-test">External (Lateral) Rotation Stress Test (Kleiger Test)</a></li><li><a href="#prone-anterior-drawer-test">Prone Anterior Drawer Test</a></li></ol></nav>
 <h2 id="exercise-testing-in-musculoskeletal-disease-injury-and">EXERCISE TESTING IN MUSCULOSKELETAL DISEASE, INJURY AND</h2>
 <h2 id="dysfunction">DYSFUNCTION</h2>
-<p>• Test for Cervical Spine • Distraction Test • The distraction test is used for patients who have complained of radicular symptoms in the history and show radicular signs during the examination. • It is used to alleviate symptoms. • To perform the distraction test, the examiner places one hand under the patient's chin and the other hand around the occiput, • then slowly lifts the patient's head • In effect, applying traction to the cervical spine.</p>
+<p>• Test for Cervical Spine • Distraction Test • The distraction test is used for patients who have complained of radicular symptoms in the history and show radicular signs during the examination. • It is used to alleviate symptoms. • To perform the distraction test, the examiner places one hand under the patient's chin and the other hand around the occiput, • then slowly lifts the patient's head • In effect, applying <span class="term" data-note="A gentle pulling force applied to a joint or the spine to relieve pressure." tabindex="0">traction</span> to the cervical spine.</p>
 <p>The test is classified as positive if the pain is relieved or decreased when the head is lifted or distracted, indicating pressure on nerve roots that has been relieved • Foraminal Compression (Spurling's) Test • This test is performed if, in the history, the patient has complained of nerve root symptoms, which at the time of examination are diminished or absent. • This test is designed to provoke symptoms. • The patient bends or side flexes the head to the unaffected side first, followed by the affected side. • The examiner carefully presses straight down on the head. • Bradley and colleagues advocate doing this test in three stages, each of which is increasingly provocative; if symptoms are produced, one does not proceed to the next stage.</p>
 <p>• The first stage involves compression with the head in neutral. • The second stage involves compression with the head in extension, and the final stage is with the head in extension and rotation to the unaffected side, then to the side of complaint with compression. • The third part of the test more closely follows the test as described by Spurling. • A test result is classified as positive if pain radiates into the arm toward which the head is side flexed during compression; this indicates pressure on a nerve root (cervical radiculitis). • Jackson's Compression Test • This test is also a modification of the foraminal compression test. • The patient rotates the head to one side. The examiner then carefully presses straight down on the head .</p>
-<p>• The test is repeated with the head rotated to the other side. • The test is positive if pain radiates into the arm, indicating pressure on a nerve root. • The pain distribution (dermatome) can give some indication of which nerve root is affected.</p>
-<p>• Upper Limb Neurodynamic (Tension) Tests (Brachial Plexus Tension or Elvey Test). • The upper limb neurodynamic tests (ULNT) are equivalent to the straight leg raising (SLR) test in the lumbar spine. • They are tension tests designed to put stress on the neurological structures of the upper limb by stretching them. • The neurological tissue is differentiated by what is defined as sensitizing tests (e.g., neck flexion with the SLR test). • This test, first described by Elvey, has since been divided into four tests. • Modification of the position of the shoulder, elbow, forearm, wrist, and fingers places greater stress on specific nerves (nerve bias).</p>
+<p>• The test is repeated with the head rotated to the other side. • The test is positive if pain radiates into the arm, indicating pressure on a nerve root. • The pain distribution (<span class="term" data-note="The area of skin supplied by a single spinal nerve root." tabindex="0">dermatome</span>) can give some indication of which nerve root is affected.</p>
+<p>• Upper Limb <span class="term" data-note="Relating to the mechanical and physiological function of nerves; neural mobilisation treats nerve sensitivity." tabindex="0">Neurodynamic</span> (Tension) Tests (Brachial Plexus Tension or Elvey Test). • The upper limb neurodynamic tests (ULNT) are equivalent to the straight leg raising (SLR) test in the lumbar spine. • They are tension tests designed to put stress on the neurological structures of the upper limb by stretching them. • The neurological tissue is differentiated by what is defined as sensitizing tests (e.g., neck flexion with the SLR test). • This test, first described by Elvey, has since been divided into four tests. • Modification of the position of the shoulder, elbow, forearm, wrist, and fingers places greater stress on specific nerves (nerve bias).</p>
 <p>• Shoulder • Apprehension (Crank) Test for Anterior Shoulder Dislocation • This test is primarily designed to check for traumatic instability problems causing gross or anatomical instability of the shoulder, although the relocation portion of the test is sometimes used to differentiate between instability and impingement. • The examiner abducts the arm to 90° and laterally rotates the patient's shoulder slowly. • By placing a hand under the glenohumeral joint to act as a fulcrum, the apprehension test becomes the fulcrum test. • Jerk Test • The patient sits with the arm medially rotated and forward flexed to 90°. • The examiner grasps the patient's elbow and axially loads the humerus in a proximal direction. • While maintaining the axial loading, the examiner moves the arm horizontally (cross flexion/ horizontal adduction) across the body . • A positive test for recurrent posterior instability is the production of a sudden jerk or clunk as the humeral head slides off (subluxes) the back of the glenoid. • When the arm is returned to the original 90° abduction position, a second jerk may be felt as the head reduces. • Kim, et al.208 reported that the positive signs also indicate a positive test for a posteroinferior labral tear.</p>
-<p>• Test for Inferior Shoulder Instability (Sulcus Sign) • The patient stands with the arm by the side and shoulder muscles relaxed. • The examiner grasps the patient's forearm below the elbow and pulls the arm distally . • The presence of a sulcus sign may indicate inferior instability or glenohumeral laxity but should only be considered positive for instability if the patient is symptomatic • Hawkins-Kennedy Impingement Test • The patient stands while the examiner forward flexes the arm to 90° and then forcibly medially rotates the shoulder. • This movement pushes the supraspinatus tendon against the anterior surface228 of the coracoacromial ligament and coracoid process.</p>
+<p>• Test for Inferior Shoulder Instability (Sulcus Sign) • The patient stands with the arm by the side and shoulder muscles relaxed. • The examiner grasps the patient's forearm below the elbow and pulls the arm distally . • The presence of a sulcus sign may indicate inferior instability or glenohumeral laxity but should only be considered positive for instability if the patient is symptomatic • Hawkins-Kennedy Impingement Test • The patient stands while the examiner forward flexes the arm to 90° and then forcibly medially rotates the shoulder. • This movement pushes the supraspinatus tendon against the anterior surface228 of the coracoacromial <span class="term" data-note="Strong fibrous tissue that connects bone to bone and stabilises a joint." tabindex="0">ligament</span> and coracoid process.</p>
 <p>• The test may also be performed in different degrees of forward flexion (vertically "circling the shoulder") or horizontal adduction (horizontally "circling the shoulder"). • Pain indicates a positive test for supraspinatus paratenonitis/tendinosis or secondary impingement • Forearm, Wrist, and Hand • Ulnomeniscotriquetral Dorsal Glide Test • The patient sits or stands with the arm pronated. • The examiner places a thumb over the ulna dorsally and places the proximal interphalangeal joint of the index finger of the same hand over the pisotriquetral complex anteriorly. • While stabilizing the ulna, the examiner applies a posteriorly directed force through the pisotriquetral complex stressing the TFCC .</p>
 <p>• Excessive laxity or pain when the posteriorly directed force is applied indicates a positive test for TFCC pathology.</p>
 <h2 id="watson-scaphoid-shift-test">Watson (Scaphoid Shift) Test</h2>
 <p>• The patient sits with the elbow resting on the table and forearm pronated. The examiner faces the patient. With one hand, the examiner takes the patient's wrist into full ulnar deviation and slight extension while holding the metacarpals. • The examiner presses the thumb of the other hand against the distal pole of the scaphoid on the palmar side to prevent it from moving toward the palm while the fingers provide a counter pressure on the dorsum of the forearm. • With the first hand, the examiner radially deviates and slightly flexes the patient's hand while maintaining pressure on the scaphoid. • This creates a subluxation stress if the scaphoid is unstable. If the scaphoid (and lunate) are unstable, the dorsal pole of the scaphoid subluxes or "shifts" over the dorsal rim of the radius and the patient complains of pain, indicating a positive test. • Carpal Compression Test • The examiner holds the supinated wrist in both hands and applies direct, even pressure over the median nerve in the carpal tunnel for up to 30 seconds. • Production of the patient's symptoms is considered to be a positive test for carpal tunnel syndrome.</p>
 <h2 id="for-lumbar-spine">FOR LUMBAR SPINE</h2>
 <p>• Slump Test • The slump test has become the most common neurological test for the lower limb. The patient is seated on the edge of the examining table with the legs supported, the hips in neutral position (i.e., no rotation, abduction, or adduction), and the hands behind the back. • The examination is performed in sequential steps. First, the patient is asked to "slump" the back into thoracic and lumbar flexion. • The examiner maintains the patient's chin in the neutral position to prevent neck and head flexion. The examiner then uses one arm to apply overpressure across the shoulders to maintain flexion of the thoracic and lumbar spines.</p>
-<p>• While this position is held, the patient is asked to actively flex the cervical spine and head as far as possible (i.e., chin to chest). • The examiner then applies overpressure to maintain flexion of all three parts of the spine (cervical, thoracic, and lumbar) using the hand of the same arm to maintain overpressure in the cervical spine. • With the other hand, the examiner then holds the patient's foot in maximum dorsiflexion. • While the examiner holds these positions, the patient is asked to actively straighten the knee as much as possible. • The test is repeated with the other leg and then with both legs at the same time.</p>
+<p>• While this position is held, the patient is asked to actively flex the cervical spine and head as far as possible (i.e., chin to chest). • The examiner then applies overpressure to maintain flexion of all three parts of the spine (cervical, thoracic, and lumbar) using the hand of the same arm to maintain overpressure in the cervical spine. • With the other hand, the examiner then holds the patient's foot in maximum <span class="term" data-note="Bending the ankle or wrist so the angle at the front decreases (e.g. lifting the toes up)." tabindex="0">dorsiflexion</span>. • While the examiner holds these positions, the patient is asked to actively straighten the knee as much as possible. • The test is repeated with the other leg and then with both legs at the same time.</p>
 <p>If the patient is unable to fully extend the knee because of pain, the examiner releases the overpressure to the cervical spine and the patient. • Prone Knee Bending (Nachlas) Test • The patient lies prone while the examiner passively flexes the knee as far as possible so that the patient's heel rests against the buttock. • At the same time, the examiner should ensure that the patient's hip is not rotated. • If the examiner is unable to flex the patient's knee past 90° because of a pathological condition in the knee, the test may be performed by passive extension of the hip while the knee is flexed as much as possible.</p>
 <p>• Unilateral neurological pain in the lumbar area, buttock, posterior thigh or sometimes the anterior thigh may indicate an L2 or L3 nerve root lesion</p>
 <h2 id="straight-leg-raising-test">Straight Leg Raising Test</h2>
@@ -130,16 +261,82 @@ footer .wrap{max-width:var(--maxw)}
 <h2 id="ege-s-test">Ege's Test</h2>
 <p>• This test has been described as a weightbearing McMurray's Test. • The patient stands with the knees in extension and the feet 30 to 40 cm (11 to 15 inches) away from each other. • To test the medial meniscus, the patient laterally rotates each tibia maximally and squats causing the distance between the knees and lateral rotation to increase. • The patient then stands slowly while leaving the feet laterally rotated</p>
 <h2 id="mcmurray-test">McMurray Test</h2>
-<p>• The McMurray test is the grandfather of meniscus tests of the knee. However, the reliability and sensitivity of the test has been found to be low. • The patient lies in the supine position with the knee completely flexed (the heel to the buttock). • The examiner then medially rotates the tibia and extends the knee. • If there is a loose fragment of the lateral meniscus, this action causes a snap or click that is often accompanied by pain. Patellar Tap Test ("Ballotable Patella"). • With the patient's knee extended or flexed to discomfort, the examiner applies a slight tap or pressure over the patella. • When this is done, a floating of the patella should be felt. • This is sometimes called the "dancing patella" sign. Lower Leg, Ankle, and Foot • Anterior Drawer Test of the Ankle. This test is designed primarily to test for injuries to the anterior talofibular ligament, the most frequently injured ligament in the ankle. • The patient lies supine with the foot relaxed. • The examiner stabilizes the tibia and fibula, holds the patient's foot in 20° of plantar flexion, and draws the talus forward in the ankle mortise.</p>
+<p>• The McMurray test is the grandfather of meniscus tests of the knee. However, the reliability and <span class="term" data-note="A test's ability to correctly identify people who have the condition." tabindex="0">sensitivity</span> of the test has been found to be low. • The patient lies in the supine position with the knee completely flexed (the heel to the buttock). • The examiner then medially rotates the tibia and extends the knee. • If there is a loose fragment of the lateral meniscus, this action causes a snap or click that is often accompanied by pain. Patellar Tap Test ("Ballotable Patella"). • With the patient's knee extended or flexed to discomfort, the examiner applies a slight tap or pressure over the patella. • When this is done, a floating of the patella should be felt. • This is sometimes called the "dancing patella" sign. Lower Leg, Ankle, and Foot • Anterior Drawer Test of the Ankle. This test is designed primarily to test for injuries to the anterior talofibular ligament, the most frequently injured ligament in the ankle. • The patient lies supine with the foot relaxed. • The examiner stabilizes the tibia and fibula, holds the patient's foot in 20° of plantar flexion, and draws the talus forward in the ankle mortise.</p>
 <h2 id="external-lateral-rotation-stress-test-kleiger-test">External (Lateral) Rotation Stress Test (Kleiger Test)</h2>
 <p>• The patient is seated with the leg hanging over the examining table with the knee at 90°. • The examiner stabilizes the leg with one hand. • With the other hand, the examiner holds the foot in plantigrade (90°) and applies a passive lateral rotation stress to the foot and ankle. • The test is positive for a syndesmosis ("high ankle") injury if pain is produced over the anterior or posterior tibiofibular ligaments and the interosseous membrane. • If the patient has pain medially and the examiner feels the talus displace from the medial malleolus, it may indicate a tear of the deltoid ligament.</p>
 <h2 id="prone-anterior-drawer-test">Prone Anterior Drawer Test</h2>
-<p>• The patient lies prone with the feet extending over the end of the examining table. • With one hand, the examiner pushes the heel steadily forward. • Excessive anterior movement and a sucking in of the skin on both sides of the Achilles tendon indicate a positive sign.</p>
-<h2 id="source-pages">Source pages (figures, tables &amp; slides)</h2><p class="srcnote">These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes). They are reproduced here as images so no source content is lost.</p><div class="figure-grid"><figure><img loading="lazy" src="pages/p580.jpg" alt="Source page 580"><figcaption>Source page 580</figcaption></figure></div>
-<hr style="border:none;border-top:1px solid var(--border);margin:2.6em 0 1.4em">
-<nav class="sib" style="justify-content:space-between;display:flex;flex-wrap:wrap"><a href="15-diagnostic-imaging-msk.html">&larr; Investigation Methods / Diagnostic Imaging in MSK</a> <a href="index.html">Index</a> <a href="17-recent-advances.html">Recent Advances &rarr;</a></nav>
+<p>• The patient lies prone with the feet extending over the end of the examining table. • With one hand, the examiner pushes the heel steadily forward. • Excessive anterior movement and a sucking in of the skin on both sides of the Achilles <span class="term" data-note="Strong fibrous tissue that attaches muscle to bone." tabindex="0">tendon</span> indicate a positive sign.</p>
+<h2 id="source-pages">Source pages (figures, tables &amp; slides)</h2><p class="srcnote">These pages of the original document carry no extractable text (presentation slides, figures, tables or handwritten notes). They are reproduced here as images so no source content is lost.</p><div class="figure-grid"><figure><img alt="Source page 580" loading="lazy" src="pages/p580.jpg"/><figcaption>Source page 580</figcaption></figure></div>
+<hr style="border:none;border-top:1px solid var(--border);margin:2.6em 0 1.4em"/>
+<nav class="sib" style="justify-content:space-between;display:flex;flex-wrap:wrap"><a href="15-diagnostic-imaging-msk.html">← Investigation Methods / Diagnostic Imaging in MSK</a> <a href="index.html">Index</a> <a href="17-recent-advances.html">Recent Advances →</a></nav>
 </main></div>
-<footer><div class="wrap">Compiled study notes &middot; for academic revision. Original clinical content &copy; respective authors (Magee, Dutton, Gross et&nbsp;al. and others).</div></footer>
+<footer><div class="wrap">Compiled study notes · for academic revision. Original clinical content © respective authors (Magee, Dutton, Gross et al. and others).</div></footer>
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}</script>
-</body>
+<details class="glossary"><summary>Glossary of difficult terms (7)</summary><p class="gloss-hint">Dotted-underlined words also show the definition on hover or tap.</p><ul><li><strong>dermatome</strong> — The area of skin supplied by a single spinal nerve root.</li><li><strong>dorsiflexion</strong> — Bending the ankle or wrist so the angle at the front decreases (e.g. lifting the toes up).</li><li><strong>ligament</strong> — Strong fibrous tissue that connects bone to bone and stabilises a joint.</li><li><strong>neurodynamic</strong> — Relating to the mechanical and physiological function of nerves; neural mobilisation treats nerve sensitivity.</li><li><strong>sensitivity</strong> — A test's ability to correctly identify people who have the condition.</li><li><strong>tendon</strong> — Strong fibrous tissue that attaches muscle to bone.</li><li><strong>traction</strong> — A gentle pulling force applied to a joint or the spine to relieve pressure.</li></ul></details><script id="rg-tools">
+(function(){
+  var root=document.documentElement, PERSIST=true, KEY='rguhs';
+  var content=document.querySelector('#content, main, .wrap')||document.body;
+  var popup=document.getElementById('rg-popup'), pinned=null;
+
+  function syncTheme(){var d=root.classList.contains('dark');var b=document.getElementById('rgToggleTheme');
+    if(b){b.textContent=d?'Day mode':'Night mode';b.classList.toggle('active',d);}}
+  function syncFit(){var f=root.classList.contains('fit');var b=document.getElementById('rgToggleFit');
+    if(b){b.textContent=f?'Fit: on':'Fit to screen';b.classList.toggle('active',f);}}
+  syncTheme(); syncFit();
+
+  var hlKey=KEY+'-hl-'+location.pathname;
+  if(PERSIST){try{var saved=localStorage.getItem(hlKey);if(saved)content.innerHTML=saved;}catch(e){}}
+  function saveHl(){if(!PERSIST)return;try{localStorage.setItem(hlKey,content.innerHTML);}catch(e){}}
+  function selRange(){var s=window.getSelection();if(!s||s.rangeCount===0||s.isCollapsed)return null;
+    var r=s.getRangeAt(0);if(!content.contains(r.commonAncestorContainer))return null;return r;}
+  function highlight(c){var r=selRange();if(!r)return;var m=document.createElement('mark');m.className='hl '+c;
+    try{r.surroundContents(m);}catch(e){m.appendChild(r.extractContents());r.insertNode(m);}
+    window.getSelection().removeAllRanges();saveHl();}
+  function eraseSel(){var r=selRange();if(!r)return;var ch=false;
+    content.querySelectorAll('mark.hl').forEach(function(m){if(r.intersectsNode(m)){m.parentNode.replaceChild(document.createTextNode(m.textContent),m);ch=true;}});
+    window.getSelection().removeAllRanges();if(ch)saveHl();}
+
+  var tb=document.querySelector('.rg-toolbar');
+  if(tb)tb.addEventListener('mousedown',function(e){if(e.target.closest('button'))e.preventDefault();});
+  if(tb)tb.addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b)return;
+    if(b.dataset.color){highlight(b.dataset.color);}
+    else if(b.id==='rgErase'){eraseSel();}
+    else if(b.id==='rgClearAll'){content.querySelectorAll('mark.hl').forEach(function(m){m.parentNode.replaceChild(document.createTextNode(m.textContent),m);});saveHl();}
+    else if(b.id==='rgToggleNotes'){root.classList.toggle('no-notes');b.classList.toggle('active',!root.classList.contains('no-notes'));if(root.classList.contains('no-notes')){pinned=null;if(popup)popup.style.display='none';}}
+    else if(b.id==='rgToggleTheme'){root.classList.toggle('dark');try{localStorage.setItem(KEY+'-theme',root.classList.contains('dark')?'dark':'light');}catch(x){}syncTheme();}
+    else if(b.id==='rgToggleFit'){root.classList.toggle('fit');try{localStorage.setItem(KEY+'-fit',root.classList.contains('fit')?'1':'0');}catch(x){}syncFit();}
+  });
+
+  function showPopup(el){if(!popup)return;var r=el.getBoundingClientRect();
+    popup.innerHTML='<b>'+el.textContent+'</b><br>'+el.getAttribute('data-note');
+    popup.style.display='block';var pw=popup.offsetWidth,ph=popup.offsetHeight;
+    var left=window.scrollX+r.left, top=window.scrollY+r.bottom+8, vw=document.documentElement.clientWidth;
+    if(left+pw>window.scrollX+vw-12)left=window.scrollX+vw-pw-12; if(left<window.scrollX+8)left=window.scrollX+8;
+    if(r.bottom+ph+20>window.innerHeight)top=window.scrollY+r.top-ph-8;
+    popup.style.left=left+'px';popup.style.top=top+'px';}
+  function hidePopup(){if(!pinned&&popup)popup.style.display='none';}
+  document.addEventListener('mouseover',function(e){var t=e.target.closest?e.target.closest('.term'):null;
+    if(t&&t.getAttribute('data-note')&&!root.classList.contains('no-notes'))showPopup(t);});
+  document.addEventListener('mouseout',function(e){var t=e.target.closest?e.target.closest('.term'):null;if(t&&t!==pinned)hidePopup();});
+  document.addEventListener('click',function(e){var t=e.target.closest?e.target.closest('.term'):null;
+    if(t){if(root.classList.contains('no-notes'))return;if(pinned===t){pinned=null;if(popup)popup.style.display='none';}else{pinned=t;showPopup(t);}return;}
+    if(!e.target.closest||!e.target.closest('#rg-popup')){pinned=null;if(popup)popup.style.display='none';}});
+  window.addEventListener('scroll',function(){if(pinned)showPopup(pinned);},{passive:true});
+  document.addEventListener('keydown',function(e){
+    if((e.key==='Enter'||e.key===' ')&&document.activeElement&&document.activeElement.classList&&document.activeElement.classList.contains('term')){e.preventDefault();pinned=document.activeElement;showPopup(pinned);}
+    if(e.key==='Escape'){pinned=null;if(popup)popup.style.display='none';closeDrawer();}});
+
+  var drawer=document.getElementById('rgDrawer'),scrim=document.getElementById('rgScrim'),
+      fab=document.getElementById('rgNotesFab'),note=document.getElementById('rgPageNote');
+  function openDrawer(o){if(!drawer)return;drawer.classList.toggle('open',o);scrim.classList.toggle('open',o);if(fab)fab.setAttribute('aria-expanded',o?'true':'false');}
+  function closeDrawer(){openDrawer(false);}
+  if(fab){fab.addEventListener('click',function(){openDrawer(!drawer.classList.contains('open'));});
+    document.getElementById('rgDrawerClose').addEventListener('click',closeDrawer);
+    scrim.addEventListener('click',closeDrawer);}
+  if(note){var nk=KEY+'-note-'+location.pathname;
+    try{var v=localStorage.getItem(nk);if(v)note.value=v;}catch(e){}
+    note.addEventListener('input',function(){try{localStorage.setItem(nk,note.value);}catch(e){}});}
+})();
+</script></body>
 </html>

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Screening the Head and Neck &middot; Paper 3 MSK Assessment</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Screening the Head and Neck · Paper 3 MSK Assessment</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{
   --bg:#faf7f5; --surface:#fffdfb; --surface-2:#f3ece6; --border:rgba(35,32,29,.12);
@@ -82,15 +83,145 @@ footer .wrap{max-width:var(--maxw)}
   border-radius:999px;padding:2px 9px;align-self:flex-start}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
 </style>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#0f766e">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-</head>
-<body>
-<header class="top"><div class="bar"><div class="brand"><b>Paper&nbsp;3</b> &middot; MSK Assessment</div><nav class="sib"><a href="index.html">Index</a></nav></div></header>
+<link href="manifest.json" rel="manifest"/>
+<meta content="#0f766e" name="theme-color"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<script id="rg-boot">(function(){try{var d=document.documentElement;
+if(localStorage.getItem('rguhs-theme')==='dark')d.classList.add('dark');
+if(localStorage.getItem('rguhs-fit')==='1')d.classList.add('fit');}catch(e){}})();</script><style id="rguhs-teal-theme">
+/* ===== RGUHS teal study theme (injected layer) ===== */
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --ink:#1b1f24; --muted:#5b6472;
+  --line:#e4e7eb; --line-2:#d3d8de;
+  --accent:#0f766e; --accent-ink:#0b5f59; --accent-soft:#e8f3f1;
+  --term:#4a5560; --term-dot:#9aa3ad;
+  --paper:#f6f7f9; --paper2:#eef1f4; --surface:#ffffff; --surface2:#f2f4f7;
+  --surface-2:#f2f4f7; --border:#e4e7eb; --rule:#e4e7eb; --rule-strong:#d3d8de;
+  --text:#1b1f24; --text-dim:#5b6472; --ink-dim:#5b6472;
+  --navy:#0f766e; --terra:#0b5f59; --terra-bg:#e8f3f1; --gold:#0f766e; --gold-bg:#e8f3f1;
+  --accent2:#0b5f59; --accent-dim:#99f6e4; --accent2-dim:#99f6e4;
+  --blue:#0f766e; --bar:#ffffff;
+  --ui-bg:#ffffff; --ui-ink:#1b1f24; --ui-line:rgba(20,30,50,.16); --ui-hover:rgba(20,30,50,.07); --ui-on:#e8f3f1;
+}
+html.dark, html[data-theme="dark"]{
+  --bg:#101216; --panel:#171a1f; --ink:#e7e9ed; --muted:#98a1ac;
+  --line:#262a31; --line-2:#333842;
+  --accent:#5eead4; --accent-ink:#5eead4; --accent-soft:#16292a;
+  --term:#aab2bd; --term-dot:#5a6470;
+  --paper:#101216; --paper2:#171a1f; --surface:#171a1f; --surface2:#1d2126;
+  --surface-2:#1d2126; --border:#262a31; --rule:#262a31; --rule-strong:#333842;
+  --text:#e7e9ed; --text-dim:#98a1ac; --ink-dim:#98a1ac;
+  --navy:#5eead4; --terra:#5eead4; --terra-bg:#16292a; --gold:#5eead4; --gold-bg:#16292a;
+  --accent2:#5eead4; --accent-dim:#16292a; --accent2-dim:#16292a;
+  --blue:#5eead4; --bar:#171a1f;
+  --ui-bg:#1d2126; --ui-ink:#e7e9ed; --ui-line:rgba(255,255,255,.18); --ui-hover:rgba(255,255,255,.09); --ui-on:#16292a;
+}
+html,body{background:var(--bg)!important;color:var(--ink)!important;
+  font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;font-size:17px;line-height:1.68;
+  -webkit-font-smoothing:antialiased;}
+body{background-image:none!important;}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:var(--ink)!important;letter-spacing:normal!important;}
+a{color:var(--accent)!important;}
+a:hover{color:var(--accent-ink)!important;}
+::selection{background:var(--accent-soft);}
+/* top bars / nav */
+.pnav,.top,.bar,.pnav-in,.rtools{background:var(--panel)!important;border-color:var(--line)!important;color:var(--ink)!important;}
+.bar,.top{position:sticky;top:52px;z-index:70;}
+.rtools{display:none!important;}
+.pnav-in a.tab.on{border-color:var(--accent)!important;background:var(--accent-soft)!important;color:var(--accent-ink)!important;}
+.brand,.brand b{color:var(--accent-ink)!important;}
+/* cards / panels */
+.topic,.pcard,.homefoot,.sec-head,.refs,.exam-para,.tbl-wrap,.fig,.stat,.card,
+main article,main section,.crumb,.legend span{
+  background:var(--panel)!important;border-color:var(--line)!important;color:var(--ink)!important;
+  box-shadow:none!important;}
+.topic-top{border-left-color:var(--accent)!important;}
+.exam-para,.stat,.legend span,.t-meta .rbc,.rbc{background:var(--accent-soft)!important;color:var(--accent-ink)!important;border-color:var(--line)!important;}
+.bmnemonic,.bmnemonic::before{background:var(--accent-soft)!important;}
+.stars,.stars-sm,.open,.pcard .open,.ep-label,.kicker,.ptag,.pcard .ptag{color:var(--accent)!important;}
+.stars .dim,.stars-sm .dim{color:var(--line-2)!important;}
+/* tables */
+table{border-collapse:collapse;}
+th{background:var(--accent-soft)!important;color:var(--accent-ink)!important;border-color:var(--line)!important;}
+td{border-color:var(--line)!important;}
+thead th{background:var(--accent)!important;color:#fff!important;}
+html.dark thead th{color:#06231f!important;}
+/* toolbar */
+.rg-toolbar{position:sticky;top:0;z-index:900;display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+  padding:9px 20px;background:var(--panel);border-bottom:1px solid var(--line);font-size:13.5px;font-family:"Segoe UI",Roboto,Arial,sans-serif;}
+.rg-toolbar .lbl{color:var(--muted);font-weight:600;}
+.rg-toolbar .sw{width:22px;height:22px;border-radius:50%;border:1px solid var(--line-2);cursor:pointer;padding:0;}
+.rg-toolbar .sw.yellow{background:#ffe680;} .rg-toolbar .sw.green{background:#a8e6a3;} .rg-toolbar .sw.pink{background:#ffb3d1;}
+.rg-toolbar .btn{border:1px solid var(--line-2);background:var(--panel);color:var(--ink);border-radius:8px;padding:5px 10px;cursor:pointer;font:inherit;font-size:13px;}
+.rg-toolbar .btn:hover{background:var(--accent-soft);border-color:var(--accent);}
+.rg-toolbar .btn.active{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink);font-weight:600;}
+.rg-toolbar .sep{width:1px;height:20px;background:var(--line-2);}
+.rg-toolbar .hint{margin-left:auto;color:var(--muted);font-size:12.5px;}
+html.fit .wrap,html.fit main{max-width:100%!important;}
+/* term popups */
+.term{color:var(--term);border-bottom:1px dotted var(--term-dot);cursor:help;}
+.term:hover{background:var(--accent-soft);border-bottom-color:var(--accent);}
+html.no-notes .term{border-bottom:none;color:inherit;cursor:inherit;background:none;}
+#rg-popup{position:absolute;z-index:1200;max-width:330px;display:none;padding:11px 13px;border-radius:9px;
+  background:#1c1f24;color:#f1f3f6;font-size:14px;line-height:1.5;box-shadow:0 12px 30px rgba(0,0,0,.28);font-family:"Segoe UI",Roboto,Arial,sans-serif;}
+html.dark #rg-popup{background:#2a2f36;color:#eef1f4;border:1px solid var(--line-2);}
+#rg-popup b{color:#fff;}
+mark.hl{border-radius:3px;padding:0 1px;color:inherit;}
+mark.hl.yellow{background:rgba(255,214,0,.38);}
+mark.hl.green{background:rgba(52,199,89,.32);}
+mark.hl.pink{background:rgba(255,90,150,.30);}
+/* glossary */
+.glossary{margin:26px 0;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:6px 18px;}
+.glossary summary{cursor:pointer;font-weight:700;padding:12px 0;}
+.gloss-hint{margin:0 0 8px;color:var(--muted);font-size:13.5px;}
+.glossary ul{font-size:14px;columns:2;column-gap:26px;}
+@media (max-width:680px){.glossary ul{columns:1;}}
+/* notes */
+.rg-fab{position:fixed;right:20px;bottom:20px;z-index:1100;display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:999px;padding:11px 17px;
+  font:inherit;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 10px 26px rgba(0,0,0,.22);font-family:"Segoe UI",Roboto,Arial,sans-serif;}
+html.dark .rg-fab{color:#052622;}
+.rg-drawer{position:fixed;top:0;right:0;height:100%;width:min(430px,92vw);z-index:1300;background:var(--panel);
+  border-left:1px solid var(--line);box-shadow:-12px 0 34px rgba(0,0,0,.2);transform:translateX(102%);
+  transition:transform .22s ease;display:flex;flex-direction:column;font-family:"Segoe UI",Roboto,Arial,sans-serif;}
+.rg-drawer.open{transform:none;}
+.rg-drawer .dhead{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line);}
+.rg-drawer .dhead strong{font-size:16px;}
+.rg-drawer .dclose{border:1px solid var(--line-2);background:var(--panel);color:var(--ink);border-radius:8px;padding:4px 11px;font:inherit;font-size:13px;cursor:pointer;}
+.rg-drawer .dhint{margin:10px 18px 2px;color:var(--muted);font-size:12.5px;}
+.rg-drawer .dbody{overflow:auto;padding:6px 18px 28px;}
+.rg-notes{width:100%;min-height:220px;resize:vertical;padding:10px 11px;font:inherit;font-size:14.5px;line-height:1.55;
+  color:var(--ink);background:var(--bg);border:1px solid var(--line-2);border-radius:8px;}
+.rg-notes:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft);}
+.rg-scrim{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1250;opacity:0;pointer-events:none;transition:opacity .22s ease;}
+.rg-scrim.open{opacity:1;pointer-events:auto;}
+@media print{.rg-toolbar,#rg-popup,.rg-fab,.rg-drawer,.rg-scrim{display:none!important;}}
+</style></head>
+<body><div aria-label="Study tools" class="rg-toolbar" role="toolbar">
+<span class="lbl">Highlight</span>
+<button aria-label="Yellow highlighter" class="sw yellow" data-color="yellow" title="Yellow highlighter"></button>
+<button aria-label="Green highlighter" class="sw green" data-color="green" title="Green highlighter"></button>
+<button aria-label="Pink highlighter" class="sw pink" data-color="pink" title="Pink highlighter"></button>
+<button class="btn" id="rgErase">Erase</button>
+<button class="btn" id="rgClearAll">Clear all</button>
+<span class="sep"></span>
+<button class="btn active" id="rgToggleNotes">Term notes</button>
+<button class="btn" id="rgToggleTheme">Night mode</button>
+<button class="btn" id="rgToggleFit">Fit to screen</button>
+<span class="hint">Select text, then pick a colour. Notes save automatically.</span>
+</div>
+<div id="rg-popup"></div>
+<button aria-expanded="false" class="rg-fab" id="rgNotesFab">✎ Study Notes</button>
+<div class="rg-scrim" id="rgScrim"></div>
+<aside aria-label="Study notes" class="rg-drawer" id="rgDrawer">
+<div class="dhead"><strong>Study Notes</strong><button class="dclose" id="rgDrawerClose">Close</button></div>
+<p class="dhint">Your notes for this page — saved automatically in this browser.</p>
+<div class="dbody"><textarea class="rg-notes" id="rgPageNote" placeholder="Write your notes for this page..."></textarea></div>
+</aside>
+<header class="top"><div class="bar"><div class="brand"><b>Paper 3</b> · MSK Assessment</div><nav class="sib"><a href="index.html">Index</a></nav></div></header>
 <div class="wrap"><main>
-<div class="crumb">Paper 3 &middot; MSK Assessment</div>
+<div class="crumb">Paper 3 · MSK Assessment</div>
 <h1>Screening the Head and Neck</h1>
 <p class="lead">Faithful study notes transcribed from the Paper 3 MSK assessment compilation (based on David J. Magee, <em>Orthopedic Physical Assessment</em>, 6th ed., and companion material).</p>
 <nav class="toc"><h4>On this page</h4><ol><li><a href="#patient-history">Patient History</a></li><li><a href="#observation">Observation</a></li><li><a href="#examination">Examination</a></li><li><a href="#palpation">Palpation</a></li><li><a href="#diagnostic-imaging">Diagnostic Imaging</a></li><li><a href="#references">References</a></li><li><a href="#patient-history-2">PATIENT HISTORY</a></li><li><a href="#observation-2">OBSERVATION</a></li><li><a href="#examination-2">EXAMINATION</a></li><li><a href="#head-examination">Head Examination</a></li><li><a href="#facial-examination">Facial Examination</a></li><li><a href="#eye-examination">Eye Examination</a></li><li><a href="#nasal-examination">Nasal Examination</a></li><li><a href="#tooth-examination">Tooth Examination</a></li><li><a href="#ear-examination">Ear Examination</a></li><li><a href="#special-tests">Special Tests</a></li><li><a href="#romberg-test">Romberg Test</a></li><li><a href="#joint-play-movements">Joint Play Movements</a></li><li><a href="#palpation-2">Palpation</a></li><li><a href="#diagnostic-imaging-2">Diagnostic Imaging</a></li><li><a href="#computed-tomography">Computed Tomography</a></li><li><a href="#magnetic-resonance">Magnetic Resonance</a></li><li><a href="#references-2">References</a></li></ol></nav>
@@ -98,7 +229,7 @@ footer .wrap{max-width:var(--maxw)}
 <h2 id="patient-history">Patient History</h2>
 <h2 id="observation">Observation</h2>
 <h2 id="examination">Examination</h2>
-<h2 id="palpation">Palpation</h2>
+<h2 id="palpation"><span class="term" data-note="Examining the body by touch to feel for tenderness, swelling or tissue change." tabindex="0">Palpation</span></h2>
 <h2 id="diagnostic-imaging">Diagnostic Imaging</h2>
 <h2 id="references">References</h2>
 <h2 id="patient-history-2">PATIENT HISTORY</h2>
@@ -113,13 +244,13 @@ footer .wrap{max-width:var(--maxw)}
 <p>If there appears to be any bulging, especially unilaterally, the examiner should tilt the patient's head forward or back and, looking from above, compare each cornea with the lid below, noting whether one or both corneas bulge beyond the lid margins. If one or both eyes appear to bulge, the examiner can use a pocket ruler to roughly measure the distance from the angle of the eye to the corneal apex.</p>
 <p>Immediate referral for further examination by a specialist is required for an embedded corneal foreign body; haze or blood in the anterior chamber (hyphema); decreased or partial vision; irregular, asymmetric, or poor pupil action; diplopia or double vision; laceration of the eyelid or impaired lid function; perforation or laceration of the globe; broken contact lens or shattered eyeglass in the eye; unexplained eye pain that is stabbing or deep and throbbing; blurred vision that does not clear with blinking; loss of all or part of the visual field; protrusion of one eye relative to the other; an injured eye that does not move as fully as the uninjured eye; or abnormal pupil size or shape.</p>
 <p>A teardrop pupil usually indicates iris entrapment in a corneal or scleral laceration. In addition, the eyes should be observed from the lateral aspect. The normal distance from the cornea to the angle of the eye is 16 mm or less. The distances between the upper and lower lids should be the same for both eyes. When the eyes open, the superior eyelid should cover a portion of the iris but not the pupil itself. If it covers more of the s than the other upper eyelid does or if it extends over the iris or pupil, ptosis or drooping of that eyelid should be suspected. If the eyelid does not cover part of the iris, retraction of the eyelid should be suspected. Are the eyelids everted or inverted? Normally, they are neither.</p>
-<p>The examiner should also note whether the patient can close both eyes completely. If an eye injury is suspected, this action should be done carefully, because closing the eyes can increase intraocular pressure. The lids should be pressed together only enough to bring the eyelashes together. Any inflammation or masses, especially on the lid margin, should be noted. The lashes should be viewed to see if there is even distribution along the lid margins. "Raccoon eyes," which are purple discolorations of the eyelids and orbital regions, may indicate orbital fractures, basilar skull fractures, or a fracture of the base of the anterior cranial fossa. This sign takes several hours to develop.</p>
-<p>The conjunctiva should be inspected for hemorrhage, laceration, and foreign bodies. If the patient complains of "something in the eye," eversion of the upper eyelid usually reveals a foreign body that can often be easily brushed away. Displaced contact lenses are often found in this upper area of the eye. The conjunctival covering of the lower lid may be examined by having the patient look upward while the examiner draws the lower lid downward. The conjunctiva should be examined as being a continuous sheet of epithelium from the globe to the lids. The color of the sclera should also be noted. Posttraumatic conjunctival hemorrhage () and possible scleral lacerations) should be noted, if present.</p>
+<p>The examiner should also note whether the patient can close both eyes completely. If an eye injury is suspected, this action should be done carefully, because closing the eyes can increase intraocular pressure. The lids should be pressed together only enough to bring the eyelashes together. Any <span class="term" data-note="The body's protective response to injury - heat, redness, swelling and pain." tabindex="0">inflammation</span> or masses, especially on the lid margin, should be noted. The lashes should be viewed to see if there is even distribution along the lid margins. "Raccoon eyes," which are purple discolorations of the eyelids and orbital regions, may indicate orbital fractures, basilar skull fractures, or a fracture of the base of the anterior cranial fossa. This sign takes several hours to develop.</p>
+<p>The conjunctiva should be inspected for hemorrhage, laceration, and foreign bodies. If the patient complains of "something in the eye," <span class="term" data-note="Turning the sole of the foot outward." tabindex="0">eversion</span> of the upper eyelid usually reveals a foreign body that can often be easily brushed away. Displaced contact lenses are often found in this upper area of the eye. The conjunctival covering of the lower lid may be examined by having the patient look upward while the examiner draws the lower lid downward. The conjunctiva should be examined as being a continuous sheet of epithelium from the globe to the lids. The color of the sclera should also be noted. Posttraumatic conjunctival hemorrhage () and possible scleral lacerations) should be noted, if present.</p>
 <p>In dark-skinned patients, pigmented areas may show up as small dark spots or patches near the limbus. The shape and color of the cornea should be inspected. The anterior chambers of the eye should be inspected and compared for clarity and depth.63 If present, hyphema in the form of haze or actual blood pooling in the anterior eye chamber should be noted.57 If there is any potential for or evidence of bleeding in the anterior chamber of the eye, the patient's activity should be curtailed, because increased activity increases the chances of secondary hemorrhage during the first week after injury . The pupillary size (diameter range, 2 to 6 mm; mean, 3.5 mm), shape (round), and symmetry should be compared with those of the other eye.</p>
 <p>Elliptical pupils often indicate a corneal laceration. The color of the irises of the eyes should be compared. When looking at the pupils, the examiner should note whether the pupils are equal. Are the pupils smaller or larger than normal? Are they round or irregularly shaped? The pupils are normally slightly unequal in 5% of the population, but inequality of pupil size should initially be viewed with suspicion. The nose should be inspected for any deviations in shape, size, or color. The skin should be smooth without swelling and should conform to the color of the face. The airways are usually oval and symmetrically proportioned. If a discharge is present, its character (i.e., color, smell, texture) should be noted and described.</p>
 <p>Bloody discharge occurs as a result of epistaxis or trauma, such as a nasal fracture, zygoma fracture, or skull fracture. Mucoid discharge is typical of rhinitis. Bilateral purulent discharge can occur with upper respiratory tract infection. Unilateral purulent, thick, greenish, and often malodorous discharge usually indicates the presence of a foreign body. Depression of the nasal bridge can result from a fracture of the nasal bone. Nasal flaring is associated with respiratory distress, whereas narrowing of the airways on inspiration may indicate chronic nasal obstruction and be associated with mouth breathing. The nasal mucosa should be deep pink and glistening. A film of clear discharge is often apparent on the nasal septum.</p>
 <p>The nasal septum should be close to midline and fairly straight, appearing thicker anteriorly than posteriorly. If present, a hematoma in the septal area should be noted. Asymmetric posterior nasal cavities may indicate a deviation of the nasal septum. With the patient's mouth closed, the lips should be observed for symmetry, color, edema, and surface abnormalities. Lipstick should be removed before the assessment. The lips should be pink and have vertical and horizontal symmetry, both at rest and with movement. Dry, cracked lips may be caused by dehydration from wind or low humidity, whereas deep fissures at the corners of the mouth may indicate overclosure of the mouth or riboflavin deficiency.</p>
-<p>Drooping of the mouth on one side, sagging of the lower eyelid, and flattening of the nasolabial fold suggest possible facial nerve (cranial nerve VII) involvement. The patient is also unable to pucker the lips to whistle. The shape and position of the jaw and teeth should also be noted anteriorly and from the side. Asymmetry may indicate a fracture of the jaw ,whereas bleeding around the gums of the teeth may indicate fracture, avulsion, or loosening of the teeth. If teeth are missing, they must be accounted for. If they are not accounted for, an x-ray may be required to ensure that the teeth have not entered the abdominal or chest cavity. Pain on percussion of the teeth often indicates damage to the periodontal ligament.</p>
+<p>Drooping of the mouth on one side, sagging of the lower eyelid, and flattening of the nasolabial fold suggest possible facial nerve (cranial nerve VII) involvement. The patient is also unable to pucker the lips to whistle. The shape and position of the jaw and teeth should also be noted anteriorly and from the side. Asymmetry may indicate a fracture of the jaw ,whereas bleeding around the gums of the teeth may indicate fracture, avulsion, or loosening of the teeth. If teeth are missing, they must be accounted for. If they are not accounted for, an x-ray may be required to ensure that the teeth have not entered the abdominal or chest cavity. Pain on percussion of the teeth often indicates damage to the periodontal <span class="term" data-note="Strong fibrous tissue that connects bone to bone and stabilises a joint." tabindex="0">ligament</span>.</p>
 <p>From the side, the examiner should look for any asymmetry or depression, which may indicate pathology. The examiner should inspect the auricles of the ears for size, shape, symmetry, landmarks, color, and position on the head. To determine the position of the auricle, the examiner can draw an imaginary line between the outer canthus of the eye and occipital protuberance . The top of the auricle should touch or be above this line. The examiner can then draw another imaginary line perpendicular to the previous line and just B anterior to the auricle. The auricle's position should be almost vertical. If the angle is more than 10° posterior or anterior, it is considered abnormal.</p>
 <p>An auricle that is set low or is at an unusual angle may indicate chromosomal aberrations or renal disorders. In addition, the lateral and medial surfaces and surrounding tissues should be examined, noting any deformities, lesions, or nodules. The auricles should be the same color as the facial skin without moles, cysts, or other lesions or deformities. Athletes, especially wrestlers, may exhibit a cauliflower ear (hematoma auris), which is a keloid scar forming in the auricle because of friction to or twisting of the ear. Blueness may indicate some degree of cyanosis. Pallor or excessive redness may be the result of vasomotor instability or increased temperature. Frostbite can cause extreme pallor or blistering.</p>
 <p>The examiner should look posteriorly for any asymmetry or depression. The positions of the ears (height, protrusion) can be compared by observing them from behind. A low hairline may indicate conditions such as Klippel-Feil syndrome. The examiner should also look for the presence of Battle sign. This sign, which takes as long as 24 hours to appear, is demonstrated by purple and blue discoloration of the skin in the mastoid area and may indicate a temporal bone or basilar skull fracture. The examiner then views the patient from overhead (superior view) to note any asymmetry from above . This method is especially useful when looking for a possible fracture of the zygoma .</p>
@@ -127,7 +258,7 @@ footer .wrap{max-width:var(--maxw)}
 <h2 id="examination-2">EXAMINATION</h2>
 <p>The examination of the head and face differs from the orthopedic assessment of other areas of the body because the assessment does not involve joints. Examination of the Head Many problems in the head and face may be problems referred from the cervical spine, temporomandibular joint, or teeth. However, if one suspects a head injury, it is necessary to keep a close watch on the patient, noting any changes and when these changes occur. The examiner should implement a Neural Watch so that any changes that occur over time can be determined easily. The testing should occur at 15- or 30-minute intervals, depending on the severity of the injury and the changes recorded. The issue of whether a patient should be allowed to return to competition or high-level activity following a concussion, and how soon, is one that has not been completely settled, although clinicians are becoming more concerned about the consequences of concussions.</p>
 <h2 id="head-examination">Head Examination</h2>
-<p>• Concussion • Headache • Memory tests • Neural Watch (Glasgow Coma Scale) • Expanding intracranial lesion • Proprioception • Coordination • Head injury card Examination of the Face Once a head injury has been ruled out or if no head injury is suspected, the examiner can inspect the face for injury. Major trauma and subsequent injury to the face should be assessed first. If major trauma has not occurred, only those areas of the face that have been affected by the trauma (e.g., eyes, nose, ears) need be assessed.</p>
+<p>• Concussion • Headache • Memory tests • Neural Watch (Glasgow Coma Scale) • Expanding intracranial lesion • <span class="term" data-note="The sense of body and joint position and movement." tabindex="0">Proprioception</span> • Coordination • Head injury card Examination of the Face Once a head injury has been ruled out or if no head injury is suspected, the examiner can inspect the face for injury. Major trauma and subsequent injury to the face should be assessed first. If major trauma has not occurred, only those areas of the face that have been affected by the trauma (e.g., eyes, nose, ears) need be assessed.</p>
 <h2 id="facial-examination">Facial Examination</h2>
 <p>• Bone and soft tissue contours • Fractures • Mandible • Maxilla • Zygoma • Skull • Cranial nerves • Facial muscles Examination of the Eye If the eyelids are swollen shut, the examiner should initially assume that the globe has been ruptured. A penetrating wound of the eyelid should be assessed carefully, because it may be associated with a globe injury. The examiner should not force the eyelid open, because intraocular pressure can force extrusion of the ocular contents if the globe has been ruptured. The patient should also be instructed not to squeeze the eyelids tight, because this action can increase the intraocular pressure from a normal value of 15 mm Hg up to approximately 70 mm Hg.</p>
 <h2 id="eye-examination">Eye Examination</h2>
@@ -139,13 +270,13 @@ footer .wrap{max-width:var(--maxw)}
 <h2 id="ear-examination">Ear Examination</h2>
 <p>• Tenderness (exterior and interior) • Ear discharge (bloody, straw-colored, clear) • Hearing • Balance</p>
 <h2 id="special-tests">Special Tests</h2>
-<p>Examiners perform only those special tests that they think will have value in helping to confirm a diagnosis. For example, the tests for expanding intracranial lesions would not be performed with a facial injury unless an associated injury to the brain or other neurological tissues is suspected. For the reader who would like to review them, the reliability, validity, specificity, sensitivity, and odds ratios of some of the special tests used for the head and face are available on the Evolve website. Tests for Expanding Intracranial Lesions</p>
+<p>Examiners perform only those special tests that they think will have value in helping to confirm a diagnosis. For example, the tests for expanding intracranial lesions would not be performed with a facial injury unless an associated injury to the brain or other neurological tissues is suspected. For the reader who would like to review them, the reliability, validity, <span class="term" data-note="A test's ability to correctly identify people who do not have the condition." tabindex="0">specificity</span>, <span class="term" data-note="A test's ability to correctly identify people who have the condition." tabindex="0">sensitivity</span>, and odds ratios of some of the special tests used for the head and face are available on the Evolve website. Tests for Expanding Intracranial Lesions</p>
 <h2 id="romberg-test">Romberg Test</h2>
-<p>Tests for Coordination Balance Error Scoring System. Reflexes and Cutaneous Distribution With a head injury patient, deep tendon reflexes should be tested. Accentuation of one or more of the reflexes may indicate trauma to the brain on the opposite side. Pathological reflexes may also be altered with a head injury. The corneal reflex (trigeminal nerve, cranial nerve V) is used to test for damage or dysfunction to the pons. In some cases, the patient may look to one side to avoid involuntary blinking. The examiner touches the cornea (not the eyelashes or conjunctiva) with a small, fine point of cotton. The normal response is a bilateral blink, because the reflex arc connects both facial nerve nuclei.</p>
+<p>Tests for Coordination Balance Error Scoring System. Reflexes and Cutaneous Distribution With a head injury patient, deep <span class="term" data-note="Strong fibrous tissue that attaches muscle to bone." tabindex="0">tendon</span> reflexes should be tested. Accentuation of one or more of the reflexes may indicate trauma to the brain on the opposite side. Pathological reflexes may also be altered with a head injury. The corneal reflex (trigeminal nerve, cranial nerve V) is used to test for damage or dysfunction to the pons. In some cases, the patient may look to one side to avoid involuntary blinking. The examiner touches the cornea (not the eyelashes or conjunctiva) with a small, fine point of cotton. The normal response is a bilateral blink, because the reflex arc connects both facial nerve nuclei.</p>
 <p>If the reflex is absent, the test is considered positive. The gag reflex may be tested using a tongue depressor that is inserted into the posterior pharynx and depressed toward the hypopharynx. The reflex tests cranial nerves IX and X, and its absence in a trauma setting may indicate caudal brain stem dysfunction. Consensual light reflex may be tested by shining a light into one eye. This action causes the lighted pupil to constrict. If there is normal communication between the two oculomotor nerves, the nonlighted pupil also constricts. The jaw reflex is usually tested only if the temporomandibular joint or cervical spine is being examined.</p>
-<p>The examiner should check the sensation of the head and face, keeping in mind the differences in dermatome and sensory nerve distribution . Lip anesthesia or paresthesia is often seen in patients with mandibular fracture.</p>
+<p>The examiner should check the sensation of the head and face, keeping in mind the differences in <span class="term" data-note="The area of skin supplied by a single spinal nerve root." tabindex="0">dermatome</span> and sensory nerve distribution . Lip anesthesia or paresthesia is often seen in patients with mandibular fracture.</p>
 <p>Nerve Injuries of the Head and Face Bell's palsy involves paralysis of the facial nerve (cranial nerve VII) and usually occurs where the nerve emerges from the stylomastoid foramen. Pressure in the foramen caused by inflammation or trauma affects the nerve and, therefore, the muscles of the face (occipitofrontalis, corrugator, orbicularis oculi, and the nose and mouth muscles) on one side. The inflammation may result from a middle ear infection, viral infection, chilling of the face, or tumor. The observable result is smoothing of the face on the affected side owing to loss of muscle action, the eye on the affected side remaining open, and the lower eyelid sagging. The patient is unable to wink, whistle, purse the lips, or wrinkle the forehead. Speech sounds, especially those requiring pursing of the lips, are affected, resulting in slurred speech. The mouth droops, and it and the nose may deviate to the opposite side, especially in longstanding cases, of which there are remarkably few (90% of patients recover completely within 2 to 8 weeks). Facial sensation on the affected side is lost, and taste sensation is sometimes lost as well. The House- Brackmann Facial Nerve Grading System may be used to grade the level of facial nerve involvement.</p>
-<h2 id="joint-play-movements">Joint Play Movements</h2>
+<h2 id="joint-play-movements"><span class="term" data-note="The small accessory movement available at a joint beyond voluntary control." tabindex="0">Joint Play</span> Movements</h2>
 <p>Because no articular joints are involved in the assessment of the head and face, there are no joint play movements to test.</p>
 <h2 id="palpation-2">Palpation</h2>
 <p>During palpation of the head and face, the examiner should note any tenderness, deformity, crepitus, or other signs and symptoms that may indicate the source of pathology. The examiner should note the texture of the skin and surrounding bony and soft tissues. Normally, the patient is palpated in the sitting or supine position, beginning with the skull and moving from anterior to posterior, to the face, and finally to the lateral and posterior structures of the head. The skull is palpated by a gentle rotary movement of the fingers, progressing systematically from front to back. Normally, the skin of the skull moves freely and has no tenderness, swelling, or depressions.</p>
@@ -162,10 +293,76 @@ footer .wrap{max-width:var(--maxw)}
 <p>Imaging Magnetic resonance imaging is especially useful for demonstrating lesions of the soft tissues of the head and face and for differentiating between bone and soft tissue.</p>
 <h2 id="references-2">References</h2>
 <p>David J. magee : orthopedic physical assessment 6th edition .</p>
-<hr style="border:none;border-top:1px solid var(--border);margin:2.6em 0 1.4em">
-<nav class="sib" style="justify-content:space-between;display:flex;flex-wrap:wrap"><a href="01-introduction-to-assessment.html">&larr; Introduction to Assessment and Basic Assessment Methods</a> <a href="index.html">Index</a> <a href="03-screening-cervical-spine.html">Screening of Cervical Spine &rarr;</a></nav>
+<hr style="border:none;border-top:1px solid var(--border);margin:2.6em 0 1.4em"/>
+<nav class="sib" style="justify-content:space-between;display:flex;flex-wrap:wrap"><a href="01-introduction-to-assessment.html">← Introduction to Assessment and Basic Assessment Methods</a> <a href="index.html">Index</a> <a href="03-screening-cervical-spine.html">Screening of Cervical Spine →</a></nav>
 </main></div>
-<footer><div class="wrap">Compiled study notes &middot; for academic revision. Original clinical content &copy; respective authors (Magee, Dutton, Gross et&nbsp;al. and others).</div></footer>
+<footer><div class="wrap">Compiled study notes · for academic revision. Original clinical content © respective authors (Magee, Dutton, Gross et al. and others).</div></footer>
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}</script>
-</body>
+<details class="glossary"><summary>Glossary of difficult terms (10)</summary><p class="gloss-hint">Dotted-underlined words also show the definition on hover or tap.</p><ul><li><strong>dermatome</strong> — The area of skin supplied by a single spinal nerve root.</li><li><strong>eversion</strong> — Turning the sole of the foot outward.</li><li><strong>inflammation</strong> — The body's protective response to injury - heat, redness, swelling and pain.</li><li><strong>joint play</strong> — The small accessory movement available at a joint beyond voluntary control.</li><li><strong>ligament</strong> — Strong fibrous tissue that connects bone to bone and stabilises a joint.</li><li><strong>palpation</strong> — Examining the body by touch to feel for tenderness, swelling or tissue change.</li><li><strong>proprioception</strong> — The sense of body and joint position and movement.</li><li><strong>sensitivity</strong> — A test's ability to correctly identify people who have the condition.</li><li><strong>specificity</strong> — A test's ability to correctly identify people who do not have the condition.</li><li><strong>tendon</strong> — Strong fibrous tissue that attaches muscle to bone.</li></ul></details><script id="rg-tools">
+(function(){
+  var root=document.documentElement, PERSIST=true, KEY='rguhs';
+  var content=document.querySelector('#content, main, .wrap')||document.body;
+  var popup=document.getElementById('rg-popup'), pinned=null;
+
+  function syncTheme(){var d=root.classList.contains('dark');var b=document.getElementById('rgToggleTheme');
+    if(b){b.textContent=d?'Day mode':'Night mode';b.classList.toggle('active',d);}}
+  function syncFit(){var f=root.classList.contains('fit');var b=document.getElementById('rgToggleFit');
+    if(b){b.textContent=f?'Fit: on':'Fit to screen';b.classList.toggle('active',f);}}
+  syncTheme(); syncFit();
+
+  var hlKey=KEY+'-hl-'+location.pathname;
+  if(PERSIST){try{var saved=localStorage.getItem(hlKey);if(saved)content.innerHTML=saved;}catch(e){}}
+  function saveHl(){if(!PERSIST)return;try{localStorage.setItem(hlKey,content.innerHTML);}catch(e){}}
+  function selRange(){var s=window.getSelection();if(!s||s.rangeCount===0||s.isCollapsed)return null;
+    var r=s.getRangeAt(0);if(!content.contains(r.commonAncestorContainer))return null;return r;}
+  function highlight(c){var r=selRange();if(!r)return;var m=document.createElement('mark');m.className='hl '+c;
+    try{r.surroundContents(m);}catch(e){m.appendChild(r.extractContents());r.insertNode(m);}
+    window.getSelection().removeAllRanges();saveHl();}
+  function eraseSel(){var r=selRange();if(!r)return;var ch=false;
+    content.querySelectorAll('mark.hl').forEach(function(m){if(r.intersectsNode(m)){m.parentNode.replaceChild(document.createTextNode(m.textContent),m);ch=true;}});
+    window.getSelection().removeAllRanges();if(ch)saveHl();}
+
+  var tb=document.querySelector('.rg-toolbar');
+  if(tb)tb.addEventListener('mousedown',function(e){if(e.target.closest('button'))e.preventDefault();});
+  if(tb)tb.addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b)return;
+    if(b.dataset.color){highlight(b.dataset.color);}
+    else if(b.id==='rgErase'){eraseSel();}
+    else if(b.id==='rgClearAll'){content.querySelectorAll('mark.hl').forEach(function(m){m.parentNode.replaceChild(document.createTextNode(m.textContent),m);});saveHl();}
+    else if(b.id==='rgToggleNotes'){root.classList.toggle('no-notes');b.classList.toggle('active',!root.classList.contains('no-notes'));if(root.classList.contains('no-notes')){pinned=null;if(popup)popup.style.display='none';}}
+    else if(b.id==='rgToggleTheme'){root.classList.toggle('dark');try{localStorage.setItem(KEY+'-theme',root.classList.contains('dark')?'dark':'light');}catch(x){}syncTheme();}
+    else if(b.id==='rgToggleFit'){root.classList.toggle('fit');try{localStorage.setItem(KEY+'-fit',root.classList.contains('fit')?'1':'0');}catch(x){}syncFit();}
+  });
+
+  function showPopup(el){if(!popup)return;var r=el.getBoundingClientRect();
+    popup.innerHTML='<b>'+el.textContent+'</b><br>'+el.getAttribute('data-note');
+    popup.style.display='block';var pw=popup.offsetWidth,ph=popup.offsetHeight;
+    var left=window.scrollX+r.left, top=window.scrollY+r.bottom+8, vw=document.documentElement.clientWidth;
+    if(left+pw>window.scrollX+vw-12)left=window.scrollX+vw-pw-12; if(left<window.scrollX+8)left=window.scrollX+8;
+    if(r.bottom+ph+20>window.innerHeight)top=window.scrollY+r.top-ph-8;
+    popup.style.left=left+'px';popup.style.top=top+'px';}
+  function hidePopup(){if(!pinned&&popup)popup.style.display='none';}
+  document.addEventListener('mouseover',function(e){var t=e.target.closest?e.target.closest('.term'):null;
+    if(t&&t.getAttribute('data-note')&&!root.classList.contains('no-notes'))showPopup(t);});
+  document.addEventListener('mouseout',function(e){var t=e.target.closest?e.target.closest('.term'):null;if(t&&t!==pinned)hidePopup();});
+  document.addEventListener('click',function(e){var t=e.target.closest?e.target.closest('.term'):null;
+    if(t){if(root.classList.contains('no-notes'))return;if(pinned===t){pinned=null;if(popup)popup.style.display='none';}else{pinned=t;showPopup(t);}return;}
+    if(!e.target.closest||!e.target.closest('#rg-popup')){pinned=null;if(popup)popup.style.display='none';}});
+  window.addEventListener('scroll',function(){if(pinned)showPopup(pinned);},{passive:true});
+  document.addEventListener('keydown',function(e){
+    if((e.key==='Enter'||e.key===' ')&&document.activeElement&&document.activeElement.classList&&document.activeElement.classList.contains('term')){e.preventDefault();pinned=document.activeElement;showPopup(pinned);}
+    if(e.key==='Escape'){pinned=null;if(popup)popup.style.display='none';closeDrawer();}});
+
+  var drawer=document.getElementById('rgDrawer'),scrim=document.getElementById('rgScrim'),
+      fab=document.getElementById('rgNotesFab'),note=document.getElementById('rgPageNote');
+  function openDrawer(o){if(!drawer)return;drawer.classList.toggle('open',o);scrim.classList.toggle('open',o);if(fab)fab.setAttribute('aria-expanded',o?'true':'false');}
+  function closeDrawer(){openDrawer(false);}
+  if(fab){fab.addEventListener('click',function(){openDrawer(!drawer.classList.contains('open'));});
+    document.getElementById('rgDrawerClose').addEventListener('click',closeDrawer);
+    scrim.addEventListener('click',closeDrawer);}
+  if(note){var nk=KEY+'-note-'+location.pathname;
+    try{var v=localStorage.getItem(nk);if(v)note.value=v;}catch(e){}
+    note.addEventListener('input',function(){try{localStorage.setItem(nk,note.value);}catch(e){}});}
+})();
+</script></body>
 </html>
